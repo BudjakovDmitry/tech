@@ -1,1 +1,3 @@
 - [Introduction to Unix, Linux, GNU](introduction.md)
+- [Architecture](architecture.md)
+- 
