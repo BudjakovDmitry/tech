@@ -1,1 +1,2 @@
 - [Linux](linux/index.md)
+- [Python](python/index.md)
