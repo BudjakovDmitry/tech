@@ -5,3 +5,7 @@
 - [cd](cd.md)
 - [ls](ls.md)
 - [pwd](pwd.md)
+
+## Working with files
+
+- [cp](cp.md)
