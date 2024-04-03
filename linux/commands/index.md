@@ -9,3 +9,4 @@
 ## Working with files
 
 - [cp](cp.md)
+- [file](file.md)
