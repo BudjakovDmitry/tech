@@ -2,5 +2,6 @@
 
 ## Navigation
 
-- [ls](ls.md)
 - [cd](cd.md)
+- [ls](ls.md)
+- [pwd](pwd.md)
