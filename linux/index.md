@@ -1,4 +1,5 @@
 - [Introduction to Unix, Linux, GNU](introduction.md)
 - [Architecture](architecture.md)
 - [Filesystem](filesystem.md)
+- [Hard links, Symbolic links](links.md)
 - [Terminal commands](commands/index.md)
