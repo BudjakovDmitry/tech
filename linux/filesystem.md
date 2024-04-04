@@ -143,7 +143,7 @@ application programs do.
 
 ## inodes
 
-inode is a data object that contains metadata obout the files within your file system.
+inode is a data object that contains metadata about the files within your file system.
 inodes contains the information like the size of the file, who owns it, the permission
 string and more, other than the name of the file and the content of the file.
 
@@ -153,7 +153,6 @@ Every storage medium have its own set of inodes. For example:
 
 ```shell
 ls -li ~john
-
 6921 -rw-rw-r-- 1 john john 85 Apr 3 12:08 README.MD
 ```
 
