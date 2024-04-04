@@ -9,7 +9,7 @@ the referenced file or directory. The symbolic link and file it points to have d
 inode numbers because symbolic link and a file it links to are completely different
 objects.
 
-# Hard link
+## Hard link
 
 By default, every file has a single hard link that gives the file its name.
 
