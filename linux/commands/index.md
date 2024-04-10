@@ -12,3 +12,7 @@
 - [file](file.md)
 - [less](less.md)
 - [ln](ln.md)
+
+## Common
+
+- [clear](clear.md)
