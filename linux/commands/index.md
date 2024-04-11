@@ -14,6 +14,10 @@
 - [ln](ln.md)
 - [mv](mv.md)
 
+## Informational
+
+- [cal](cal.md)
+
 ## Common
 
 - [clear](clear.md)
