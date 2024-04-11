@@ -17,6 +17,7 @@
 ## Informational
 
 - [cal](cal.md)
+- [date](date.md)
 
 ## Common
 
