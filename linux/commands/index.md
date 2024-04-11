@@ -18,6 +18,7 @@
 
 - [cal, ncal](cal.md)
 - [date](date.md)
+- [df](df.md)
 
 ## Common
 
