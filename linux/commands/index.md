@@ -17,3 +17,4 @@
 ## Common
 
 - [clear](clear.md)
+- [exit](exit.md)
