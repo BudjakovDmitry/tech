@@ -20,6 +20,7 @@
 - [date](date.md)
 - [df](df.md)
 - [free](free.md)
+- [id](id.md)
 
 ## Common
 
