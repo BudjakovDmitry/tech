@@ -21,6 +21,7 @@
 - [df](df.md)
 - [free](free.md)
 - [id](id.md)
+- [ps](ps.md)
 
 ## Common
 
