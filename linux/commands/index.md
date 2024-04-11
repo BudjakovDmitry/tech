@@ -16,7 +16,7 @@
 
 ## Informational
 
-- [cal](cal.md)
+- [cal, ncal](cal.md)
 - [date](date.md)
 
 ## Common
