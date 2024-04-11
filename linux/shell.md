@@ -52,6 +52,10 @@ appearance somewhat depending on the distribution, it will typically include you
 *username@machinename*, followed by the **current working directory** and a dollar sign
 (or other sign).
 
+### Terminal prompt
+
+The terminal prompt looks like this:
+
 ```shell
 username@machinename dir %
 ```
