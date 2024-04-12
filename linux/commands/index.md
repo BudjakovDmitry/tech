@@ -41,6 +41,7 @@
 - [chmod](chmod.md)
 - [head](head.md)
 - [more](more.md)
+- [paste](paste.md)
 - [rmdir](rmdir.md)
 - [touch](touch.md)
 
