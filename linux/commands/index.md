@@ -21,6 +21,7 @@
 - [df](df.md)
 - [free](free.md)
 - [id](id.md)
+- [man](man.md)
 - [ps](ps.md)
 - [top](top.md)
 - [uname](uname.md)
