@@ -31,6 +31,7 @@
 
 ## Working with files and file system
 
+- [cat](cat.md)
 - [chmod](chmod.md)
 - [rmdir](rmdir.md)
 - [touch](touch.md)
