@@ -29,6 +29,10 @@
 - [who](who.md)
 - [whoami](whoami.md)
 
+## Working with files and file system
+
+- [chmod](chmod.md)
+
 ## Common
 
 - [clear](clear.md)
