@@ -22,6 +22,7 @@
 - [free](free.md)
 - [id](id.md)
 - [man](man.md)
+- [printenv](printenv.md)
 - [ps](ps.md)
 - [top](top.md)
 - [uname](uname.md)
