@@ -44,6 +44,7 @@
 - [paste](paste.md)
 - [rmdir](rmdir.md)
 - [sort](sort.md)
+- [tail](tail.md)
 - [touch](touch.md)
 
 ## Common
