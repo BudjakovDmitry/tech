@@ -23,6 +23,7 @@
 - [id](id.md)
 - [ps](ps.md)
 - [top](top.md)
+- [uname](uname.md)
 
 ## Common
 
