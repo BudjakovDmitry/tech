@@ -40,4 +40,5 @@
 ## Common
 
 - [clear](clear.md)
+- [echo](echo.md)
 - [exit](exit.md)
