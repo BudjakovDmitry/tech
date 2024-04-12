@@ -46,6 +46,7 @@
 - [sort](sort.md)
 - [tail](tail.md)
 - [touch](touch.md)
+- [uniq](uniq.md)
 
 ## Common
 
