@@ -43,6 +43,7 @@
 - [more](more.md)
 - [paste](paste.md)
 - [rmdir](rmdir.md)
+- [sort](sort.md)
 - [touch](touch.md)
 
 ## Common
