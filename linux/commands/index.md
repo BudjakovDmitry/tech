@@ -33,6 +33,7 @@
 
 - [chmod](chmod.md)
 - [rmdir](rmdir.md)
+- [touch](touch.md)
 
 ## Common
 
