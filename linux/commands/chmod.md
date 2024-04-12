@@ -2,6 +2,8 @@
 
 Change or modify file or directory permissions (chmod stands for "change mod").
 
+[Managing file permissions and ownership](/linux/file_permissions.md)
+
 Specify which permissions to change with a combination of the following characters:
 
 - **permissions**: `r` - read, `w` - write, `x` - execute;

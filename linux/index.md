@@ -2,6 +2,7 @@
 - [Architecture](architecture.md)
 - [Shell and Terminal](shell.md)
 - [Filesystem](filesystem.md)
+- [File permissions and ownership](file_permissions.md)
 - [Package managers](package_managers.md)
 - [Hard links, Symbolic links](links.md)
 - [Options and arguments](options_and_arguments.md)
