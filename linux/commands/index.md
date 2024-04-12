@@ -32,6 +32,7 @@
 ## Working with files and file system
 
 - [chmod](chmod.md)
+- [rmdir](rmdir.md)
 
 ## Common
 
