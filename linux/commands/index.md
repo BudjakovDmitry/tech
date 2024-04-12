@@ -14,6 +14,10 @@
 - [ln](ln.md)
 - [mv](mv.md)
 
+## Search
+
+- [find](find.md)
+
 ## Informational
 
 - [cal, ncal](cal.md)
