@@ -17,6 +17,7 @@
 ## Search
 
 - [find](find.md)
+- [grep](grep.md)
 
 ## Informational
 
