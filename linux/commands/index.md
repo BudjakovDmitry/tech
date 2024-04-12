@@ -39,6 +39,7 @@
 - [cat](cat.md)
 - [cut](cut.md)
 - [chmod](chmod.md)
+- [head](head.md)
 - [rmdir](rmdir.md)
 - [touch](touch.md)
 
