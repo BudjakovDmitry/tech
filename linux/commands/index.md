@@ -24,6 +24,7 @@
 - [ps](ps.md)
 - [top](top.md)
 - [uname](uname.md)
+- [whoami](whoami.md)
 
 ## Common
 
