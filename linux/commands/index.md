@@ -40,6 +40,7 @@
 - [cut](cut.md)
 - [chmod](chmod.md)
 - [head](head.md)
+- [more](more.md)
 - [rmdir](rmdir.md)
 - [touch](touch.md)
 
