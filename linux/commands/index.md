@@ -49,6 +49,10 @@
 - [uniq](uniq.md)
 - [wc](wc.md)
 
+## Archives
+
+- [tar](tar.md)
+
 ## Common
 
 - [clear](clear.md)
