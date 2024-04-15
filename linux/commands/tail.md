@@ -1,6 +1,6 @@
 # tail
 
-Print last N lines of a file. By default it prints last 10 lines.
+Print last N lines of a file. By default, it prints last 10 lines.
 
 ```shell
 # print last 10 lines
