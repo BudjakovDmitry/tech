@@ -47,6 +47,7 @@
 - [tail](tail.md)
 - [touch](touch.md)
 - [uniq](uniq.md)
+- [wc](wc.md)
 
 ## Common
 
