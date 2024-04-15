@@ -6,13 +6,19 @@
 - [ls](ls.md)
 - [pwd](pwd.md)
 
-## Working with files
+## Viewing file's contents and info
 
-- [cp](cp.md)
+- [cat](cat.md)
+- [cut](cut.md)
 - [file](file.md)
+- [head](head.md)
 - [less](less.md)
-- [ln](ln.md)
-- [mv](mv.md)
+- [more](more.md)
+- [paste](paste.md)
+- [sort](sort.md)
+- [tail](tail.md)
+- [uniq](uniq.md)
+- [wc](wc.md)
 
 ## Search
 
@@ -34,20 +40,14 @@
 - [who](who.md)
 - [whoami](whoami.md)
 
-## Working with files and file system
+## Manipulating with files and file system
 
-- [cat](cat.md)
-- [cut](cut.md)
+- [cp](cp.md)
 - [chmod](chmod.md)
-- [head](head.md)
-- [more](more.md)
-- [paste](paste.md)
+- [ln](ln.md)
+- [mv](mv.md)
 - [rmdir](rmdir.md)
-- [sort](sort.md)
-- [tail](tail.md)
 - [touch](touch.md)
-- [uniq](uniq.md)
-- [wc](wc.md)
 
 ## Archives
 
