@@ -52,6 +52,7 @@
 ## Archives
 
 - [tar](tar.md)
+- [zip](zip.md)
 
 ## Common
 
