@@ -47,6 +47,7 @@
 - [ln](ln.md)
 - [mkdir](mkdir.md)
 - [mv](mv.md)
+- [rm](rm.md)
 - [rmdir](rmdir.md)
 - [touch](touch.md)
 
