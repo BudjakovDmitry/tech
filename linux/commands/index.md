@@ -45,6 +45,7 @@
 - [cp](cp.md)
 - [chmod](chmod.md)
 - [ln](ln.md)
+- [mkdir](mkdir.md)
 - [mv](mv.md)
 - [rmdir](rmdir.md)
 - [touch](touch.md)
