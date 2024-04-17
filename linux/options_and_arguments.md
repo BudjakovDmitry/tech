@@ -9,11 +9,17 @@ command -options arguments
 
 Most commands use options, which consists of a single character preceded by a dash, for
 example (`-l`). Many commands, however, including those from the GNU Project, also
-support long options, consisting of a word preceded by two dashes. Also, many commands
+support *long options*, consisting of a word preceded by two dashes. Also, many commands
 allow multiple short options to be strung together.
 
 ```shell
 ls -lt
 ```
 
-Command options, like filenames in Linux, are case sensitive.
+But we can't collapse long options:
+
+```shell
+sort colors.txt --reverse --unique
+```
+
+Command options, like filenames in Linux, are case-sensitive.
