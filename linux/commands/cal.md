@@ -21,3 +21,27 @@ If we specify a month and a year, they will print out that month's calendar.
 cal april 1927
 ncal may 1990
 ```
+
+## Options
+
+### -h
+
+This option is only for `ncal`.
+
+By default, today's date is highlighted. `-h` option turns off the highlighting.
+
+### -j
+
+Tells `cal` or `ncal` to display a calendar using Julian days (days are numbered
+starting from January 1st).
+
+### -M
+
+This option is only for `ncal`
+
+Tell `ncal` to use Monday as the first day of the week instead of Sunday (normally,
+Sunday is a first day).
+
+### -3
+
+Tells `cal` or `ncal` to display the previous, current and next month.
