@@ -41,3 +41,9 @@ Display the last modification time of FILE.
 date -r /path/to/file
 date --reference=/path/to/file
 ```
+
+### -u
+
+Long format: `--universal`
+
+Print the date in Coordinated Universal Time (UTC).
