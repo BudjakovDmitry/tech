@@ -22,6 +22,8 @@ parrot
 
 ### -r
 
+Long format: `--reverse`
+
 Get lines sorted in reverse order.
 
 ```shell
@@ -35,4 +37,20 @@ humster
 dog
 dog
 dog
+```
+
+### -u
+
+Long format: `--unique`
+
+Prints only unique strings in the output.
+
+```shell
+sort -u pets.txt
+```
+
+```
+dog
+humster
+parrot
 ```
