@@ -24,6 +24,30 @@ ncal may 1990
 
 ## Options
 
+### -A
+
+Display a certain number of months after a specific date.
+
+```shell
+ncal -A 2
+# or
+ncal -A2
+```
+
+This option can be combined with `-B` option to get *n* months before and *m* months
+after the specific date.
+
+### -B
+
+Print a number of months before the specific date.
+
+```shell
+cal -B1
+```
+
+This option can be combined with `-A` option to get *n* months before and *m* months
+after the specific date.
+
 ### -h
 
 This option is only for `ncal`.
