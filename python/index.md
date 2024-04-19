@@ -1,4 +1,5 @@
 - [Python interpreter](interpreter.md)
+- [Builtin functions](builtin_functions/index.md)
 
 # Frameworks
 
