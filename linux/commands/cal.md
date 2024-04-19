@@ -66,6 +66,10 @@ This option is only for `ncal`
 Tell `ncal` to use Monday as the first day of the week instead of Sunday (normally,
 Sunday is a first day).
 
+### -w
+
+Print the number of the week below each week column.
+
 ### -3
 
 Tells `cal` or `ncal` to display the previous, current and next month.
