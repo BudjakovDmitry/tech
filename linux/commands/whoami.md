@@ -1,6 +1,6 @@
 # whoami
 
-Returns the current user's username.
+Returns the current user's username. Same as `id -un`.
 
 ```shell
 $ whoami
