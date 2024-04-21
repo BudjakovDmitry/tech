@@ -31,6 +31,7 @@
 - [date](date.md)
 - [df](df.md)
 - [free](free.md)
+- [help](help.md)
 - [id](id.md)
 - [man](man.md)
 - [printenv](printenv.md)
