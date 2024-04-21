@@ -36,6 +36,7 @@
 - [printenv](printenv.md)
 - [ps](ps.md)
 - [top](top.md)
+- [type](type.md)
 - [uname](uname.md)
 - [who](who.md)
 - [whoami](whoami.md)
