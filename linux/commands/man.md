@@ -6,7 +6,10 @@ Display the reference manual of the given command.
 man ls
 ```
 
-Press `q` to quit the manual. The manual opens in [less](less.md) editor.
+The manual opens in [less](less.md) editor. Press `q` to quit the manual.
+
+Not every command has a manual page, especially if we talk about built-in shell
+commands. In that case use [help](help.md) command.
 
 In general, each man page will follow this pattern:
 
