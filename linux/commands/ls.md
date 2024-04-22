@@ -9,19 +9,65 @@ ls
 
 ## Options
 
-| Option | Description                                                                                                                                                                                                                               |
-|--------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `-a` | list all files, even those with names that begin with a period (`.`), which are normally not listed (that is, hidden).                                                                                                                    |
-| `-A` | like the `-a` option except it does not list `.` (current directory) and `..` (parent directory).                                                                                                                                         |
-| `-d` | ordinarily, if a directory is specified, it will list the contents of the directory, not the directory itself. Use this option in conjunction with the `-l` option to see details about the directory rather than its contents: `ls -ld`; |
-| `-F` | option will append an indicator character to the end of each listed name. For example, it will append a forward slash (`/`) if the name is a directory;                                                                                   |
-| `-h` | 'human-readable' with `-l` and `-s` print sizes like 1K, 234M, 2G, etc: `ls -lh`;                                                                                                                                                         |
-| `-i` | print the index number of each file (inode);                                                                                                                                                                                              |
-| `-l` | show child files and directories in a more detailed format which shows permissions, last-modified date, owner, etc (long format);                                                                                                         |
-| `-r` | reverse the order of the sort. Normally, `ls` displays its results in ascending alphabetical order: `ls -ltr`;                                                                                                                            |
-| `-S` | Sort results by file size, largest first;                                                                                                                                                                                                 |
-| `-t` | sort by modification time, newest first: `ls -lt`;                                                                                                                                                                                        |
-| `-R` | list subdirectories recursively; |
+### -a, --all
+
+List all files, even those with names that begin with a period (`.`), which are normally
+not listed (that is, hidden).
+
+### -A
+
+Like the `-a` option except it does not list `.` (current directory) and `..` (parent
+directory).
+
+### --color[=WHEN]
+
+colorize the output; WHEN can be 'always' (default if omitted), 'auto', or 'never'.
+
+### -d
+
+Ordinarily, if a directory is specified, it will list the contents of the directory, not
+the directory itself. Use this option in conjunction with the `-l` option to see details
+about the directory rather than its contents: `ls -ld`.
+
+### -F
+
+Option will append an indicator character to the end of each listed name. For example,
+it will append a forward slash (`/`) if the name is a directory.
+
+### -h, --human-readable
+
+'human-readable' with `-l` and `-s` print sizes like 1K, 234M, 2G, etc.: `ls -lh`.
+
+### -i
+
+Print the index number of each file (inode).
+
+### -l
+
+Show child files and directories in a more detailed format which shows permissions,
+last-modified date, owner, etc. (long format).
+
+### -r
+
+Reverse the order of the sort. Normally, `ls` displays its results in ascending
+alphabetical order: `ls -ltr`.
+
+### -S
+
+Sort results by file size, largest first.
+
+### --sort=WORD
+
+Sort by WORD instead of name: none (`-U`), size (`-S`), time (`-t`), version (`-v`),
+extension (`-X`).
+
+### -t
+
+Sort by modification time, newest first: `ls -lt`.
+
+### -R
+
+List subdirectories recursively.
 
 ## Long look format
 
