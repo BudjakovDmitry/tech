@@ -47,6 +47,10 @@ Print the index number of each file (inode).
 Show child files and directories in a more detailed format which shows permissions,
 last-modified date, owner, etc. (long format).
 
+### -m
+
+Print result as comma separated list of entities.
+
 ### -r
 
 Reverse the order of the sort. Normally, `ls` displays its results in ascending
