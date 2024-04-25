@@ -50,7 +50,7 @@ mv -i file1 file2
 Move *file1* and *file2* into directory *dir1*. The directory *dir1* must already exist.
 
 ```shell
-mv file1 file2 dir1
+mv file1 file2 dir1/
 ```
 
 ---
@@ -60,5 +60,5 @@ directory *dir1* into *dir2* and delete directory *dir1*. If directory *dir2* do
 exist, move directory *dir1* (and its contents) into directory *dir2*.
 
 ```shell
-mv dir1 dir2
+mv dir1/ dir2/
 ```
