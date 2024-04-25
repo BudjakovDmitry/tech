@@ -56,6 +56,10 @@ Print result as comma separated list of entities.
 Reverse the order of the sort. Normally, `ls` displays its results in ascending
 alphabetical order: `ls -ltr`.
 
+### -R, --recursive
+
+List subdirectories recursively.
+
 ### -S
 
 Sort results by file size, largest first.
