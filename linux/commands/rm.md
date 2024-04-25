@@ -18,6 +18,10 @@ We can pass a relative or absolute path to the file.
 
 ## Options
 
+### -d, --dir
+
+Remove a directory if it is empty.
+
 ### -r
 
 Remove directories and their contents recursively.
