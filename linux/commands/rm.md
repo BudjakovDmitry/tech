@@ -8,6 +8,14 @@ Delete file silently:
 rm access.log
 ```
 
+Delete multiple files:
+
+```shell
+rm app.js style.css imdex.html
+```
+
+We can pass a relative or absolute path to the file.
+
 ## Options
 
 ### -r
