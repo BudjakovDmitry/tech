@@ -2,9 +2,15 @@
 
 ## Terminal shortcuts
 
-- `Ctrl - l` to clear the entire screen (the same result as `clear` command);
+- `Ctrl - l` to clear the entire screen (same as `clear` command);
 - `Ctrl - a` to move the cursor to the beginning of the line;
 - `Ctrl - e` to move the cursor to the end of the line;
+- `Ctrl - f` to move the cursor forward one character at a time (same as the right arrow
+)
+- `Ctrl - b` to move the cursor backward one character at a time (same as the left arrow
+)
+- `Alt - f` to move the cursor forward one word;
+- `Alt - b` to move the cursor backward one word;
 
 
 ## Commands
