@@ -1,12 +1,21 @@
 # Terminal commands
 
-## Navigation
+## Terminal shortcuts
+
+- `Ctrl - l` to clear the entire screen (the same result as `clear` command);
+- `Ctrl - a` to move the cursor to the beginning of the line;
+- `Ctrl - e` to move the cursor to the end of the line;
+
+
+## Commands
+
+### Navigation
 
 - [cd](cd.md)
 - [ls](ls.md)
 - [pwd](pwd.md)
 
-## Viewing file's contents and info
+### Viewing file's contents and info
 
 - [cat](cat.md)
 - [cut](cut.md)
@@ -20,12 +29,12 @@
 - [uniq](uniq.md)
 - [wc](wc.md)
 
-## Search
+### Search
 
 - [find](find.md)
 - [grep](grep.md)
 
-## Informational
+### Informational
 
 - [cal, ncal](cal.md)
 - [date](date.md)
@@ -43,7 +52,7 @@
 - [who](who.md)
 - [whoami](whoami.md)
 
-## Manipulating with files and file system
+### Manipulating with files and file system
 
 - [cp](cp.md)
 - [chmod](chmod.md)
@@ -54,12 +63,12 @@
 - [rmdir](rmdir.md)
 - [touch](touch.md)
 
-## Archives
+### Archives
 
 - [tar](tar.md)
 - [zip](zip.md)
 
-## Common
+### Common
 
 - [clear](clear.md)
 - [echo](echo.md)

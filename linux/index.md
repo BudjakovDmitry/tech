@@ -6,4 +6,4 @@
 - [Package managers](package_managers.md)
 - [Hard links, Symbolic links](links.md)
 - [Options and arguments](options_and_arguments.md)
-- [Terminal commands](commands/index.md)
+- [Terminal](commands/index.md)
