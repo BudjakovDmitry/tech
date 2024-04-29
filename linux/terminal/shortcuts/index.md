@@ -33,3 +33,10 @@ line;
 word;
 - `Ctrl - w` to kill the text from the current cursor through beginning of the word;
 - `Ctrl - d` to kill one character under the cursor;
+
+## Reviving (Yanking) from the kill-ring
+
+When we kill text using commands like `ctrl-k`, `ctrl-u`, etc., the "killed" text stored
+in a memory in an area known as the "kill-ring".
+
+- `Ctrl - y` - retrieve most recently killed text;
