@@ -1,7 +1,16 @@
 # cat
 
-Print the entire contents of a file.
+The `cat` command con**cat**enates and prints the contents of files.
+
+In simplest way this command will read the contents of the file and print them out.
 
 ```shell
-cat hello.txt
+cat instructions.txt
+```
+
+If we provide cat with multiple files, it will concatenate their contents and output
+them.
+
+```shell
+cat one.txt two.txt
 ```
