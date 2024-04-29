@@ -1,6 +1,6 @@
 # Hard links, Symbolic links
 
-To create hard links or symbolic links use [ln](/linux/commands/ln.md) command.
+To create hard links or symbolic links use [ln](terminal/commands/ln.md) command.
 
 ## Symbolic link
 

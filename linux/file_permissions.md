@@ -1,6 +1,7 @@
 # File permissions and ownership
 
-For managing files and directory permissions use [chmod](commands/chmod.md) command.
+For managing files and directory permissions use [chmod](terminal/commands/chmod.md)
+command.
 
 Linux is a multi-user operating system. This means that by default, other users will be
 able to view any files you store on the system. However, you may have some files such as
