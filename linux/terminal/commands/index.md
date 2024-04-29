@@ -1,37 +1,12 @@
 # Terminal commands
 
-## Terminal shortcuts
-
-- `Ctrl - l` to clear the entire screen (same as `clear` command);
-- `Ctrl - a` to move the cursor to the beginning of the line;
-- `Ctrl - e` to move the cursor to the end of the line;
-- `Ctrl - f` to move the cursor forward one character at a time (same as the right arrow
-)
-- `Ctrl - b` to move the cursor backward one character at a time (same as the left arrow
-)
-- `Alt - f` to move the cursor forward one word;
-- `Alt - b` to move the cursor backward one word;
-- `Ctrl - t` to swap the current character under the cursor with the one preceding it;
-- `Alt - t` to swap the current word under the cursor with the one preceding it;
-- `Ctrl - k` to kill the text from the current cursor location until the end of the
-line;
-- `Ctrl - u` to kill the text from the current cursor location to the beginning of the
-line;
-- `Alt - d` to kill the text from the current cursor location through the end of the
-word;
-- `Ctrl - w` to kill the text from the current cursor through beginning of the word;
-- `Ctrl - d` to kill one character under the cursor;
-
-
-## Commands
-
-### Navigation
+## Navigation
 
 - [cd](cd.md)
 - [ls](ls.md)
 - [pwd](pwd.md)
 
-### Viewing file's contents and info
+## Viewing file's contents and info
 
 - [cat](cat.md)
 - [cut](cut.md)
@@ -45,12 +20,12 @@ word;
 - [uniq](uniq.md)
 - [wc](wc.md)
 
-### Search
+## Search
 
 - [find](find.md)
 - [grep](grep.md)
 
-### Informational
+## Informational
 
 - [cal, ncal](cal.md)
 - [date](date.md)
@@ -68,7 +43,7 @@ word;
 - [who](who.md)
 - [whoami](whoami.md)
 
-### Manipulating with files and file system
+## Manipulating with files and file system
 
 - [cp](cp.md)
 - [chmod](chmod.md)
@@ -79,12 +54,12 @@ word;
 - [rmdir](rmdir.md)
 - [touch](touch.md)
 
-### Archives
+## Archives
 
 - [tar](tar.md)
 - [zip](zip.md)
 
-### Common
+## Common
 
 - [clear](clear.md)
 - [echo](echo.md)
