@@ -32,6 +32,7 @@
 - [df](df.md)
 - [free](free.md)
 - [help](help.md)
+- [history](history.md)
 - [id](id.md)
 - [man](man.md)
 - [printenv](printenv.md)
