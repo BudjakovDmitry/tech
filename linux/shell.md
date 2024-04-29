@@ -70,12 +70,6 @@ privileges.
 Many shells support feature called **tab completion**. It allows you to complete a
 command you are typing on the command line.
 
-### Command history
-
-If we press the up arrow, we will see that the previous command entered. This is called
-command history. Most Linux distributions remember the last 1,000 commands by default.
-Press the down arrow and the previous command disappears.
-
 ### Mice and focus
 
 You can also use a mouse with your terminal emulator. It supports a quick copy-and-paste
