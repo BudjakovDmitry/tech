@@ -16,6 +16,7 @@
 - [more](more.md)
 - [paste](paste.md)
 - [sort](sort.md)
+- [tac](tac.md)
 - [tail](tail.md)
 - [uniq](uniq.md)
 - [wc](wc.md)
