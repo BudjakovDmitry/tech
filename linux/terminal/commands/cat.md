@@ -14,3 +14,9 @@ them.
 ```shell
 cat one.txt two.txt
 ```
+
+## Options
+
+### -n, --number
+
+Number all output lines.
