@@ -1,6 +1,7 @@
 # wc
 
-Get count of lines, words and characters in file.
+Wc stands for word count. Get count of lines (new line characters), words and byte
+counts in file.
 
 For example, we have file *notes.txt* with following content:
 
@@ -29,6 +30,20 @@ characters and one new line character in each line (total: 3*4=12 characters).
 
 ## Options
 
+### -c, --bytes
+
+Print the byte count
+
+```shell
+wc -c notes.txt
+```
+
+will return
+
+```
+12  notes.txt
+```
+
 ### -l
 
 View only line count.
@@ -43,6 +58,11 @@ will return
 3  notes.txt
 ```
 
+### -m, --chars
+
+Print the character counts
+
+
 ### -w
 
 View only word count.
@@ -55,18 +75,4 @@ will return
 
 ```
 3  notes.txt
-```
-
-### -c
-
-View only character count.
-
-```shell
-wc -c notes.txt
-```
-
-will return
-
-```
-12  notes.txt
 ```
