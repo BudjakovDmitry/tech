@@ -20,7 +20,7 @@ The common keyboard commands used by *less*. To find all commands type `h`.
 | Page Up or `b`            | Scroll back one page |
 | Page down or Space or `f` | Scroll forward one page |
 | Up arrow                  | Scroll up one line |
-| Down arrow                | Scroll down one line |
+| Down arrow or Enter       | Scroll down one line |
 | `G`                       | Move to the end of the text file |
 | `g`                       | Move to the beginning of the text file |
 | `/characters`             | Search forward to the next occurrence of `characters` |
