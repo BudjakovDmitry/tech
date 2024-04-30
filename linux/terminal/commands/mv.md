@@ -59,6 +59,12 @@ Move *file1* and *file2* into directory *dir1*. The directory *dir1* must alread
 mv file1 file2 dir1/
 ```
 
+Move all files from one directory to another
+
+```shell
+mv dir1/* dir2/
+```
+
 ### Rename directory or move directory into another directory
 
 If directory *dir2* does not exist, create directory *dir2* and move the contents of
@@ -69,8 +75,6 @@ contents) into directory *dir2*.
 ```shell
 mv dir1/ dir2/
 ```
-
----
 
 Move directories *dir1*, *dir2*, *dir3* into directory *destination_directory*
 
