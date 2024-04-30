@@ -30,3 +30,9 @@ The common keyboard commands used by *less*. To find all commands type `h`.
 
 *less* falls into the class of programs called *pagers*, programs that allow the easy
 viewing of long text documents in a page-by-page manner.
+
+## Options
+
+### -N
+
+Enables line numbers.
