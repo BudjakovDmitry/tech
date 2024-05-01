@@ -33,6 +33,16 @@ viewing of long text documents in a page-by-page manner.
 
 ## Options
 
+### -i, --ignore-case
+
+Causes searches to ignore case. This option is ignored if any uppercase letters appear
+in the search pattern (if pattern contains uppercase letters, then that search does not
+ignore case).
+
+### -I, --IGNORE-CASE
+
+Like `-i`, but searches ignore case even if the pattern contains uppercase letters.
+
 ### -N
 
 Enables line numbers.
