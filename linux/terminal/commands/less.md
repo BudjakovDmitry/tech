@@ -43,6 +43,6 @@ ignore case).
 
 Like `-i`, but searches ignore case even if the pattern contains uppercase letters.
 
-### -N
+### -N, --LINE-NUMBERS
 
-Enables line numbers.
+Causes a line number to be displayed at the beginning of each line in the display.
