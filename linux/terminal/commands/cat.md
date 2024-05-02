@@ -20,3 +20,22 @@ cat one.txt two.txt
 ### -n, --number
 
 Number all output lines.
+
+## Arguments
+
+The path to a file.
+
+```shell
+cat names.txt
+```
+
+The `cat` command is set up to accept filenames as arguments directly, but we can also
+redirect to standard input manually.
+
+```shell
+cat < names.txt
+```
+
+These two commands `cat names.txt` and `cat < names.txt` have the same result, but the
+way that we got there is different. In the first example we pass file as an argument,
+in the second example we pass the file to standard input.
