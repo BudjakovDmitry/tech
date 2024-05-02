@@ -140,3 +140,7 @@ dog
 humster
 parrot
 ```
+
+## Arguments
+
+With no argument, or when argument is `-`, read standard input.
