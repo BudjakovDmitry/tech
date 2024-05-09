@@ -8,6 +8,7 @@
 - [Options and arguments](options_and_arguments.md)
 - [Standard Input, Standard Output, Standard Error](streams.md)
 - [Piping](piping.md)
+- [Wildcards and character classes](wildcards.md)
 - Terminal
   - [Terminal commands and utils](terminal/commands/index.md)
   - [Terminal shortcuts](terminal/shortcuts/index.md)
