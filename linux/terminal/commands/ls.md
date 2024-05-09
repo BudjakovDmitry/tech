@@ -77,6 +77,10 @@ Sort by modification time, newest first: `ls -lt`.
 
 List subdirectories recursively.
 
+### -1
+
+List one file per line.
+
 ## Long look format
 
 Example of the output in long format:
