@@ -7,6 +7,7 @@
 - [Hard links, Symbolic links](links.md)
 - [Options and arguments](options_and_arguments.md)
 - [Standard Input, Standard Output, Standard Error](streams.md)
+- [Piping](piping.md)
 - Terminal
   - [Terminal commands and utils](terminal/commands/index.md)
   - [Terminal shortcuts](terminal/shortcuts/index.md)
