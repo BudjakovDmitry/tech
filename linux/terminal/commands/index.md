@@ -6,10 +6,11 @@
 - [ls](ls.md)
 - [pwd](pwd.md)
 
-## Viewing file's contents and info
+## Working with text
 
 - [cat](cat.md)
 - [cut](cut.md)
+- [echo](echo.md)
 - [file](file.md)
 - [head](head.md)
 - [less](less.md)
@@ -19,6 +20,7 @@
 - [sort](sort.md)
 - [tac](tac.md)
 - [tail](tail.md)
+- [tr](tr.md)
 - [uniq](uniq.md)
 - [wc](wc.md)
 
@@ -65,5 +67,4 @@
 ## Common
 
 - [clear](clear.md)
-- [echo](echo.md)
 - [exit](exit.md)
