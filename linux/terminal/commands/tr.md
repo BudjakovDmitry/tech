@@ -31,3 +31,10 @@ echo "she is smart" | tr s S
 echo "she is smart" | tr a-z A-Z
 # SHE IS SMART
 ```
+
+We can use [character classes](/linux/wildcards.md)
+
+```shell
+echo "The pin code is: 5476" | tr [:digit:] "*"
+# The pin code is: ****
+```
