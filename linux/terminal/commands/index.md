@@ -69,3 +69,4 @@
 
 - [clear](clear.md)
 - [exit](exit.md)
+- [tee](tee.md)
