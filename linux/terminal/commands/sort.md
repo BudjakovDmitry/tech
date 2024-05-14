@@ -45,6 +45,14 @@ z
 
 ## Options
 
+### -h, --human-numeric-sort
+
+Compare human readable numbers (e.g. 2K, 1G)
+
+```shell
+ls -lh /usr/bin/ | sort -hk5
+```
+
 ### -k
 
 We can specify a particular "column" that we want to sort by, using "-k" option,
