@@ -2,6 +2,7 @@
 
 - [Installation](installation.md)
 - [AsyncIO](asyncio.md)
+- [Core vs ORM](core_vs_orm.md)
 
 ## Usage Recipes
 
