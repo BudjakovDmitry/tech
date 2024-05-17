@@ -1,6 +1,7 @@
 # SQLAlchemy
 
 - [Installation](installation.md)
+- [AsyncIO](asyncio.md)
 
 ## Usage Recipes
 
