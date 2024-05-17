@@ -1,5 +1,7 @@
 # SQLAlchemy
 
+- [Installation](installation.md)
+
 ## Usage Recipes
 
 https://github.com/sqlalchemy/sqlalchemy/wiki/UsageRecipes
@@ -25,20 +27,26 @@ https://github.com/sqlalchemy/sqlalchemy/wiki/UsageRecipes
     - ~~Documentation Overview~~
     - ~~Code Examples~~
     - Installation Guide
-      - Supported platforms
-      - AsyncIO support
-      - Supported installation methods
-      - Install via pip
-      - Install manually from the source distribution
+      - ~~Supported platforms~~
+      - ~~AsyncIO support~~
+      - ~~Supported installation methods~~
+      - ~~Install via pip~~
+      - ~~Install manually from the source distribution~~
       - Building the Cython Extensions
       - Installing a Database API
-      - Checking the installed SQLAlchemy version
-      - Next steps
+      - ~~Checking the installed SQLAlchemy version~~
+      - ~~Next steps~~
+    - 1.x to 2.0 Migration
+  - Tutorial
+    - [SQLAlchemy Unified Tutorial](https://docs.sqlalchemy.org/en/20/tutorial/index.html)
   - [SQLAlchemy ORM](https://docs.sqlalchemy.org/en/20/orm/)
     - [Quickstart](https://docs.sqlalchemy.org/en/20/orm/quickstart.html)
     - [Examples](https://docs.sqlalchemy.org/en/20/orm/examples.html)
-  - [SQLAlchemy Unified Tutorial](https://docs.sqlalchemy.org/en/20/tutorial/index.html)
+    - [ORM Extensions](https://docs.sqlalchemy.org/en/20/orm/extensions/)
+      - [Asynchronous I/O (asyncio)](https://docs.sqlalchemy.org/en/20/orm/extensions/asyncio.html)
   - [SQLAlchemy Core](https://docs.sqlalchemy.org/en/20/core/)
+    - [SELECT and Related Constructs](https://docs.sqlalchemy.org/en/20/core/selectable.html)
   - [Dialect](https://docs.sqlalchemy.org/en/20/dialects/)
   - [Changelog](https://docs.sqlalchemy.org/en/20/changelog/)
+    - [SQLAlchemy 2.0 - Major migration guide](https://docs.sqlalchemy.org/en/20/changelog/migration_20.html)
   - [Glossary](https://docs.sqlalchemy.org/en/20/glossary.html)
