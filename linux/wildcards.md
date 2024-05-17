@@ -4,13 +4,14 @@ Wildcards is a special characters which help rapidly specify group of characters
 
 Wildcards
 
-| Wildcard        | Meaning                       |
-|-----------------|-------------------------------|
-| `*`             | Matches any characters        |
-| `?`             | Matches any single character  |
-| `[characters]`  | Matches any character that is a member of the set `characters` |
-| `[!characters]` | Matches any characters that is not a member of the set `characters` |
-| `[[:class:]]`   | Matches any character that is a member of the specified `class` |
+| Wildcard        | Meaning                                                                            |
+|-----------------|------------------------------------------------------------------------------------|
+| `*`             | Matches any characters                                                             |
+| `?`             | Matches any single character                                                       |
+| `[characters]`  | Matches any character that is a member of the set `characters`                     |
+| `[!characters]` | Matches any characters that is not a member of the set `characters`                |
+| `[[:class:]]`   | Matches any character that is a member of the specified `class`                    |
+| `^`             | Inside of square brackets (`[]`) we can specify a range of characters to not match |
 
 Commonly Used Character Classes
 
@@ -33,9 +34,12 @@ Examples
 | `[abc]*`                 | Any file beginning with either an *a*, *b*, or *c*                            |
 | `BACKUP.[0-9][0-9][0-9]` | Any file beginning with *BACKUP.* followed by exactly three numerals          |
 | `app[2-4].js`            | *app2.js*, *app3.js*, *app4.js*                                               |
+| `[A-C]*`                 | Any file beginning with either capital *A*, *B* or *C*                        |
 | `[[:upper:]]*`           | Any file beginning with an uppercase letter                                   |
 | `[![:digit:]]*`          | Any file not beginning with a numeral                                         |
 | `*[[:lower:]123]`        | Any file ending with a lowercase letter or the numerals *1*, *2* or *3*       |
+| `[^a]*`                  | Any files that do not start with "a"                                          |
+| `[^0-9]*`                | Any files that do not start with a number (0-9)                               |
 
 You may have encoutered the `[A-Z]` and `[a-z]` character range notations. These are
 traditional Unix notations and worked in older versions of Linux as well. They can still
