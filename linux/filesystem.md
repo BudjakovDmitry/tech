@@ -68,8 +68,9 @@ directory named "a".
 ### Special paths
 
 - `~` user's home directory (the default home directory in Linux is `/home/{username}`,
-where `username` is the name you would been assigned had you created a personal Linux
+where `username` is the name you would be assigned had you created a personal Linux
 user account)
+- `~john` john user's home directory
 - `/` root directory
 - `..` parent of current directory
 - `.` current directory
