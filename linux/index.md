@@ -9,6 +9,7 @@
 - [Standard Input, Standard Output, Standard Error](streams.md)
 - [Piping](piping.md)
 - [Wildcards, character classes, Brace expansion, Arithmetic expansion](wildcards.md)
+- [Quoting](quoting.md)
 - Terminal
   - [Terminal commands and utils](terminal/commands/index.md)
   - [Terminal shortcuts](terminal/shortcuts/index.md)
