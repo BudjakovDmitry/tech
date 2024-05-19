@@ -30,7 +30,58 @@
 - Slots: Attribute Declarations
 - Slot basics
 - Slot and namespace dictionaries
-- Multiple __slot__ lists in superclasses
+- Multiple \__slot\__ lists in superclasses
 - Handling slots and other "virtual" attributes generically
 - Slot usage rules
 - Example impacts of slots: ListTree and mapattrs
+- What about slots speed?
+- Properties: Attribute Accessors
+- Property basics
+- \__getattribute\__ and descriptors: Attribute Tools
+- Other class changes and extensions
+- Static and class methods
+- Why the special methods?
+- Static methods in 2.x and 3.x
+- Static method Alternatives
+- Using static and class methods
+- Counting instances with static methods
+- Counting instances with class methods
+- Decorators and Metaclasses: Part 1
+- Function Decorator Basics
+- A first look at User-Defined Function Decorators
+- A first look at Class Decorators and metaclasses
+- For more details
+- The super built-in function: for better or worse?
+- The great super debate
+- Traditional superclass call form: Portable, General
+- Basic super usage and its tradeoffs
+- Odd semantics: A magic proxy in Python 3.x
+- Pitfall: Adding multiple inheritance naively
+- Limitation: Operator overloading
+- Use differs in Python 2.x: verbose calls
+- The super upsides: Tree changes and dispatch
+- Runtime class changes and super
+- Cooperative multiple inheritance method dispatch
+- The basics: cooperative super call in action
+- Constraint: Call chain anchor requirement
+- Scope: An all-or-nothing model
+- Flexibility: Call ordering assumptions
+- Customization: Method replacement
+- Coupling: Application to mix-in classes
+- Customization: Same-argument constraints
+- The super Summary
+- Class gotchas
+- Changing class attributes can have side effects
+- Changing mutable class attributes can have side effects, too
+- Multiple inheritance: order matters
+- Scopes in methods and classes
+- Miscellaneous class gotchas
+- Choose per-instance or class storage wisely
+- You usually want to call superclass constructors
+- Delegation-based classes in 3.X: \__getattr\__ and built-ins
+- KISS revisited: "Overwrapping-itis"
+- Chapter Summary
+- Test your knowledge: Quiz
+- Test your knowledge: Answers
+- Test your knowledge: Part VI Exercises
+- Why you will care: OOP by the masters
