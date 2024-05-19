@@ -46,7 +46,7 @@
 - Using static and class methods
 - Counting instances with static methods
 - Counting instances with class methods
-- Decorators and Metaclasses: Part 1
+- [x] ~~Decorators and Metaclasses: Part 1~~
 - Function Decorator Basics
 - A first look at User-Defined Function Decorators
 - A first look at Class Decorators and metaclasses
