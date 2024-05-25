@@ -17,6 +17,12 @@ locate chick
 
 It will perform a search for all files that contain 'chick' in their name.
 
+To update database use [updatedb](updatedb.md).
+
+```shell
+sudo updatedb
+```
+
 In Ubuntu `locate` command is not pre-installed. To install it use *apt* manager.
 
 ## Options
