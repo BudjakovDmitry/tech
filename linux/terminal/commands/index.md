@@ -24,10 +24,11 @@
 - [uniq](uniq.md)
 - [wc](wc.md)
 
-## Search
+## Finding things
 
 - [find](find.md)
 - [grep](grep.md)
+- [locate](locate.md)
 
 ## Informational
 
