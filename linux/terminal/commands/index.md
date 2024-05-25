@@ -29,6 +29,7 @@
 - [find](find.md)
 - [grep](grep.md)
 - [locate](locate.md)
+- [updatedb](updatedb.md)
 
 ## Informational
 
