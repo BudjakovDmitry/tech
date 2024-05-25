@@ -23,11 +23,12 @@ date "+%D"
 Here are some popular format specifiers:
 
 | Specifier | Explanation |
-|-----------|-------------|
+|----------|-------------|
 | `%d` | Displays the day of the month (01 to 31) |
 | `%h` | Displays the abbreviated month name (Jan to Dec) |
 | `%m` | Displays the month of a year (01 to 12) |
 | `%Y` | Displays the four-digit year |
+| `%y` | Displays the two-digit year |
 | `%T` | Displays the time in 24 hour format as HH:MM:SS |
 | `%H` | Displays the hour |
 
