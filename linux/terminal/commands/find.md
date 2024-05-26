@@ -6,33 +6,70 @@ based on different attributes, such as the file's name, type, owner, size, or ti
 The find command conducts a search of the entire directory tree starting from the given
 directory name.
 
-## Arguments
-
-Path to the directory where search. You can search for files based on different
-attributes, such as the file's name, type, owner, size or timestamp.
+Example: print out the list of every single file and directory nested in the current
+working directory including files and folders nested in subdirectories.
 
 ```shell
-# search within a current directory
-find . -name 'a.txt'
+find
+```
 
-# find all .txt files in the /etc directory
-find /etc -name '*.txt'
+## Arguments
+
+Path to the directory where search.
+
+```shell
+# find all files and directories in user's home directory
+find ~
 ```
 
 ## Options
 
 ### -name
 
-Name of a file which need to find (case-sensitive).
+We can provide a specific pattern to `find` to use when matching filenames and
+directories with the `-name` option. We need to enclose our pattern in quotes.
+
+The `-name` option is case-sensitive.
 
 ```shell
-find . -name 'a.txt'
+# find all files in Documents folder that end in the '.txt'
+find ~/Documents -name "*.txt"
+```
+
+It is important ot understand if we write `find ~ -name "right"` the command is not
+going to do a search for partial match of "right". It's going to look a file or
+directory called exactly "right". If we want to find all files or directories that end
+with "right", we should use other pattern `find ~ -name "*right"`.
+
+```shell
+# find any file or directory inside home directory that contains a number
+find ~ -name "*[[:digit:]]*"
 ```
 
 ### -iname
 
-Name of file which need to find (case-insensitive).
+The same as `-name` but case-insensitive.
 
 ```shell
-find . -iname 'a.txt'
+find /home -iname "documents"
+```
+
+### -type
+
+We can tell `find` to only find by file type: only print files, directories, symbolic
+links, etc.
+
+```shell
+# print a list of every file inside current working directory
+find -type f
+```
+
+```shell
+# print a list of every directory inside of current working directory
+find -type d
+```
+
+```shell
+# print a list of symbolic links inside current working directory
+find -type l
 ```
