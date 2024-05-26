@@ -39,8 +39,31 @@ https://github.com/sqlalchemy/sqlalchemy/wiki/UsageRecipes
       - ~~Checking the installed SQLAlchemy version~~
       - ~~Next steps~~
     - 1.x to 2.0 Migration
-  - Tutorial
-    - [SQLAlchemy Unified Tutorial](https://docs.sqlalchemy.org/en/20/tutorial/index.html)
+  - [SQLAlchemy Unified Tutorial](https://docs.sqlalchemy.org/en/20/tutorial/index.html)
+    - SQLAlchemy United Tutorial
+    - Tutorial overview
+    - [Establishing Connectivity - the Engine](https://docs.sqlalchemy.org/en/20/tutorial/engine.html)
+    - [Working with transactions and the DBAPI](https://docs.sqlalchemy.org/en/20/tutorial/dbapi_transactions.html)
+      - Working with transactions and the DBAPI
+      - Getting connection
+      - Committing changes
+      - Basics of Statement Execution
+      - Fetching rows
+      - Sending parameters
+      - Sending multiple parameters
+      - Executing with an ORM session
+    - [Working with database metadata](https://docs.sqlalchemy.org/en/20/tutorial/metadata.html)
+      - Working with database metadata
+      - Setting up MetaData with Table objects
+      - Components of table
+      - Declaring simple constraints
+      - Emitting DDL to the database
+      - Using ORM Declarative forms to define table metadata
+      - Establishing a declarative base
+      - Declared mapped classes
+      - Emitting DDL to the database from ORM mapping
+      - Table reflection
+      - Next steps
   - [SQLAlchemy ORM](https://docs.sqlalchemy.org/en/20/orm/)
     - [Quickstart](https://docs.sqlalchemy.org/en/20/orm/quickstart.html)
     - [Examples](https://docs.sqlalchemy.org/en/20/orm/examples.html)
