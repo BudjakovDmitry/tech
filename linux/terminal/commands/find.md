@@ -92,3 +92,12 @@ find -type d
 # print a list of symbolic links inside current working directory
 find -type l
 ```
+
+### -user
+
+The `-user` option uses to match files and directories that belong to a particular user.
+
+```shell
+# find all fies that in /home directory that belong to harry
+find /home -user harry
+```
