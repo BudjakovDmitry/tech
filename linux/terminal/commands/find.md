@@ -54,6 +54,25 @@ The same as `-name` but case-insensitive.
 find /home -iname "documents"
 ```
 
+### -size
+
+The `-size` option is used to find files of a specific size.
+
+```shell
+# find all files larger than 1 gigabyte
+find -size +1G
+```
+
+```shell
+# find files under 50 megabytes
+find -size -50M
+```
+
+```shell
+# find files that are exactly 20 kilobytes
+find -size 20k
+```
+
 ### -type
 
 We can tell `find` to only find by file type: only print files, directories, symbolic
