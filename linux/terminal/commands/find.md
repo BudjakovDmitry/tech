@@ -24,6 +24,25 @@ find ~
 
 ## Options
 
+### -empty
+
+Find empty files and/or directories.
+
+```shell
+# find all empty files and directories in user's home directory
+find ~ -empty
+```
+
+```shell
+# find all empty files in user's home directory
+find ~ -empty -type f
+```
+
+```shell
+# find all empty directories in user's home directory
+find ~ -empty -type d
+```
+
 ### -name
 
 We can provide a specific pattern to `find` to use when matching filenames and
