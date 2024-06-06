@@ -11,6 +11,7 @@
 - [Wildcards, character classes, Brace expansion, Arithmetic expansion](wildcards.md)
 - [Command substitution](command_substitution.md)
 - [Quoting](quoting.md)
+- [Timestamps](timestamps.md)
 - Terminal
   - [Terminal commands and utils](terminal/commands/index.md)
   - [Terminal shortcuts](terminal/shortcuts/index.md)
