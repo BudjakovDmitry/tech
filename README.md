@@ -1,5 +1,6 @@
 - [Linux](linux/index.md)
   - [tmux](linux/tmux/tmux.md)
 - [Python](python/index.md)
+  - [pyenv](python/pyenv/index.md)
   - [SQLAlchemy](python/sqlalchemy/index.md)
 - [Git](git/index.md)

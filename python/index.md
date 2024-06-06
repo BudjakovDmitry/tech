@@ -5,10 +5,6 @@
 
 - [aiohttp](aiohttp/index.md)
 
-# Tools
-
-- [pyenv](pyenv/index.md)
-
 # Books
 
 [Learning Python Contents](learning_python_contents.md)
