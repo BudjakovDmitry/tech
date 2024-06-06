@@ -19,6 +19,11 @@ not listed (that is, hidden).
 Like the `-a` option except it does not list `.` (current directory) and `..` (parent
 directory).
 
+### -c
+
+By default, when you type `ls -l` we see *modification time*. If you want to see
+*change time* type `ls -lc`. [More about timestamps](/linux/timestamps.md).
+
 ### --color[=WHEN]
 
 colorize the output; WHEN can be 'always' (default if omitted), 'auto', or 'never'.
@@ -72,6 +77,12 @@ extension (`-X`).
 ### -t
 
 Sort by modification time, newest first: `ls -lt`.
+
+### -u
+
+By default, when you type `ls -l` we see *modification time*. If you want to see
+*access time* type `ls -lu`. [More about timestamps](/linux/timestamps.md).
+
 
 ### -R
 
