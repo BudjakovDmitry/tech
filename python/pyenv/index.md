@@ -79,14 +79,10 @@ passes the command along to the corresponding Python installation.
 
 [pyenv-installer](https://github.com/pyenv/pyenv-installer)
 
-Requires Git installed.
-
-In general, compiling your own Python interpreter requires the installation of the
-appropriate libraries and packages.
-
-Debian/Ubuntu:
+Pyenv requires these libraries and tools to be installed (Debian/Ubuntu):
 
 ```shell
+sudo apt install git
 sudo apt install libedit-dev
 sudo apt install libncurses5-dev6
 ```
@@ -189,3 +185,41 @@ libncursesw5-dev xz-utils tk-dev libxml2-dev libxmlsec1-dev libffi-dev liblzma-d
 
 If you are going build PyPy from source or install other Python flavors that require
 CLang, also install `llvm`.
+
+## Commands
+
+[Documentation](https://github.com/pyenv/pyenv/blob/master/COMMANDS.md)
+
+### global
+
+Sets the global version of Python to be used in all shells by writing the version name
+to the `~/.pyenv/version` file. This version can be overridden by an
+application-specific `.python-version` file, or by setting the `PYENV_VERSION`
+environment variable.
+
+```shell
+pyenv global 3.11.5
+```
+
+The special version name `system` tells pyenv to use the system Python (detected by
+searching your `$PATH`).
+
+When run without a version number, `pyenv global` reports the currently configured
+global version.
+
+### install
+
+Install a Python version (using python-build).
+
+```shell
+pyenv install 3.12.1
+```
+
+#### Options
+
+* `-l`, `--list` - list all available versions of Python including Anaconda, Jython,
+pypy and stackless;
+
+```shell
+pyenv install --list
+```
