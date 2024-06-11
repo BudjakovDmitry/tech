@@ -24,6 +24,71 @@ find ~
 
 ## Options
 
+### -amin n
+
+File was last accessed less than, more than or exactly *n* minutes ago.
+
+```shell
+# find files that were accessed exactly ten minutes ago
+find -amin 10
+
+# find files that were accessed more than ten minutes ago
+find -amin +10
+
+# find files that were accessed less than ten minutes ago
+find -amin -10
+```
+
+### -atime n
+
+File was last accessed less than, more than or exactly *n\*24* hours ago. When *find*
+figures out how many 24-hours periods ago file was last accessed, any fractional parts
+is ignored. So to match `-atime +1`, a file has to have been accessed at least **two**
+days ago.
+
+```shell
+# find files that were last accessed exactly 24 hours ago
+find -atime 1
+
+# find files that were last accessed more than 48 hours ago
+find -atime +2
+
+# find files that were last accessed less than 48 hours ago
+find -atime -2
+```
+
+### -cmin n
+
+File's status was last changed less than, more than or exactly *n* minutes ago.
+
+```shell
+# find files that were changed exactly one minute ago
+find -cmin 1
+
+# find files that were changed more than ten minutes ago
+find -cmin +10
+
+# find files that were changed less then ten five minutes ago
+find -cmin -5
+```
+
+### -ctime n
+
+File's status was last changed less than, more than or exactly *n\*24* hours ago. See
+the comments for `-atime` to understand how rounding affects the interpretation of file
+status change times.
+
+```shell
+# find files that were changed exactly 24 hours ago
+find -ctime 1
+
+# find files that were changed more than 48 hours ago
+find -ctime +2
+
+# find files that were changed less than 48 hours ago
+find -ctime -2
+```
+
 ### -empty
 
 Find empty files and/or directories.
@@ -41,6 +106,38 @@ find ~ -empty -type f
 ```shell
 # find all empty directories in user's home directory
 find ~ -empty -type d
+```
+
+### -mmin n
+
+File's data was last modified less than, more than or exactly *n* minutes ago.
+
+```shell
+# find files that were modified exactly 30 minutes ago
+find -mmin 30
+
+# find files that were modified more than 30 minutes ago
+find -mmin +30
+
+# find files that were modified less than 30 minutes ago
+find -mmin -30
+```
+
+### -mtime n
+
+File's data was last modified less than, more than or exactly *n\*24* hours ago. See the
+comments for `-atime` to understand how rounding affects the interpretation of file
+modification times.
+
+```shell
+# find files that were modified exactly 24 hours ago
+find -mtime 1
+
+# find files that were modified more than 48 hours ago
+find -mtime +2
+
+# find files that were modified less than 48 hours ago
+find -mtime -2
 ```
 
 ### -name
