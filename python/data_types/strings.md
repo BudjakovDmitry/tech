@@ -1,0 +1,5 @@
+# Strings
+
+```python
+"Hello world"
+```
