@@ -24,6 +24,11 @@ find ~
 
 ## Options
 
+
+### -and
+
+`find expr1 -and expr2` is the same as `find expr1 expr2`
+
 ### -amin n
 
 File was last accessed less than, more than or exactly *n* minutes ago.
@@ -162,12 +167,40 @@ with "right", we should use other pattern `find ~ -name "*right"`.
 find ~ -name "*[[:digit:]]*"
 ```
 
+### -not
+
+Negates whatever options comes after it.
+
+```shell
+# find files that NOT ends with '.html'
+find -type -f -not -name '*.html'
+
+# find all files in user's home directory that were changed less than one minute ago and
+# don't end with '.xml'
+find ~ -mmin -1 -not -name '*.xml'
+```
+
+The shortcut for `-not` is `!`
+
+```shell
+# these commands have the same result
+find -not -name '*.txt'
+find ! -name '*.txt'
+```
+
 ### -iname
 
 The same as `-name` but case-insensitive.
 
 ```shell
 find /home -iname "documents"
+```
+
+### -or
+
+```shell
+# print all html and css files
+find . -name '*.html' -or -name '*.css'
 ```
 
 ### -size
