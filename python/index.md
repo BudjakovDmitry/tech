@@ -2,6 +2,8 @@
 - [Data types](data_types/index.md)
 - [Decorators](decorators.md)
 - [Builtin functions](builtin_functions/index.md)
+- Concurrency
+  - [Parallel tasks](concurrency/parallel_tasks.md)
 
 # Frameworks
 
