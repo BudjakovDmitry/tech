@@ -4,6 +4,7 @@
 - [Builtin functions](builtin_functions/index.md)
 - Concurrency
   - [Parallel tasks](concurrency/parallel_tasks.md)
+  - [Asyncio](concurrency/asyncio/index.md)
 
 # Frameworks
 
