@@ -6,10 +6,55 @@
     - [Django at a glance](https://docs.djangoproject.com/en/5.0/intro/overview/)
     - ~~[Quick install guide](https://docs.djangoproject.com/en/5.0/intro/install/)~~
     - [Writing your first Django app, part 1](https://docs.djangoproject.com/en/5.0/intro/tutorial01/)
+      - ~~Writing your first Django app, part 1~~
+      - Creating a project
   - [Using Django](https://docs.djangoproject.com/en/5.0/topics/)
     - [How to install Django](https://docs.djangoproject.com/en/5.0/topics/install/)
+  - [API Reference](https://docs.djangoproject.com/en/5.0/ref/)
+    - [Applications](https://docs.djangoproject.com/en/5.0/ref/applications/)
+    - [System check framework](https://docs.djangoproject.com/en/5.0/ref/checks/)
+    - [Built-in class-based views API](https://docs.djangoproject.com/en/5.0/ref/class-based-views/)
+    - [Clickjacking Protection](https://docs.djangoproject.com/en/5.0/ref/clickjacking/)
+    - [contrib packages](https://docs.djangoproject.com/en/5.0/ref/contrib/)
+    - [Cross site request forgery protection](https://docs.djangoproject.com/en/5.0/ref/csrf/)
+    - [Databases](https://docs.djangoproject.com/en/5.0/ref/databases/)
+    - [django-adimn and manage.py](https://docs.djangoproject.com/en/5.0/ref/django-admin/)
+      - ~~django-admin and manage.py~~
+      - ~~Usage~~
+      - ~~Getting runtime help~~
+      - ~~App names~~
+      - ~~Determining the version~~
+      - ~~Display debug output~~
+      - check
+      - compilemessages
+      - createcachetable
+      - dbshell
+      - diffsettings
+      - dumpdata
+      - flush
+      - inspectdb
+      - loaddata
+      - makemessages
+      - makemigrations
+      - migrate
+      - optimizemigration
+      - runserver
+      - sendtestemail
+      - shell
+      - showmigrations
+      - sqlflush
+      - sqlmigrate
+      - sqlsequencereset
+      - squashmigrations
+      - startapp
+      - startproject
+      - test
   - [Django FAQ](https://docs.djangoproject.com/en/5.0/faq/)
     - [FAQ: General](https://docs.djangoproject.com/en/5.0/faq/general/)
     - [FAQ: Installation](https://docs.djangoproject.com/en/5.0/faq/install/)
     - [FAQ: Using Django](https://docs.djangoproject.com/en/5.0/faq/usage/)
     - [FAQ](https://docs.djangoproject.com/en/5.0/faq/help/)
+    - [FAQ: Databases and models](https://docs.djangoproject.com/en/5.0/faq/models/)
+    - [FAQ: The admin](https://docs.djangoproject.com/en/5.0/faq/admin/)
+    - [FAQ: Contributing code](https://docs.djangoproject.com/en/5.0/faq/contributing/)
+    - [FAQ: Troubleshooting](https://docs.djangoproject.com/en/5.0/faq/troubleshooting/)
