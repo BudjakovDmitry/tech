@@ -1,5 +1,11 @@
 # Install Django
 
+You've got three options to install Django:
+
+- Install an official release.
+- Install a version of Django provided by your operating system distribution.
+- Install the latest development version.
+
 ## Install with pip
 
 ```shell

@@ -8,7 +8,8 @@
       - ~~Quick install guide~~
       - ~~Install Python~~
       - ~~Set up a database~~
-      - Install Django
+      - ~~Install Django~~
+      - Verifying
     - [Writing your first Django app, part 1](https://docs.djangoproject.com/en/5.0/intro/install/)
   - [Using Django](https://docs.djangoproject.com/en/5.0/topics/)
     - [How to install Django](https://docs.djangoproject.com/en/5.0/topics/install/)
