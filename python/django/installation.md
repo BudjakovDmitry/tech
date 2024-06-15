@@ -19,3 +19,18 @@ python -m pip install Django
 # check the installation was successful
 python -m django --version
 ```
+
+## Check Django version
+
+Using shell
+
+```shell
+python -m django --version
+```
+
+Using python interactive mode
+
+```python
+>>> import django
+>>> print(django.get_version())
+```
