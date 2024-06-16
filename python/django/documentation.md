@@ -11,6 +11,11 @@
       - The development server
       - ~~Creating the Polls app~~
       - Write your first view
+    - [Writing your first Django app, part 2](https://docs.djangoproject.com/en/5.0/intro/tutorial02/)
+      - Writing your first Django app, part 2
+      - Database setup
+      - Creating models
+      - Activating models
   - [Using Django](https://docs.djangoproject.com/en/5.0/topics/)
     - [How to install Django](https://docs.djangoproject.com/en/5.0/topics/install/)
     - [Models and databases](https://docs.djangoproject.com/en/5.0/topics/db/)
@@ -73,6 +78,85 @@
       - startapp
       - startproject
       - test
+    - [Django exceptions](https://docs.djangoproject.com/en/5.0/ref/exceptions/)
+    - [File handling](https://docs.djangoproject.com/en/5.0/ref/files/)
+    - [Forms](https://docs.djangoproject.com/en/5.0/ref/forms/)
+    - [Logging](https://docs.djangoproject.com/en/5.0/ref/logging/)
+    - [Middleware](https://docs.djangoproject.com/en/5.0/ref/middleware/)
+    - [Migration Operations](https://docs.djangoproject.com/en/5.0/ref/migration-operations/)
+    - [Models](https://docs.djangoproject.com/en/5.0/ref/models/)
+    - [Paginator](https://docs.djangoproject.com/en/5.0/ref/paginator/)
+    - [Request and response objects](https://docs.djangoproject.com/en/5.0/ref/request-response/)
+    - [SchemaEditor](https://docs.djangoproject.com/en/5.0/ref/schema-editor/)
+    - [Settings](https://docs.djangoproject.com/en/5.0/ref/settings/)
+      - Settings
+      - Core Settings
+      - ABSOLUTE_URL_OVERRIDES
+      - ADMINS
+      - ALLOWED_HOSTS
+      - APPEND_SLASH
+      - CACHES
+      - CACHE_MIDDLEWARE_ALIAS
+      - CACHE_MIDDLEWARE_KEY_PREFIX
+      - CACHE_MIDDLEWARE_SECONDS
+      - CSRF_COOKIE_AGE
+      - CSRF_COOKIE_DOMAIN
+      - CSRF_COOKIE_HTTPONLY
+      - CSRF_COOKIE_NAME
+      - CSRF_COOKIE_PATH
+      - CSRF_COOKIE_SAMESITE
+      - CSRF_COOKIE_SECURE
+      - CSRF_USE_SESSIONS
+      - CSRF_FAILURE_VIEW
+      - CSRF_HEADER_NAME
+      - CSRF_TRUSTED_ORIGINS
+      - DATABASES
+      - DATA_UPLOAD_MAX_MEMORY_SIZE
+      - DATA_UPLOAD_MAX_NUMBER_FIELDS
+      - DATA_UPLOAD_MAX_NUMBER_FILES
+      - DATABASE_ROUTERS
+      - DATE_FORMAT
+      - DATE_INPUT_FORMATS
+      - DATETIME_FORMAT
+      - DATETIME_INPUT_FORMATS
+      - DEBUG
+      - DEBUG_PROPAGATE_EXCEPTIONS
+      - DECIMAL_SEPARATOR
+      - DEFAULT_AUTO_FIELD
+      - DEFAULT_CHARSET
+      - DEFAULT_EXCEPTION_REPORTER
+      - DEFAULT_EXCEPTION_REPORTER_FILTER
+      - DEFAULT_FILE_STORAGE
+      - DEFAULT_FROM_EMAIL
+      - DEFAULT_INDEX_TABLESPACE
+      - DEFAULT_TABLESPACE
+      - DISALLOWED_USER_AGENTS
+      - EMAIL_BACKEND
+      - EMAIL_FILE_PATH
+      - EMAIL_HOST
+      - EMAIL_HOST_PASSWORD
+      - EMAIL_HOST_USER
+      - EMAIL_PORT
+      - EMAIL_SUBJECT_PREFIX
+      - EMAIL_USE_LOCALTIME
+      - EMAIL_USE_TLS
+      - EMAIL_USE_SSL
+      - EMAIL_SSL_CERTFILE
+      - EMAIL_SSL_KEYFILE
+      - EMAIL_TIMEOUT
+      - FILE_UPLOAD_HANDLERS
+      - FILE_UPLOAD_MAX_MEMORY_SIZE
+      - FILE_UPLOAD_DIRECTORY_PERMISSIONS
+      - FILE_UPLOAD_PERMISSIONS
+      - FILE_UPLOAD_TEMP_DIR
+      - FIRST_DAY_OF_WEEK
+      - FIXTURE_DIRS
+      - FORCE_SCRIPT_NAME
+      - FORM_RENDERER
+      - FORMS_URLFIELD_ASSUME_HTTPS
+      - FORMAT_MODULE_PATH
+      - IGNORABLE_404_URLS
+      - INSTALLED_APPS
   - [Django FAQ](https://docs.djangoproject.com/en/5.0/faq/)
     - [FAQ: General](https://docs.djangoproject.com/en/5.0/faq/general/)
     - [FAQ: Installation](https://docs.djangoproject.com/en/5.0/faq/install/)
