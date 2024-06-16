@@ -9,6 +9,8 @@
       - ~~Writing your first Django app, part 1~~
       - ~~Creating a project~~
       - The development server
+      - ~~Creating the Polls app~~
+      - Write your first view
   - [Using Django](https://docs.djangoproject.com/en/5.0/topics/)
     - [How to install Django](https://docs.djangoproject.com/en/5.0/topics/install/)
     - [Models and databases](https://docs.djangoproject.com/en/5.0/topics/db/)
