@@ -23,6 +23,7 @@ python -m django <command> [options]
 
 ## Available commands
 
+- [startapp](commands/startapp.md)
 - [startproject](commands/startproject.md)
 
 ## Getting runtime help
