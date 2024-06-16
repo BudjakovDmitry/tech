@@ -19,7 +19,8 @@ named *\<name\>* and the project directory will be created in the current workin
 directory.
 
 If the optional destination is provided, Django will use that existing directory as the
-project directory, and create *manage.py* and the project package within it.
+project directory, and create *manage.py* and the project package within it. Use `.` to
+denote the current working directory.
 
 ```shell
 django-admin startproject myproject /home/johndoe/code/myproject_repo
