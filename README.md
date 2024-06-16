@@ -3,4 +3,5 @@
 - [Python](python/index.md)
   - [pyenv](python/pyenv/index.md)
   - [SQLAlchemy](python/sqlalchemy/index.md)
+  - [django](python/django/index.md)
 - [Git](git/index.md)

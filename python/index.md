@@ -9,7 +9,6 @@
 # Frameworks
 
 - [aiohttp](aiohttp/index.md)
-- [django](django/index.md)
 
 # Books
 
