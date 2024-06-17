@@ -23,9 +23,11 @@
 - [Authentication](https://www.django-rest-framework.org/api-guide/authentication/)
   - Authentication
   - How authentication is determined
-  - Setting the authentication scheme
+  - ~~Setting the authentication scheme~~
   - Unauthorized and Forbidden responses
   - Apache mod_wsgi specific configuration
   - API Reference
     - BasicAuthentication
     - TokenAuthentication
+      - ~~TokenAuthentication~~
+      - Generating tokens
