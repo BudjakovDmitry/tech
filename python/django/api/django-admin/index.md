@@ -23,6 +23,7 @@ python -m django <command> [options]
 
 ## Available commands
 
+- [runserver](commands/runserver.md)
 - [startapp](commands/startapp.md)
 - [startproject](commands/startproject.md)
 

@@ -8,7 +8,7 @@
     - [Writing your first Django app, part 1](https://docs.djangoproject.com/en/5.0/intro/tutorial01/)
       - ~~Writing your first Django app, part 1~~
       - ~~Creating a project~~
-      - The development server
+      - ~~The development server~~
       - ~~Creating the Polls app~~
       - Write your first view
     - [Writing your first Django app, part 2](https://docs.djangoproject.com/en/5.0/intro/tutorial02/)
@@ -67,7 +67,7 @@
       - makemigrations
       - migrate
       - optimizemigration
-      - runserver
+      - ~~runserver~~
       - sendtestemail
       - shell
       - showmigrations
