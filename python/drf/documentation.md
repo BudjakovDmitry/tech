@@ -11,6 +11,12 @@
 - [Requests](https://www.django-rest-framework.org/api-guide/requests/)
 - [Responses](https://www.django-rest-framework.org/api-guide/responses/)
 - [Views](https://www.django-rest-framework.org/api-guide/views/)
+  - ~~Class-based Views~~
+  - ~~API policy attributes~~
+  - ~~API policy instantiation methods~~
+  - ~~API policy implementation methods~~
+  - ~~Dispatch methods~~
+  - Function based Views
 - [Generic views](https://www.django-rest-framework.org/api-guide/generic-views/)
 - [Viewsets](https://www.django-rest-framework.org/api-guide/viewsets/)
 - [Routes](https://www.django-rest-framework.org/api-guide/routers/)
