@@ -6,4 +6,5 @@
   - [Django](python/django/index.md)
   - [Django REST framework](python/drf/index.md)
   - [Flask](python/flask/index.md)
+  - [Flask-RESTX](python/flask-restx/index.md)
 - [Git](git/index.md)
