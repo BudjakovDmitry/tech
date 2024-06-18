@@ -28,6 +28,12 @@
     - [Managing files](https://docs.djangoproject.com/en/5.0/topics/files/)
     - [Testing in Django](https://docs.djangoproject.com/en/5.0/topics/testing/)
     - [User authentication in Django](https://docs.djangoproject.com/en/5.0/topics/auth/)
+      - User authentication in Django
+      - Overview
+      - Installation
+        - [Using the Django authentication system](https://docs.djangoproject.com/en/5.0/topics/auth/default/)
+        - [Customizing authentication in Django](https://docs.djangoproject.com/en/5.0/topics/auth/customizing/)
+        - [Password management in Django](https://docs.djangoproject.com/en/5.0/topics/auth/passwords/)
     - [Django's cache framework](https://docs.djangoproject.com/en/5.0/topics/cache/)
     - [Conditional View Processing](https://docs.djangoproject.com/en/5.0/topics/conditional-view-processing/)
     - [Cryptographic signing](https://docs.djangoproject.com/en/5.0/topics/signing/)
@@ -45,6 +51,7 @@
     - [Built-in class-based views API](https://docs.djangoproject.com/en/5.0/ref/class-based-views/)
     - [Clickjacking Protection](https://docs.djangoproject.com/en/5.0/ref/clickjacking/)
     - [contrib packages](https://docs.djangoproject.com/en/5.0/ref/contrib/)
+      - [django.contrib.auth](https://docs.djangoproject.com/en/5.0/ref/contrib/auth/)
     - [Cross site request forgery protection](https://docs.djangoproject.com/en/5.0/ref/csrf/)
     - [Databases](https://docs.djangoproject.com/en/5.0/ref/databases/)
     - [django-adimn and manage.py](https://docs.djangoproject.com/en/5.0/ref/django-admin/)
@@ -85,6 +92,9 @@
     - [Middleware](https://docs.djangoproject.com/en/5.0/ref/middleware/)
     - [Migration Operations](https://docs.djangoproject.com/en/5.0/ref/migration-operations/)
     - [Models](https://docs.djangoproject.com/en/5.0/ref/models/)
+      - Model instance reference
+      - Creating objects
+      - Customizing model
     - [Paginator](https://docs.djangoproject.com/en/5.0/ref/paginator/)
     - [Request and response objects](https://docs.djangoproject.com/en/5.0/ref/request-response/)
     - [SchemaEditor](https://docs.djangoproject.com/en/5.0/ref/schema-editor/)
@@ -188,3 +198,6 @@
     - [How to override templates](https://docs.djangoproject.com/en/5.0/howto/overriding-templates/)
     - [How to manage static files (e.g. images, JavaScript, CSS)](https://docs.djangoproject.com/en/5.0/howto/static-files/)
       - [How to deploy static files](https://docs.djangoproject.com/en/5.0/howto/static-files/deployment/)
+  - [Meta-documentation and miscellany](https://docs.djangoproject.com/en/5.0/misc/)
+    - [API stability](https://docs.djangoproject.com/en/5.0/misc/api-stability/)
+    - [Design philosophies](https://docs.djangoproject.com/en/5.0/misc/design-philosophies/)
