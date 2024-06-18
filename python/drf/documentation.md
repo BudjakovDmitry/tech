@@ -18,6 +18,13 @@
   - ~~Dispatch methods~~
   - Function based Views
 - [Generic views](https://www.django-rest-framework.org/api-guide/generic-views/)
+  - ~~Generic views~~
+  - Examples
+  - API Reference
+    - GenericAPIView
+      - ~~GenericAPIView~~
+      - ~~Attributes~~
+      - Methods
 - [Viewsets](https://www.django-rest-framework.org/api-guide/viewsets/)
 - [Routes](https://www.django-rest-framework.org/api-guide/routers/)
 - [Parsers](https://www.django-rest-framework.org/api-guide/parsers/)
