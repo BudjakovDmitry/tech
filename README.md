@@ -5,4 +5,5 @@
   - [SQLAlchemy](python/sqlalchemy/index.md)
   - [Django](python/django/index.md)
   - [Django REST framework](python/drf/index.md)
+  - [Flask](python/flask/index.md)
 - [Git](git/index.md)
