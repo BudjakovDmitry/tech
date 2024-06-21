@@ -8,3 +8,4 @@
   - [Flask](python/flask/index.md)
   - [Flask-RESTX](python/flask-restx/index.md)
 - [Git](git/index.md)
+- [SOLID](solid/index.md)
