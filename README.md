@@ -9,3 +9,4 @@
   - [Flask-RESTX](python/flask-restx/index.md)
 - [Git](git/index.md)
 - [SOLID](solid/index.md)
+- [Парадигмы программирование](paradigms/index.md)
