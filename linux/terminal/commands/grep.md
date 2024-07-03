@@ -28,6 +28,18 @@ Erwin Schrodinger
 
 ## Options
 
+### -A NUM, --after-context=NUM
+
+Print NUM lines of trailing context after matching lines.
+
+### -B NUM, --before-context=NUM
+
+Print NUM lines of leading context before matching lines.
+
+### -C NUM, -NUM, --context=NUM
+
+Print NUM lines of output context (NUM lines before and NUM lines after matching lines).
+
 ### -c
 
 Get the count of matching lines;
@@ -48,7 +60,11 @@ Dennis Ritchie
 Erwin Schrodinger
 ```
 
-### -n
+### -m NUM, --max-count=NUM
+
+Stop reading a file after NUM matching lines.
+
+### -n, --line-number
 
 Also print the line numbers;
 
@@ -63,6 +79,11 @@ directory.
 ```shell
 # search the current working directory and any nested directories
 grep -r "chicken"
+```
+
+```shell
+# specify directory
+grep -r red ~/colors
 ```
 
 ### -v
