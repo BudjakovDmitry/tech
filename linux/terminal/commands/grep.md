@@ -28,9 +28,13 @@ Erwin Schrodinger
 
 ## Options
 
+### -c
+
+Get the count of matching lines;
+
 ### -i
 
-Make search case-insensitive.
+Make search case-insensitive (by default it is case-sensitive).
 
 ```shell
 grep -i ch people.txt
@@ -48,9 +52,18 @@ Erwin Schrodinger
 
 Also print the line numbers;
 
-### -c
+### -r
 
-Get the count of matching lines;
+Use `-r` option to perform a recursive search which will include all files under a
+directory, subdirectories and their files.
+
+If we don't specify a starting directory, grep will search the current working
+directory.
+
+```shell
+# search the current working directory and any nested directories
+grep -r "chicken"
+```
 
 ### -v
 
@@ -58,4 +71,5 @@ Print all lines which do not contain the pattern;
 
 ### -w
 
-Match only if the pattern matches whole words;
+Match only if the pattern matches whole words rather than fragments located inside of
+the words.
