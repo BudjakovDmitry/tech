@@ -3,6 +3,10 @@
 Return lines of a file matching a specified pattern, such as a regular expression. Grep
 stands for "Global Regular Expression Print".
 
+In addition, the variant programs `egrep`, `fgrep` and `rgrep` are the same as
+`grep -E`, `grep -F` and `grep -r`, respectively.
+
+
 Suppose we have a list of people's names.
 
 ```
@@ -39,6 +43,19 @@ Print NUM lines of leading context before matching lines.
 ### -C NUM, -NUM, --context=NUM
 
 Print NUM lines of output context (NUM lines before and NUM lines after matching lines).
+
+### -E, --extended-regexp
+
+Interpreter patterns as extended regular expressions.
+
+**Basic vs Extended Regular Expressions**: in basic regular expressions the
+meta-characters *?*, *+*, *{*, *|*, *(* and *)* lose their special meaning; instead use
+the backslashed versions *\?*, *\+*, *\{*, *\|*, *(* and *\)*.
+
+```shell
+# match lines with question mark
+grep "?" file
+```
 
 ### -c
 
@@ -94,3 +111,13 @@ Print all lines which do not contain the pattern;
 
 Match only if the pattern matches whole words rather than fragments located inside of
 the words.
+
+## Piping to grep
+
+A common use case is to use `grep` to whittle down or filter a large chunk of data. For
+example:
+
+```shell
+# this command lets us see python processes
+ps -aux | grep "python"
+```
