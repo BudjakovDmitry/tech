@@ -113,6 +113,22 @@ find ~ -empty -type f
 find ~ -empty -type d
 ```
 
+## -exec *command*
+
+Execute command. All following arguments to **find** are taken ot be arguments to the
+*command* until an argument consisting of ';' is encountered. The string `{}` is
+replaced by the current file name being processed everywhere it occurs in the arguments
+to the command.
+
+```shell
+find ~ -type f -name "*.txt" -exec grep "hello" '{}' ';'
+```
+
+### -l, --files-with-matches
+
+Suppress normal output; instead print a name of each input file from which output would
+normally have been printed. Scanning each input file stops upon first match.
+
 ### -mmin n
 
 File's data was last modified less than, more than or exactly *n* minutes ago.
