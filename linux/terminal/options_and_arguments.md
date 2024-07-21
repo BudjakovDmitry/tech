@@ -7,19 +7,30 @@ further, by one or more *arguments*. So, most commands look kind of like this:
 command -options arguments
 ```
 
+## Options
+
 Most commands use options, which consists of a single character preceded by a dash, for
-example (`-l`). Many commands, however, including those from the GNU Project, also
-support *long options*, consisting of a word preceded by two dashes. Also, many commands
-allow multiple short options to be strung together.
+example (`-l`). This is Unix-style options.
+
+Many commands allow multiple short options to be strung together.
 
 ```shell
 ls -lt
 ```
 
-But we can't collapse long options:
+Another style is BSD-style with no dash.
 
 ```shell
-sort colors.txt --reverse --unique
+ps aux
+```
+
+Many commands including those from the GNU Project, also support *long options*,
+consisting of a word preceded by two dashes.
+
+We can't collapse long options:
+
+```shell
+s ort colors.txt --reverse --unique
 ```
 
 Command options, like filenames in Linux, are case-sensitive.
