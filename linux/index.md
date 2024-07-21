@@ -5,7 +5,6 @@
 - [File permissions and ownership](file_permissions.md)
 - [Package managers](package_managers.md)
 - [Hard links, Symbolic links](links.md)
-- [Options and arguments](options_and_arguments.md)
 - [Standard Input, Standard Output, Standard Error](streams.md)
 - [Piping](piping.md)
 - [Wildcards, character classes, Brace expansion, Arithmetic expansion](wildcards.md)
@@ -14,5 +13,6 @@
 - [Timestamps](timestamps.md)
 - Terminal
   - [Terminal commands and utils](terminal/commands/index.md)
+  - [Options and arguments](terminal/options_and_arguments.md)
   - [Terminal shortcuts](terminal/shortcuts/index.md)
   - [Commands history](terminal/history.md)
