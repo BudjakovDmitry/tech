@@ -113,7 +113,7 @@ find ~ -empty -type f
 find ~ -empty -type d
 ```
 
-## -exec *command*
+### -exec *command*
 
 Execute command. All following arguments to **find** are taken ot be arguments to the
 *command* until an argument consisting of ';' is encountered. The string `{}` is
