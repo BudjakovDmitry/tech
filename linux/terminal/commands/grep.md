@@ -57,6 +57,11 @@ the backslashed versions *\?*, *\+*, *\{*, *\|*, *(* and *\)*.
 grep "?" file
 ```
 
+### -I
+
+Process a binary file as if it did not contain matching data; this is equivalent to the
+`--binary-files=without-match`.
+
 ### -c
 
 Get the count of matching lines;
@@ -76,6 +81,11 @@ Charles Babbage
 Dennis Ritchie
 Erwin Schrodinger
 ```
+
+### -l, --files-with-matches
+
+Suppress normal output; instead print the name of each input file from which output
+would normally have been printed. Scanning each input file stops upon first match.
 
 ### -m NUM, --max-count=NUM
 
