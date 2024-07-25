@@ -115,13 +115,38 @@ find ~ -empty -type d
 
 ### -exec *command*
 
-Execute command. All following arguments to **find** are taken ot be arguments to the
-*command* until an argument consisting of ';' is encountered. The string `{}` is
+```shell
+find -exec command {};
+```
+
+Execute command. All following arguments to **find** are taken to be arguments to the
+*command* until an argument consisting of `;` is encountered. The string `{}` is
 replaced by the current file name being processed everywhere it occurs in the arguments
 to the command.
 
 ```shell
+find -type f -empty -exec ls -l '{}' ';'
+```
+
+```shell
 find ~ -type f -name "*.txt" -exec grep "hello" '{}' ';'
+```
+
+The next example finds all files that end with `.html`. It then creates a copy of each
+one using the `cp` command. Each of the copies ends with "_COPY" so we end up with
+files like "index.html_COPY" and "navbar.html_COPY".
+
+```shell
+find -type f -name "*.html" -exec cp '{}' '{}_COPY' ';'
+```
+
+### -ok *command*;
+
+Like `-exec` but ask the user first. If the user agrees, run the command. Otherwise just
+return false.
+
+```shell
+find -empty -ok rm '{}' ';'
 ```
 
 ### -l, --files-with-matches
