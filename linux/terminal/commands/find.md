@@ -128,6 +128,9 @@ to the command.
 find -type f -empty -exec ls -l '{}' ';'
 ```
 
+> Note: the `ls` command will execute for every pathname. For example, if `find` command
+> returns 10 files, the `ls` command wil runs 10 times for each file.
+
 ```shell
 find ~ -type f -name "*.txt" -exec grep "hello" '{}' ';'
 ```
