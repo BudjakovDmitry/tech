@@ -24,7 +24,6 @@ find ~
 
 ## Options
 
-
 ### -and
 
 `find expr1 -and expr2` is the same as `find expr1 expr2`
@@ -43,6 +42,11 @@ find -amin +10
 # find files that were accessed less than ten minutes ago
 find -amin -10
 ```
+
+### -anewer reference
+
+Time of the last access of the current file is more recent than that of the last data
+modification of the *reference* file.
 
 ### -atime n
 
@@ -76,6 +80,11 @@ find -cmin +10
 # find files that were changed less then ten five minutes ago
 find -cmin -5
 ```
+
+### -cnewer reference
+
+Time of the last status change of the current file is more recent than that of the last
+data modification of the *reference* file.
 
 ### -ctime n
 
@@ -209,6 +218,15 @@ with "right", we should use other pattern `find ~ -name "*right"`.
 ```shell
 # find any file or directory inside home directory that contains a number
 find ~ -name "*[[:digit:]]*"
+```
+
+### -newer reference
+
+Time of the last data modification of the current file is more recent than that of the
+last data modification of the *reference* file.
+
+```shell
+find -newer notes.txt
 ```
 
 ### -not
