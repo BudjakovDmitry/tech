@@ -41,11 +41,17 @@ ls -l my_new_file
 -rw-r--r-- 1 john_doe users Dec 18 09:07 my_new_file
 ```
 
-Let's have a closer look on file permissions.
+`-rw-r--r--` - these 10 characters called *file attributes*.
 
-First `-` indicates that this is a file. Next first three characters (`rw-`) define the
-*user* permissions, the next three (`r--`) the *group* permissions, and the final three
-(`r--`) the *other* permissions.
+First character tells us the type of the file:
+
+* `-` file;
+* `d` directory;
+* `c` character special file;
+* `l` symbolic link;
+
+Next first three characters (`rw-`) define the *user* permissions, the next three
+(`r--`) the *group* permissions, and the final three (`r--`) the *other* permissions.
 
 - `r` read;
 - `w` write;
@@ -57,10 +63,6 @@ an `x` in place of the last `-`.
 
 Thus, by looking at the entire line, `rw-r--r--`, you can see that anyone can read the
 file, nobody can execute it, and you are the only user that can write to it.
-
-> The `-` at the very beginning of the line in the terminal means that the permissions
-> are referring to a file. If you were getting permissions to a directory, you would see
-> a `d` in the front for "directory".
 
 ## Directory permissions
 
