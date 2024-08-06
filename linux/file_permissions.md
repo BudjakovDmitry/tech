@@ -15,9 +15,17 @@ There are three possible levels of file ownership in Linux:
 - *group*;
 - *other*.
 
-Whoever creates a file, namely the user, at the time of creation, becomes the owner of
-that file by default. A group of users can also share ownership of a file. The *other*
-category essentially refers anyone in the universe with access to your Linux machine.
+Every file or directory has its owner. Whoever creates a file, namely the user, at the
+time of creation, becomes the owner of that file by default.
+
+Additionally, users can belong to *groups* which are given access to particular files
+and folders by their owners. A group of users can also share ownership of a file. Each
+file or directory has a group owner. For example, we can create a group, add users to
+this group and add read permissions to a specified file. This way all group members will
+be able to read the file.
+
+The *other* category essentially refers anyone in the universe with access to your Linux
+machine.
 
 Only an official owner of a file is allowed to change its permissions. This means that
 only owners can decide who can read the file, write to it, or execute it.
