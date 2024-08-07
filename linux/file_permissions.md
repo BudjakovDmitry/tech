@@ -50,19 +50,21 @@ First character tells us the type of the file:
 * `c` character special file;
 * `l` symbolic link;
 
-Next first three characters (`rw-`) define the *user* permissions, the next three
-(`r--`) the *group* permissions, and the final three (`r--`) the *other* permissions.
+Next first three characters (`rw-`) define the *owner* permissions (every file has one
+owner), the next three (`r--`) tells us the permissions for members of the *group*
+owner (every file can have a group owner and group can have multiple users), and the
+final three (`r--`) the *other* permissions.
 
 - `r` read;
 - `w` write;
 - `x` execute;
 
-So you, being the user, have the permission `rw-`, which means you have read and write
+So you, being the owner, have the permission `rw-`, which means you have read and write
 permissions by default, but do not have execution permissions. Otherwise, there would be
 an `x` in place of the last `-`.
 
 Thus, by looking at the entire line, `rw-r--r--`, you can see that anyone can read the
-file, nobody can execute it, and you are the only user that can write to it.
+file, nobody can execute it, and only owner can write to it.
 
 ## Directory permissions
 
