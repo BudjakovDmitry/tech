@@ -84,7 +84,7 @@ Pyenv requires these libraries and tools to be installed (Debian/Ubuntu):
 ```shell
 sudo apt install git
 sudo apt install libedit-dev
-sudo apt install libncurses5-dev6
+sudo apt install libncurses5-dev
 ```
 
 Once prerequisites have been installed correctly:
