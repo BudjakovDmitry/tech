@@ -4,6 +4,8 @@ Change or modify file or directory permissions (chmod stands for "change mode").
 
 [Managing file permissions and ownership](/linux/file_permissions.md)
 
+## Symbolic notation
+
 Specify which permissions to change with a combination of the following characters:
 
 - **permissions**:
@@ -20,7 +22,7 @@ Specify which permissions to change with a combination of the following characte
   - `-` - revoke the permission;
   - `=` - set a permission and removes others;
 
-## Examples
+### Examples
 
 __Example 1__: add write permissions to the group
 ```shell
@@ -91,4 +93,31 @@ __Example 9__: add write and execute permissions for owner
 # before -r-- r-- r--
 chmod u+wx file.txt
 # after -rwx r-- r--
+```
+
+## Octal notation
+
+chmod also supports another way of representing permission patterns: octal numbers (base
+8). Each digit in an octal number represents 3 binary digits.
+
+| Octal | Binary | File mode |
+|-------|--------|-----------|
+| 0     | 000    | ---       |
+| 1     | 001    | --x       |
+| 2     | 010    | -w-       |
+| 3     | 011    | -wx       |
+| 4     | 100    | r--       |
+| 5     | 101    | r-x       |
+| 6     | 110    | rw-       |
+| 7     | 111    | rwx       |
+
+For every spot in a permission statement, there are two choices: a letter (for example
+`w`) or a dash (`-`). It can be represented in binary numbers 0 - is a dash and 1 is a
+number. These binary numbers are equivalent to just a shorter octal numbers.
+
+### Examples
+
+```shell
+chmod 755 file.txt
+# -rwx r-x r-x
 ```
