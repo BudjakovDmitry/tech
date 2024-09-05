@@ -2,7 +2,9 @@
 - [Architecture](architecture.md)
 - [Shell and Terminal](shell.md)
 - [Filesystem](filesystem.md)
-- [File permissions and ownership](file_permissions.md)
+- Permissions
+  - [File permissions and ownership](permissions/file_permissions.md)
+  - [Root user](permissions/root.md)
 - [Package managers](package_managers.md)
 - [Hard links, Symbolic links](links.md)
 - [Standard Input, Standard Output, Standard Error](streams.md)
