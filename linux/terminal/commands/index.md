@@ -77,3 +77,4 @@
 ## Working with users
 
 - [su](su.md)
+- [sudo](sudo.md)
