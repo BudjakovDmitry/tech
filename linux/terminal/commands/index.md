@@ -83,4 +83,5 @@
 ## Working with groups
 
 - [addgroup](addgroup.md)
+- [adduser](adduser.md)
 - [groups](groups.md)
