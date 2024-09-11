@@ -82,4 +82,5 @@
 
 ## Working with groups
 
+- [addgroup](addgroup.md)
 - [groups](groups.md)
