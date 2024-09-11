@@ -37,5 +37,8 @@ To only change the group of a file, we can run `chown :GROUP FILE`.
 chown :students file.txt
 ```
 
+> When we change group assignments we need to log out in order to have those assignments
+> take effect.
+
 File's owner can change group owner, so if current user is the owner of the file we can
 not to use `sudo`.
