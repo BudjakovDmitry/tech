@@ -1,6 +1,6 @@
 # printenv
 
-Print all or part of environment.
+Print all or part of the environment variables and their current values.
 
 ```shell
 # print all environment variables and their values

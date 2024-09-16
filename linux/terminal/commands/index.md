@@ -42,7 +42,6 @@
 - [history](history.md)
 - [id](id.md)
 - [man](man.md)
-- [printenv](printenv.md)
 - [ps](ps.md)
 - [top](top.md)
 - [type](type.md)
@@ -85,3 +84,7 @@
 - [addgroup](addgroup.md)
 - [adduser](adduser.md)
 - [groups](groups.md)
+
+# The environment
+
+- [printenv](printenv.md)
