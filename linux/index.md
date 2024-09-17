@@ -9,7 +9,11 @@
 - [Hard links, Symbolic links](links.md)
 - [Standard Input, Standard Output, Standard Error](streams.md)
 - [Piping](piping.md)
-- [Wildcards, character classes, Brace expansion, Arithmetic expansion](wildcards.md)
+- [Wildcards and character classes](wildcards.md)
+- Expansions
+  - [Brace expansions](expansions/brace.md)
+  - [Arithmetic expansions](expansions/arithmetic.md)
+  - [Parameter expansions](expansions/parameter.md)
 - [Command substitution](command_substitution.md)
 - [Quoting](quoting.md)
 - [Timestamps](timestamps.md)
