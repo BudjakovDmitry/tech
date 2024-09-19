@@ -57,7 +57,8 @@ appearance somewhat depending on the distribution, it will typically include you
 The terminal prompt looks like this:
 
 ```shell
-username@machinename dir %
+# Ubuntu example
+username@machinename:current/working/directory$
 ```
 
 If the last character of the prompt is a hash mark (`#`) rather than a dollar sign, the
