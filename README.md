@@ -2,6 +2,7 @@
   - [tmux](linux/tmux/tmux.md)
 - [Python](python/index.md)
   - [pyenv](python/pyenv/index.md)
+  - [pylint](python/pylint/index.md)
   - [SQLAlchemy](python/sqlalchemy/index.md)
   - [Django](python/django/index.md)
   - [Django REST framework](python/drf/index.md)

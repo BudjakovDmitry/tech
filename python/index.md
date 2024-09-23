@@ -1,3 +1,5 @@
+# Python
+
 - [Python interpreter](interpreter.md)
 - [Data types](data_types/index.md)
 - [Decorators](decorators.md)
@@ -8,10 +10,14 @@
   - [Parallel tasks](concurrency/parallel_tasks.md)
   - [Asyncio](concurrency/asyncio/index.md)
 
-# Frameworks
+## Python Frameworks
 
 - [aiohttp](aiohttp/index.md)
 
-# Books
+## Linters
+
+- [Pylint](pylint/index.md)
+
+## Books
 
 [Learning Python Contents](learning_python_contents.md)

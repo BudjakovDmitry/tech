@@ -1,0 +1,15 @@
+# Pylint
+
+Pylint is a static code analyzer for Python.
+
+Pylint analyses your code without actually running it. It checks for errors, enforces a
+coding standard, looks for code smells, and can make suggestions about how the code
+could be refactored.
+
+[Installation](installation.md)
+[Usage](usage.md)
+[Options](options.md)
+
+## Show your usage
+
+[...](https://pylint.readthedocs.io/en/latest/user_guide/installation/badge.html)
