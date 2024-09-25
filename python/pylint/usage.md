@@ -1,6 +1,6 @@
 # Usage
 
-## How to use pylint
+## Libraries support
 
 Pylint supports Python standard library out of the box. Third party libraries are not
 always supported, so a plugin might be needed. A good place to start is `PyPI` which
@@ -9,6 +9,13 @@ often returns a plugin by searching for `pylint <library>`.
 [pylint-django](https://github.com/pylint-dev/pylint-django) and
 [pylint-sonarjson](https://github.com/omegacen/pylint-sonarjson) are examples of such
 plugins.
+
+## The killer feature
+
+Pylint is interring the actual values of nodes using its internal code representation
+(astroid). If your code is `import logging as argparse`, Pylint can check and know that
+`argparse.error(...)` is in fact a logging call and not an argparse call. This makes
+pylint slower, but it also lets pylint find more issues if code is not fully typed.
 
 ## On module packages or directories
 
