@@ -1,0 +1,24 @@
+# Content
+
+- [Gunicorn](https://gunicorn.org/)
+- [Gunicorn docs](https://docs.gunicorn.org/en/stable/)
+  - [Install](https://docs.gunicorn.org/en/stable/install.html)
+    - ~~pip~~
+    - ~~From source~~
+    - Async workers
+    - Extra packages
+    - Debian GNU/Linux
+      - stable ("buster")
+      - oldstable ("stretch")
+      - Testing ("bullseye") / Unstable ("sid")
+    - ~~Ubuntu~~
+  - [Running Gunicorn](https://docs.gunicorn.org/en/stable/run.html)
+    - ~~Running gunicorn~~
+    - Commands
+      - ~~commands~~
+      - gunicorn
+      - commonly used arguments
+    - Integration
+      - Django
+      - Paste deployment
+  - [Configuration Overview](https://docs.gunicorn.org/en/stable/configure.html)
