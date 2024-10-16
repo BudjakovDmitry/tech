@@ -29,6 +29,7 @@ accessible in all child shell sessions and in each child processes and other com
 - `HOME` - current user's home directory;
 - `PWD` - stores current working directory;
 - `OLDPWD` - previous location;
+- [PS1](environment_variables/ps1.md) - variable that governs prompt;
 
 ## Shell variables
 
@@ -80,3 +81,29 @@ color=purple
 # set a new value
 color=red
 ```
+
+## Startup files
+
+There are multiple files on our machine that are very particular files that bash looks
+for. The shell will look to and read information from. They include configuration
+details, instructions, predefined variables and functions, just a bunch of config stuff.
+
+When we log in, the shell reads information from startup files. First, the shell reads
+from global config files that effects the environment for all users. Then, the shell
+reads startup files for specific users.
+
+`etc/bash.bashrc` - global config for all users
+
+The specific files the shell reads from depends on the type of session: login or
+non-login shell sessions.
+
+For non-login sessions (typical session when you launch the terminal via the GUI):
+`~/.bashrc` - specific settings for each user. This is where we can define our own
+settings and configuration.
+
+For login sessions:
+
+- `/etc/profile` - global config for all users;
+- `~/.bash_profile` - user's personal config file;
+- `~/.bash_login` - read if bash_profile isn't found;
+- `~/.profile` - used if previous two aren't found;
