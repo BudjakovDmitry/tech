@@ -22,3 +22,24 @@
       - Django
       - Paste deployment
   - [Configuration Overview](https://docs.gunicorn.org/en/stable/configure.html)
+    - ~~Configuration~~
+    - ~~Command line~~
+    - Configuration file
+    - Framework settings
+  - [Settings](https://docs.gunicorn.org/en/stable/settings.html)
+    - Settings
+    - Config file
+      - config
+      - wsgi_app
+    - Debugging
+      - reload
+      - reload_engine
+      - reload_extra_files
+      - spew
+      - ~~check_config~~
+      - ~~print_config~~
+    - Logging
+      - ~~accesslog~~
+      - disable_redirect_access_to_syslog
+      - access_log_format
+      - errorlog
