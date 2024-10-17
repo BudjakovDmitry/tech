@@ -6,6 +6,8 @@
 - [Builtin functions](builtin_functions/index.md)
 - STL
   - [Enum](stl/enum.md)
+  - [os](stl/os.md)
+  - [signal](stl/signal.md)
 - Concurrency
   - [Parallel tasks](concurrency/parallel_tasks.md)
   - [Asyncio](concurrency/asyncio/index.md)
