@@ -13,10 +13,6 @@
   - [Parallel tasks](concurrency/parallel_tasks.md)
   - [Asyncio](concurrency/asyncio/index.md)
 
-## Python Frameworks
-
-- [aiohttp](aiohttp/index.md)
-
 ## Linters
 
 - [Pylint](pylint/index.md)

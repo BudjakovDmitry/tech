@@ -7,6 +7,7 @@
   - [Django](python/django/index.md)
   - [Django REST framework](python/drf/index.md)
   - [Flask](python/flask/index.md)
+  - [aiohttp](python/aiohttp/index.md)
   - [Flask-RESTX](python/flask-restx/index.md)
   - [Gunicorn](python/gunicorn/index.md)
   - [Nuitka](python/nuitka/index.md)

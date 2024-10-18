@@ -2,7 +2,9 @@
 
 - [Installation](installation.md)
 - Server
-  - [Web Server Example](server_example.md)
+  - [Web Server Example](server/server_example.md)
+- Client
+  - [Quickstart](client/quickstart.md)
 
 ---
 
@@ -11,7 +13,10 @@ Map
 - [index](https://docs.aiohttp.org/en/stable/)
   - ~~[Welcome to AIOHTTP](https://docs.aiohttp.org/en/stable/#welcome-to-aiohttp)~~
   - ~~[Key features](https://docs.aiohttp.org/en/stable/#key-features)~~
-  - [Library Installation](https://docs.aiohttp.org/en/stable/#library-installation)
+  - ~~[Library Installation](https://docs.aiohttp.org/en/stable/#library-installation)~~
+  - Getting started
+    - ~~[Client example](https://docs.aiohttp.org/en/stable/#client-example)~~
+    - [Server example](https://docs.aiohttp.org/en/stable/#server-example)
 - [Client](https://docs.aiohttp.org/en/stable/client.html)
 - [Client Quickstart](https://docs.aiohttp.org/en/stable/client_quickstart.html)
 - [Server](https://docs.aiohttp.org/en/stable/web.html)
