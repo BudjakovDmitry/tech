@@ -8,6 +8,7 @@
   - [Enum](stl/enum.md)
   - [os](stl/os.md)
   - [signal](stl/signal.md)
+  - [time](stl/time.md)
 - Concurrency
   - [Parallel tasks](concurrency/parallel_tasks.md)
   - [Asyncio](concurrency/asyncio/index.md)
