@@ -12,6 +12,7 @@
   - [Gunicorn](python/gunicorn/index.md)
   - [Nuitka](python/nuitka/index.md)
   - [python-telegram-bot](python/python-telegram-bot/index.md)
+  - [python-dotenv](python/python-dotenv/index.md)
 - [Git](git/index.md)
 - [Regular Expressions](re/index.md)
 - [SOLID](solid/index.md)
