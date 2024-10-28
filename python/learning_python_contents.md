@@ -1,5 +1,48 @@
 # Learning Python Contents
 
+## Chapter 3. How you run programs
+
+## Chapter 4. Introducing Python object types
+
+- Introducing Python object types
+- The Python conceptual hierarchy
+- Why use built-in types?
+- Python's core data types
+- Numbers
+- Strings
+- Sequence operations
+- Immutability
+- Type-specific methods
+- Getting help
+- Other ways to code strings
+- Unicode strings
+- Pattern matching
+- Lists
+- Sequence operations
+- Type-specific operations
+- Bounds checking
+- Nesting
+- Comprehensions
+- Dictionaries
+- Mapping operations
+- Nesting revisited
+- Missing keys: if tests
+- Sorting keys: for Loops
+- Iteration and optimization
+- Tuples
+- Why tuples?
+- Files
+- Binary bytes files
+- Unicode text files
+- Other file-like tools
+- Other code types
+- How to break your code's flexibility
+- User-defined classes
+- And everything else
+- Chapter summary
+- Test your knowledge: quiz
+- Test your knowledge: answers
+
 ## Chapter 32. Advanced class  topics
 
 - Advanced class topics
