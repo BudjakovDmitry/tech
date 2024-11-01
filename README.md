@@ -1,5 +1,6 @@
 - [Linux](linux/index.md)
   - [tmux](linux/tmux/tmux.md)
+  - [POSIX](linux/posix/index.md)
 - [Python](python/index.md)
   - [pyenv](python/pyenv/index.md)
   - [pylint](python/pylint/index.md)
