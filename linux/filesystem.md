@@ -11,7 +11,9 @@ directories and files in the system. The filesystem assigns appropriate access r
 the directories and files.
 
 Unix-like systems such as Linux always have a single file system tree, regardless of how
-many drives or storage devices are mounted (attached) to the computer.
+many drives or storage devices are mounted (attached) to the computer. Storage devices
+are mounted at various points on the tree according to the whims of the *system
+administrator*, the person responsible  for the maintenance of the system.
 
 The very top of Linux filesystem is the *root directory* (`/`). Some of standard
 subdirectories are listed below:
@@ -47,12 +49,13 @@ The file system layout design is specified in a published standard called the *L
 Filesystem Hierarchy Standard*. Not all Linux distributions conform to the standard
 exactly, but most come pretty close.
 
-## The current working directory
+## The current working directory, home directory, parent directory
 
 At any given time, we are inside a single directory, and we can see files contained in
-the directory and the pathway to the directory above us (parent directory) and any
+the directory and the pathway to the directory above us (*parent directory*) and any
 directories below us. The directory we are standing in is called *current working
-directory*. To display the current working directory, we use the `pwd` command.
+directory*. To display the current working directory, we use the
+[`pwd`](/linux/terminal/commands/pwd.md) command.
 
 When we first log in to our system (or start a terminal emulator session), our current
 working directory is set to our *home directory*. Each user account is given its own
