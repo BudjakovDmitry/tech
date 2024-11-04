@@ -8,7 +8,9 @@ needed to run the machine and applications as well as your own files.
 Linux organizes its files in a hierarchical directory structure. The top level of the
 file system is the root directory `/`. Below this is a tree-like structure of the
 directories and files in the system. The filesystem assigns appropriate access rights to
-the directories and files.
+the directories and files. The design is actually specified in a published standard
+called the *Linux Filesystem Hierarchy Standard*. Not all Linux distributions conform to
+the standard exactly, but most come pretty close.
 
 Unix-like systems such as Linux always have a single file system tree, regardless of how
 many drives or storage devices are mounted (attached) to the computer. Storage devices
