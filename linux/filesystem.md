@@ -92,6 +92,9 @@ as *globbing*) allows you to select filenames based on patterns of characters.
 | **absolute path** is a path from root directory to destination | `/usr/bin/zip`          |
 | **relative path** is a path from current directory to destination | `../Documents/node.txt` |
 
+In almost all cases, we can omit the `./` part because it is implied. The following
+commands have the same result: `cd ./bin` or `cd bin`.
+
 ## Important facts about filenames
 
 - Filenames that begin with a period character are hidden. This only means that `ls`
