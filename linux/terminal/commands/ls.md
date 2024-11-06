@@ -14,7 +14,7 @@ ls
 List all files, even those with names that begin with a period (`.`), which are normally
 not listed (that is, hidden).
 
-### -A
+### -A, --almost-all
 
 Like the `-a` option except it does not list `.` (current directory) and `..` (parent
 directory).
@@ -28,20 +28,30 @@ By default, when you type `ls -l` we see *modification time*. If you want to see
 
 colorize the output; WHEN can be 'always' (default if omitted), 'auto', or 'never'.
 
-### -d
+### -d, --directory
 
 Ordinarily, if a directory is specified, it will list the contents of the directory, not
 the directory itself. Use this option in conjunction with the `-l` option to see details
-about the directory rather than its contents: `ls -ld`.
+about the directory rather than its contents.
 
-### -F
+```shell
+ls -l dir/  # shows info about directory's content
+ls -ld dir/  # shows info about directory itself
+```
+
+### -F, --classify
 
 Option will append an indicator character to the end of each listed name. For example,
 it will append a forward slash (`/`) if the name is a directory.
 
 ### -h, --human-readable
 
-'human-readable' with `-l` and `-s` print sizes like 1K, 234M, 2G, etc.: `ls -lh`.
+In long format listings (`-l` and `-s`) print file sizes in human-readable format rather
+than in bytes (like 1K, 234M, 2G, etc.).
+
+```bash
+ls -lh
+```
 
 ### -i
 
@@ -56,10 +66,16 @@ last-modified date, owner, etc. (long format).
 
 Print result as comma separated list of entities.
 
-### -r
+### -r, --reverse
 
-Reverse the order of the sort. Normally, `ls` displays its results in ascending
-alphabetical order: `ls -ltr`.
+Reverse the sort order. Normally, `ls` displays its results in ascending alphabetical
+order.
+
+```
+ls -r
+
+ls -ltr
+```
 
 ### -R, --recursive
 
@@ -76,7 +92,11 @@ extension (`-X`).
 
 ### -t
 
-Sort by modification time, newest first: `ls -lt`.
+Sort by modification time, newest first.
+
+```shell
+ls -lt
+```
 
 ### -u
 
