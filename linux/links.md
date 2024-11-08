@@ -40,6 +40,9 @@ to the new version and create a new symbolic link pointing to the old version.
 
 ## Hard link
 
+There is a second type of link called _hard links_. Hard links also allow files to have
+multiple names, but they do it in a different way.
+
 By default, every file has a single hard link that gives the file its name.
 
 Hard links are the original Unix way of creating links. Modern practice prefers symbolic
