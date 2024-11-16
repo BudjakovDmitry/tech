@@ -22,17 +22,15 @@ We can pass a relative or absolute path to the file.
 
 Remove a directory if it is empty.
 
-### -r
+### -f, --force
 
-Remove directories and their contents recursively.
+Ignore nonexistent files and do not prompt. This overrides the `-i` option.
+
+If `file.log` does not exists, rm will continue silently.
 
 ```shell
-rm -r /path/to/dir
+rm -f file.log
 ```
-
-If you want to remove an empty directory, `rm -rf` is not recommended. Instead, you
-should use `rmdir` command. This guarantees that you'll never accidentally delete any
-important files or directories.
 
 ### -i
 
@@ -48,16 +46,36 @@ rm -i *.log
 > filenames matching a pattern, it's best practice to confirm or deny each deletion by
 > including the `-i` option.
 
-### -f
 
-Ignore nonexistent files and do not prompt. This overrides the `-i` option.
+### -r, --recursive
 
-If `file.log` does not exists, rm will continue silently.
+Remove directories and their contents recursively. This means that if a directory being
+deleted has subdirectories, delete them too. To delete a directory, this option must be
+specified.
 
 ```shell
-rm -f file.log
+rm -r /path/to/dir
 ```
 
-### -v
+If you want to remove an empty directory, `rm -rf` is not recommended. Instead, you
+should use `rmdir` command. This guarantees that you'll never accidentally delete any
+important files or directories.
+
+### -v, --verbose
 
 Display informative messages as the deletion is performed.
+
+## Examples
+
+Delete *file* and *dir* and its content
+
+```shell
+rm -r file dir
+```
+
+Same as the previous command except that if either *file* or *dir* does not exist, `rm`
+will continue silently.
+
+```shell
+rm -rf file dir
+```
