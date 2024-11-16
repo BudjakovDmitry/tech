@@ -12,17 +12,17 @@ rename a file/directory.
 
 ## Options
 
-### -i
+### -i, --interactive
 
 Before overwriting an existing file, prompt the user for confirmation. If this option is
 not specified, `mv` will silently overwrite files.
 
-### -u
+### -u, --update
 
 When moving files from one directory to another, only move files that either don't exist
 or are newer than the existing corresponding files in the destination directory.
 
-### -v
+### -v, --verbose
 
 Display informative messages as the move is performed
 
