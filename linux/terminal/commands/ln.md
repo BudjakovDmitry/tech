@@ -20,8 +20,31 @@ ln -s /home/john/report.txt /home/john/Desktop/
 
 You should be very careful with relative paths in symbolic links, because link will try
 to find target using relative path starting from link location. If you change link
-location it can break. It is good idea always to use absolute paths while creating
-symbolic links.
+location it can break.
+
+For example, we have file system like this:
+
+```
+/home/me/
+ - file
+ - /dir
+```
+
+We are located inside `/home/me` and want to create symlink in `dir` referenced to the
+`file`:
+
+```shell
+ln -s ../file dir/file-symlink
+```
+
+Remember that when we create a symbolic link, we are creating a text description of
+where the target file is relative to the symbolic link.
+
+Symlink to the directory:
+
+```shell
+ln -s dir1 dir1-sym
+```
 
 Hard link:
 
