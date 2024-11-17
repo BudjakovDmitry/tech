@@ -23,3 +23,4 @@
   - [Terminal shortcuts](terminal/shortcuts/index.md)
   - [Commands history](terminal/history.md)
 - [The environment](environment/index.md)
+- [Shell scripts](shell_scripts/index.md)
