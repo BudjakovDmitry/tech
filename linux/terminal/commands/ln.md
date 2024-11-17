@@ -5,6 +5,12 @@ The `ln` command is used to create either hard or symbolic [links](/linux/links.
 Symbolic link:
 
 ```shell
+ln -s item link
+```
+
+where *item* is either a file or a directory.
+
+```shell
 ln -s /home/john/report.txt /home/john/Desktop/
 ```
 
@@ -18,6 +24,10 @@ location it can break. It is good idea always to use absolute paths while creati
 symbolic links.
 
 Hard link:
+
+```shell
+ln file link
+```
 
 ```shell
 ln /var/logs/app_log /home/john/logs

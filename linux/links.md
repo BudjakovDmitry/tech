@@ -9,7 +9,12 @@ Symbolic links also known as _soft links_ or _symlinks_.
 Symbolic link works by creating a special type of file that contains a text pointer to
 the referenced file or directory. The symbolic link and file it points to have different
 inode numbers because symbolic link and a file it links to are completely different
-objects.
+objects. But a file pointed to by a symbolic link and the symbolic link itself are
+largely indistinguishable from one another. For example, if you write something to the
+symbolic link, the referenced file is written to. When you delete a symbolic link,
+however, only the *link* is deleted, not the *file* itself. If the file is deleted
+before the symbolic link, the link will continue to exist but will point to nothing. In
+this case the link is said to be *broken*.
 
 The symbolic links looks like this:
 
@@ -58,7 +63,19 @@ because inode number will have absolutely different meaning in the other file sy
 A hard link is indistinguishable from the file itself. Unlike a symbolic link, when you
 list a directory containing a hard link, you will see no special indication of the link.
 When a hard link is deleted, the link is removed, but the contents of the file itself
-continue to exist until all links to the file are deleted.
+continue to exist until all links to the file are deleted. So how do we know, that two
+links in fact are the same file?
+
+When thinking about hard links, it is helpful to imagine that files are made up of two
+parts:
+
+* The data part containing the file's contents;
+* The name part that holds the file's name;
+
+When we create hard links, we actually creating additional name parts that all refer
+to the same data part. The system assigns a chain of disk blocks to what we called an
+*inode*, which is then associated with the name part. Each hard link therefore refers
+to a specific inode containing the file's contents. To find out an inode use `ls -i`.
 
 Hard links which point to the same file have the same inode number. When we create a
 hard link we create an additional entry to a file. Each hard link refers to a specific
