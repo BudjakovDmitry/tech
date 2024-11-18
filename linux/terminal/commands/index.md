@@ -4,6 +4,7 @@
 
 - [apropos](apropos.md)
 - [help](help.md)
+- [info](info.md)
 - [man](man.md)
 
 ## Navigation
