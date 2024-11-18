@@ -50,6 +50,7 @@
 - [top](top.md)
 - [type](type.md)
 - [uname](uname.md)
+- [whatis](whatis.md)
 - [which](which.md)
 - [who](who.md)
 - [whoami](whoami.md)
