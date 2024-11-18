@@ -2,6 +2,9 @@
 
 Display the reference manual of the given command.
 
+Most executable programs intended for command line use provide a formal piece of
+documentation called *manual*.
+
 ```shell
 man ls
 ```
@@ -58,6 +61,18 @@ The manual is broken into 8 different sections, each covering a specific topic i
 7. Miscellaneous (including macro packages and conventions)
 8. System administration commands (usually only for root)
 9. Kernel routines [Not standard]
+
+Sometimes we need to refer to a specific section of the manual. This is particularly
+true, if we are looking for a file format that is also a name of a command. Without
+specifying a section number, we will always get the first instance of a match, probably
+in section 1. To specify a section number, use `man` like this
+
+```shell
+man section search_term
+
+# display the man page describing the file format of the /etc/passwd file
+man 5 passwd
+```
 
 ## Options
 
