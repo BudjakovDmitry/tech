@@ -4,6 +4,19 @@ In the simplest terms, a shell script is a text file containing a series of comm
 The shell reads this file and carries out the commands as though they have been entered
 directly on the command line.
 
+## Multiple commands on a line
+
+It's possible to put more than one command on a line by separating each command with a
+semicolon.
+
+```shell
+command1; command2; command3...
+```
+
+```shell
+cd /usr; lsl cd -
+```
+
 ## How to write a Shell script?
 
 To create and run a shell script, we need to do three things:

@@ -75,9 +75,11 @@
 
 ## Common
 
+- [alias](alias.md)
 - [clear](clear.md)
 - [exit](exit.md)
 - [tee](tee.md)
+- [unalias](unalias.md)
 - [xargs](xargs.md)
 
 ## Working with users
