@@ -1,5 +1,11 @@
 # Terminal commands
 
+## Getting help
+
+- [apropos](apropos.md)
+- [help](help.md)
+- [man](man.md)
+
 ## Navigation
 
 - [cd](cd.md)
@@ -38,10 +44,8 @@
 - [du](du.md)
 - [file](file.md)
 - [free](free.md)
-- [help](help.md)
 - [history](history.md)
 - [id](id.md)
-- [man](man.md)
 - [ps](ps.md)
 - [top](top.md)
 - [type](type.md)
