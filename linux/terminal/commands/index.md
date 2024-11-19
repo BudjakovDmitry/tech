@@ -47,6 +47,7 @@
 - [free](free.md)
 - [history](history.md)
 - [id](id.md)
+- [lsb_release](lsb_release.md)
 - [ps](ps.md)
 - [top](top.md)
 - [type](type.md)
