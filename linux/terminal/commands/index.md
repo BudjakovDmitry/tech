@@ -78,6 +78,7 @@
 - [alias](alias.md)
 - [clear](clear.md)
 - [exit](exit.md)
+- [source](source.md)
 - [tee](tee.md)
 - [unalias](unalias.md)
 - [xargs](xargs.md)
