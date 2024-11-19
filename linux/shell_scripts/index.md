@@ -43,3 +43,18 @@ Everything from the `#` symbol onward on the line is ignored.
 The `#!` character sequence is a special construct called *shebang*. The shebang is used
 to tell the kernel the name of the interpreter that should be used to execute the
 script. Every shell script should include this as its first line.
+
+## Good locations for scripts
+
+The `~/bin` directory is a good place to put scripts intended for personal use.
+
+If we write a script that everyone on a system is allowed to use, the traditional
+location is `/usr/local/bin`.
+
+Scripts intended for use by the system administrator are often located in
+`/usr/local/sbin`.
+
+In most cases, locally supplied software, whether scripts or compiled programs, should
+be placed in the `/usr/local` hierarchy and not in `/bin` or `/usr/bin`. These
+directories are specified by the Linux Filesystem Hierarchy Standard to contain only
+files supplied and maintained by the Linux distributor.
