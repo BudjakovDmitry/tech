@@ -97,3 +97,4 @@
 
 - [export](export.md)
 - [printenv](printenv.md)
+- [set](set.md)
