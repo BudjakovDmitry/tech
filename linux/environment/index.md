@@ -43,7 +43,8 @@ protocols; this variable sets the protocol to be used with your terminal emulato
 
 ## Shell variables
 
-To define a __shell variable__, use the syntax `variable=value`.
+To define a __shell variable__, use the syntax:`variable=value`. Variable name, equal
+sign __with no space__, and the value.
 
 Built-in variables are upper-cased, so it's a common convention to lowercase custom
 variables to prevent confusion.
@@ -90,6 +91,51 @@ Set a new value to existing variable:
 color=purple
 # set a new value
 color=red
+```
+
+If we try to use not declared variable we will not get an error. We just get an empty
+value
+
+```shell
+echo $foo  # returns empty result, no error
+```
+
+Example of using variables:
+
+```shell
+name="John"
+echo "Hello my name is $name."
+```
+
+There is difference between quotes and double quotes. If we have a variable within the
+string, and we need to print the content of the variable, not the name of the variable,
+we need to use double quotes.
+
+```shell
+name="John"
+
+echo "Hello my name is $name."
+# Hello my name is John
+
+echo 'Hello my name is $name.'
+# Hello my name is $name
+```
+
+## Capture the output of the command
+
+We can grab the output of the command and store it in a variable.
+
+```shell
+files=$(ls)
+```
+
+The `()` is a subshell. Subshell allows to execute a command in the background.
+
+```shell
+now=$(date)
+
+echo "The system time and date is:"
+echo $now
 ```
 
 ## Startup files
