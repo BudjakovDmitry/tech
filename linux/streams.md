@@ -5,9 +5,9 @@ and its environment.
 
 They are:
 
-- Standard Input;
-- Standard Output;
-- Standard Error;
+- Standard Input (stdin);
+- Standard Output (stdout);
+- Standard Error (stderr);
 
 Each stream gets its own numeric file descriptor:
 
@@ -134,4 +134,18 @@ and standard error to the same file: `&>` notation:
 ls docs &> output.txt
 # or
 ls doct &>> output.txt
+```
+
+The order of the redirections is significant. The redirection of standard error must
+always occur after redirecting standard output, or it doesn't work.
+
+## Disposing of unwanted output
+
+Sometimes we don't want output from a command. The system provides a way to do this by
+redirecting output to a special file called `/dev/null`. This file is a system device
+often referred to as a *bit bucked*, which accepts input and does nothing with it. To
+suppress errors messages from a command, we do this:
+
+```shell
+ls -l /bin/usr 2> /dev/null
 ```
