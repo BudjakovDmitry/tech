@@ -95,8 +95,12 @@
 - [adduser](adduser.md)
 - [groups](groups.md)
 
-# The environment
+## The environment
 
 - [export](export.md)
 - [printenv](printenv.md)
 - [set](set.md)
+
+## Math
+
+- [expr](expr.md)
