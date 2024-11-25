@@ -17,6 +17,10 @@ ls -l /usr/bin/ | less
 ```
 
 ```shell
+ls /usr/bin/ /bin/ | sort | less
+```
+
+```shell
 ls -1 /usr/bin/ | wc -l
 ```
 
