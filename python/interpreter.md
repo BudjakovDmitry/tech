@@ -23,6 +23,8 @@ The version of the installed interpreter.
 
 ```shell
 python3 --version
+# or
+python3 -V
 ```
 
 ## Interpreter under the hood
