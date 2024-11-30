@@ -19,7 +19,8 @@ tail -c 10 names.txt
 
 ### -f, --follow
 
-Output appended data as file grows.
+Output appended data as file grows. This is useful for watching the progress of log
+files as they are being written.
 
 ```shell
 tail -f /var/log/syslog
