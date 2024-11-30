@@ -1,7 +1,16 @@
 # grep
 
-Return lines of a file matching a specified pattern, such as a regular expression. Grep
-stands for "Global Regular Expression Print".
+Grep stands for "Global Regular Expression Print". It is a powerful program used to find
+text patterns within files. It returns lines of a file matching a specified pattern,
+such as a regular expression.
+
+Common usage pattern:
+
+```shell
+grep pattern filename
+```
+
+When `grep` encounters a "pattern" in the file, it prints out the lines containing it.
 
 In addition, the variant programs `egrep`, `fgrep` and `rgrep` are the same as
 `grep -E`, `grep -F` and `grep -r`, respectively.
