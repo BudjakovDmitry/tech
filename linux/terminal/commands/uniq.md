@@ -1,6 +1,7 @@
 # uniq
 
-Filter out the repeated lines.
+Filter out the repeated lines. It accepts a list of data from either standard input or a
+single file.
 
 Note, that the `uniq` command only removes duplicated lines if they are consecutive.
 
@@ -25,4 +26,20 @@ will return
 dog
 parrot
 dog
+```
+
+Usage example:
+
+```shell
+ls /bin /usr/bin | sort | uniq | less
+```
+
+## Options
+
+### -d, --repeated
+
+Only print duplicate lines, one for each group
+
+```shell
+ls /bin/ /usr/bin/ | sort | uniq -d | less
 ```
