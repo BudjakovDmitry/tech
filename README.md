@@ -19,3 +19,5 @@
 - [Regular Expressions](re/index.md)
 - [SOLID](solid/index.md)
 - [Парадигмы программирование](paradigms/index.md)
+- Web servers
+  - [Nginx](nginx/index.md)
