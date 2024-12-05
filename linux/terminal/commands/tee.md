@@ -8,6 +8,10 @@ interrupting the flow.
 command1 | tee file.txt | command2 ...
 ```
 
+```shell
+ls /usr/bin | tee ls.txt | grep gzip
+```
+
 If we put `tee` in the middle of two pipes (example above), it is going to take output
 coming from one command, save it to a file that we specify and pass it to the next
 command.
