@@ -21,3 +21,4 @@
 - [Парадигмы программирование](paradigms/index.md)
 - Web servers
   - [Nginx](nginx/index.md)
+  - [Apache](apache/index.md)
