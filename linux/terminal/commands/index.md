@@ -90,6 +90,7 @@
 
 - [su](su.md)
 - [sudo](sudo.md)
+- [usermod](usermod.md)
 
 ## Working with groups
 
