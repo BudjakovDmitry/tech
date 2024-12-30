@@ -211,8 +211,8 @@ commands have the same result: `cd ./bin` or `cd bin`.
 
 ## Important facts about filenames
 
-- Filenames that begin with a period character are hidden. This only means that `ls`
-will not list them unless you say `ls -a`.
+- Filenames that begin with a period character are hidden (_.bashrc_) . This only means
+that `ls` will not list them unless you say `ls -a`.
 - Filenames and commands in Linux are case-sensitive. The filenames `File1` and `file1`
 refer to different files.
 - Do not embed spaces in filenames. If you want to represent spaces between words in a
