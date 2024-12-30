@@ -10,6 +10,10 @@ Copy the files and directories and all of their attributes, including ownership 
 permissions. Normally, copies take on the default attributes of the user performing the
 copy.
 
+### --help
+
+Display manual page and exit.
+
 ### -i, --interactive
 
 Before overwriting an existing file, prompt the user for information. If this option is
