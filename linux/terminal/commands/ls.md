@@ -53,6 +53,10 @@ than in bytes (like 1K, 234M, 2G, etc.).
 ls -lh
 ```
 
+### --help
+
+Display help page and exit.
+
 ### -i
 
 Print the index number of each file (inode).
