@@ -15,3 +15,13 @@ ls /usr/bin | tee ls.txt | grep gzip
 If we put `tee` in the middle of two pipes (example above), it is going to take output
 coming from one command, save it to a file that we specify and pass it to the next
 command.
+
+## Options
+
+### -a, --append
+
+append to the given file[s], do not overwrite.
+
+```shell
+ls -l /bin/ | tee -a utils | grep gzip
+```
