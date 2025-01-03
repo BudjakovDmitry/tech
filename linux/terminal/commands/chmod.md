@@ -95,6 +95,10 @@ chmod u+wx file.txt
 # after -rwx r-- r--
 ```
 
+__Example 10__: combination
+
+chmod u+rwx,g-x+rw,o-rwx file
+
 ## Octal notation
 
 chmod also supports another way of representing permission patterns: octal numbers (base
