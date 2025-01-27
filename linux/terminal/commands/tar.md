@@ -9,6 +9,11 @@ tar -cf my_archive.tar /path/to/file/or/dir
 ```
 
 ```shell
+# create the tarball and compress it with gzip
+tar -czf my_archive.tar.gz /path/to/dir
+```
+
+```shell
 # look inside a tar file without extracting content
 tar -tf my_archive.tar
 ```
@@ -16,6 +21,11 @@ tar -tf my_archive.tar
 ```shell
 # extract files from tar archive
 tar -xf my_archive.tar
+```
+
+```shell
+# extract .tar.gz
+tar -xf
 ```
 
 ## Options
@@ -38,7 +48,11 @@ Verbose mode. Add more information to output.
 
 ### -x
 
-Extract.
+Extract the tarball.
+
+### -z
+
+Compress the tarball.
 
 ## Arguments
 
