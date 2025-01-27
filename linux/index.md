@@ -24,3 +24,5 @@
   - [Commands history](terminal/history.md)
 - [The environment](environment/index.md)
 - [Shell scripts](shell_scripts/index.md)
+- [File archiving]
+  - [tar](terminal/commands/tar.md)
