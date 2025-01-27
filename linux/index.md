@@ -26,3 +26,4 @@
 - [Shell scripts](shell_scripts/index.md)
 - [File archiving]
   - [tar](terminal/commands/tar.md)
+  - [gzip/gunzip](terminal/commands/gzip.md)
