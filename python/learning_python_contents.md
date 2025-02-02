@@ -1,5 +1,37 @@
 # Learning Python Contents
 
+## ~~Preface~~
+
+## ~~Chapter 1. A Python Q&A Session~~
+
+## Chapter 2. How Python runs programs
+
+- ~~\*\*\*~~
+- ~~Introducing the Python interpreter~~
+- ~~Program execution~~
+- ~~The programmer's view~~
+- ~~Python's view~~
+- ~~Byte code compilation~~
+- ~~The Python Virtual Machine (PVM)~~
+- ~~Performance implications~~
+- ~~Development implication~~
+- ~~Execution model variation~~
+- Python implementation alternatives
+- CPython: The standard
+- Jython: Python for java
+- IronPython: Python for .NET
+- Stackless: Python for concurrency
+- PyPy: Python for speed
+- Execution Optimization tools
+- Cython: A Python/C hybrid
+- Shed skin: A Python-to-C++ translator
+- Psyco: The original just-in-time compiler
+- Frozen binaries
+- Future possibilities?
+- Chapter summary
+- Test your knowledge: quiz
+- Test your knowledge: answers
+
 ## Chapter 3. How you run programs
 
 ## Chapter 4. Introducing Python object types
