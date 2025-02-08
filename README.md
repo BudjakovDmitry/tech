@@ -18,6 +18,7 @@
 - [Git](git/index.md)
 - [Regular Expressions](re/index.md)
 - [SOLID](solid/index.md)
+- [Design patterns](design_patterns/index.md)
 - [Парадигмы программирование](paradigms/index.md)
 - Web servers
   - [Nginx](nginx/index.md)
