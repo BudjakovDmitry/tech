@@ -72,4 +72,8 @@ class Weekday(Enum):
 Weekday.from_date(datetime.date.today())
 ```
 
-## Flag
+## StrEnum
+
+`StrEnum` is the same as `Enum`, but ist members are also strings and can be used in
+most of the same places that a string can be used. The result of any string operation
+performed on or with a `StrEnum` member is not part of the enumeration.
