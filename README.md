@@ -1,7 +1,13 @@
-- Operating systems
-  - [Linux](linux/index.md)
-    - [tmux](linux/tmux/tmux.md)
-  - [POSIX](posix/index.md)
+# Tech knowledge base
+
+## Operating systems topics
+
+- [POSIX](operating_systems/posix.md) - Portable Operating System Interface
+- [Linux](linux/index.md)
+- [tmux](operating_systems/tmux.md) - terminal multiplexor
+
+## Programming languages
+
 - [Python](python/index.md)
   - [pyenv](python/pyenv/index.md)
   - [pylint](python/pylint/index.md)
