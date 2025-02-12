@@ -7,6 +7,7 @@
 - STL
   - [Enum](stl/enum.md)
   - [os](stl/os.md)
+  - [random](stl/random.md)
   - [signal](stl/signal.md)
   - [time](stl/time.md)
 - Concurrency

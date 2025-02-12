@@ -6,3 +6,5 @@
   - ~~Compatibility~~
   - ~~Installation~~
 - ~~[Installation](https://flask-restx.readthedocs.io/en/latest/installation.html)~~
+- [Quick start](https://flask-restx.readthedocs.io/en/latest/quickstart.html)
+- [Response marshalling](https://flask-restx.readthedocs.io/en/latest/marshalling.html)

@@ -8,19 +8,13 @@
 
 ## Programming languages
 
-- [Python](python/index.md)
-  - [pyenv](python/pyenv/index.md)
-  - [pylint](python/pylint/index.md)
-  - [SQLAlchemy](python/sqlalchemy/index.md)
-  - [Django](python/django/index.md)
-  - [Django REST framework](python/drf/index.md)
-  - [Flask](python/flask/index.md)
-  - [aiohttp](python/libs/aiohttp/index.md)
-  - [Flask-RESTX](python/flask-restx/index.md)
-  - [Gunicorn](python/gunicorn/index.md)
-  - [Nuitka](python/nuitka/index.md)
-  - [python-telegram-bot](python/python-telegram-bot/index.md)
-  - [python-dotenv](python/python-dotenv/index.md)
+### Python
+
+- [Python](programming_languages/python/index.md) - Python programming language
+- [Python STL](programming_languages/python/stl/index.md) - Python standard library
+- [Third party libs](programming_languages/python/third_party/index.md) - The Python package index
+
+
 - [Git](git/index.md)
 - [Regular Expressions](re/index.md)
 - [SOLID](solid/index.md)
