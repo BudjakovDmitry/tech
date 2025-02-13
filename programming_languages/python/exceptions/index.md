@@ -85,3 +85,8 @@ to fall in the allowed range). If an index is not an integer, `TypeError` is rai
 Raised when an operator or function receives an argument that has the right type but an
 inappropriate value, and the situation is not described by a more precise exception
 such as `IndexError`.
+
+### ZeroDivisionError
+
+Raised when the second argument of a division or modulo operation is zero. The
+associated value is a string indicating the type of the operands and the operation.
