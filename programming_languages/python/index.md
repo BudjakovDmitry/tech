@@ -4,6 +4,7 @@
 - [Data types](data_types/index.md)
 - [Decorators](decorators.md)
 - [Builtin functions](builtin_functions/index.md)
+- [Exceptions](exceptions/index.md)
 - STL
   - [Enum](stl/enum.md)
   - [os](stl/os.md)
