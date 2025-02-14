@@ -17,5 +17,5 @@ asyncio.run(main())
 
 asyncio provides a set of high-level APIs to:
 
-- [run Python coroutines](task.md) concurrently and have full control over their
-execution.
+- [run Python coroutines](coroutines_and_tasks.md) concurrently and have full control
+over their execution.
