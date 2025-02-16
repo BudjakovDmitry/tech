@@ -2,7 +2,8 @@
 - [Architecture](architecture.md)
 - [Shell and Terminal](shell.md)
 - [Filesystem](filesystem.md)
-- [Network]()
+- Network
+  - [Netplan](network/netplan/index.md)
 - Permissions
   - [File permissions and ownership](permissions/file_permissions.md)
   - [Root user](permissions/root.md)
