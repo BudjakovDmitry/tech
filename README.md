@@ -14,12 +14,15 @@
 - [Python STL](programming_languages/python/stl/index.md) - Python standard library
 - [Third party libs](programming_languages/python/third_party/index.md) - The Python package index
 
+## Web
+
+- Web servers
+  - [Nginx](nginx/index.md)
+  - [Apache](apache/index.md)
+
 
 - [Git](git/index.md)
 - [Regular Expressions](re/index.md)
 - [SOLID](solid/index.md)
 - [Design patterns](design_patterns/index.md)
 - [Парадигмы программирование](paradigms/index.md)
-- Web servers
-  - [Nginx](nginx/index.md)
-  - [Apache](apache/index.md)
