@@ -1,6 +1,6 @@
 # Netplan
 
-- [Netplan configuration]()
+- [Netplan configuration](configuration.md)
 - [Netplan commands](commands.md)
 - [How-to guides](howto.md)
 
