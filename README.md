@@ -3,7 +3,7 @@
 ## Operating systems topics
 
 - [POSIX](operating_systems/posix.md) - Portable Operating System Interface
-- [Linux](linux/index.md)
+- [Linux](operating_systems/linux/index.md)
 - [tmux](operating_systems/tmux.md) - terminal multiplexor
 
 ## Programming languages

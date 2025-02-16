@@ -58,3 +58,5 @@ In most cases, locally supplied software, whether scripts or compiled programs, 
 be placed in the `/usr/local` hierarchy and not in `/bin` or `/usr/bin`. These
 directories are specified by the Linux Filesystem Hierarchy Standard to contain only
 files supplied and maintained by the Linux distributor.
+
+## Variables
