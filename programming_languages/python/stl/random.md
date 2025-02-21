@@ -20,3 +20,10 @@ Calls such `randrange(10.0)` and `randrange(Fraction(10, 1))` raise `TypeError`
 ### random.randint(a, b)
 
 Return a random integer _N_ such that `a <= N <= b`. Alias for `randrange(a, b+1)`
+
+## Functions for sequences
+
+### random.choice(seq)
+
+Return a random element from the non-empty sequence `seq`. If `seq` is empty, raises
+`IndexError`.
