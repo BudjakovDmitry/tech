@@ -158,3 +158,14 @@ allows Python to script C and C++ components. Because Python code is translated 
 byte code, it looks and feels like a true Java program at runtime.
 
 Jython's [website](https://www.jython.org/)
+
+### Cython
+
+The Cython system is a hybrid language that combines Python code with the ability to
+call C functions and use C type declarations for variables, parameters, and class
+attributes. Cython code can be compiled to C code that uses the Python/C API, which may
+then be compiled completely. Though not completely compatible with standard Python,
+Cython can be useful both for wrapping external C libraries and for coding efficient C
+extensions for Python.
+
+Cython [website](https://cython.org/).
