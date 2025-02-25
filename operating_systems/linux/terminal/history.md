@@ -1,7 +1,8 @@
 # Terminal commands history
 
 If we press the up arrow, we will see that the previous command entered. This is called
-command history. Press the down arrow and the previous command disappears.
+command history. Most Linux distributions remember the last 1,000 commands by default.
+Press the down arrow and the previous command disappears.
 
 Use [history](commands/history.md) command to view the entire history.
 
