@@ -1,7 +1,8 @@
 # Options and Arguments
 
 Commands are often followed by one or more *options* that modify their behavior and,
-further, by one or more *arguments*. So, most commands look kind of like this:
+further, by one or more *arguments* the items upon which command acts. So, most commands
+look kind of like this:
 
 ```
 command -options arguments
@@ -15,7 +16,9 @@ example (`-l`). This is Unix-style options.
 Many commands allow multiple short options to be strung together.
 
 ```shell
-ls -lt
+# the same
+ls -l -a -h
+ls -lah
 ```
 
 Another style is BSD-style with no dash.
@@ -30,7 +33,7 @@ consisting of a word preceded by two dashes.
 We can't collapse long options:
 
 ```shell
-s ort colors.txt --reverse --unique
+sort colors.txt --reverse --unique
 ```
 
 Command options, like filenames in Linux, are case-sensitive.
