@@ -20,7 +20,7 @@ Create a new session
 tmux
 ```
 
-Create a new session with bame "test":
+Create a new session with name "test":
 
 ```shell
 tmux new-session -s <session-name>
@@ -32,12 +32,16 @@ Attach to session:
 
 ```shell
 tmux attach -t <session-name>
+# or
+tmux a -t <session-name>
 ```
 
 Session list:
 
 ```shell
 tmux list-sessions
+# or
+tmux ls
 ```
 
 ## Commands
@@ -48,6 +52,7 @@ create a new window.
 | Command | Meaning                 |
 |---------|-------------------------|
 | `c`     | Create a new window     |
+ | `d`    | Deattach from session   |
 | `2`     | Switch to window 2      |
 | `%` | Split window vertically |
 | left arrow, right arrow | If your window splitted vertically, you can switch between parts, using left/right arrows |
