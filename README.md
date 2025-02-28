@@ -14,6 +14,10 @@
 - [Python STL](programming_languages/python/stl/index.md) - Python standard library
 - [Third party libs](programming_languages/python/third_party/index.md) - The Python package index
 
+### Go
+
+- [Go](programming_languages/go/index.md) - Go programming language
+
 ## Web
 
 - Web servers
