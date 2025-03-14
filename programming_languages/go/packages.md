@@ -61,6 +61,33 @@ import "math"
 
 But it is a good style to use the factored import statement.
 
+## Modules
+
+Modules a how Go manages dependencies.
+
+A module is a collection of packages, that are released, versioned and distributed
+together. Modules may be downloaded directly from version control repositories or from
+module proxy servers.
+
+### go.mod files
+
+A module is defined by a UTF-8 encoded text file named `go.mod` in its root directory.
+
+Each line of `go.mod` file holds a single directive, made up of a keyword followed by
+arguments. For example:
+
+```
+module example.com/my/thing
+
+go 1.23.0
+
+require example.com/other/thing v1.0.2
+require example.com/new/thing/v2 v2.3.4
+exclude example.com/old/thing v1.2.3
+replace example.com/bad/thing v1.4.5 => example.com/good/thing v1.4.5
+retract [v1.9.0, v1.9.5]
+```
+
 ## Export names
 
 In Go, a name is exported if it begins with a capital letter. For example, `Pizza` is an
