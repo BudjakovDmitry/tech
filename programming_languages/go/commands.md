@@ -22,4 +22,6 @@ go build
 
 ## init
 
+```shell
 go mod init example.com/m
+```
