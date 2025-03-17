@@ -78,3 +78,22 @@ func main() {
     fmt.Println(split(17))
 }
 ```
+
+## Function main
+
+Any Go program that should be executable should have `main` function inside `main`
+package. Go will call and execute that function when the program starts. Therefore, Go
+program should have only one `main` function.
+
+```
+package main
+
+import "fmt"
+
+func main() {
+    fmt.Print("Hello world")
+}
+```
+
+If you're building third party library that exposes some utility functions, you don't
+need to have `main` function.
