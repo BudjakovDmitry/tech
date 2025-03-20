@@ -1,6 +1,7 @@
 # FastAPI
 
 - [Installation](installation.md)
+- [Run server](run_server.md)
 
 ---
 
@@ -9,6 +10,9 @@
 - ~~Requirements~~
 - ~~Installation~~
 - Example
+  - ~~Create it~~
+  - ~~Run it~~
+  - Check it
 
 ## Learn
 
