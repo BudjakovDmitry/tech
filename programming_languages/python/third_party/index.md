@@ -3,6 +3,7 @@
 - [AIOHTTP](aiohttp/index.md)
 - [Django](django/index.md)
 - [Django REST framework](drf/index.md)
+- [FastAPI](fast_api/index.md)
 - [Flask](flask/index.md)
 - [Flask-RESTX](flask-restx/index.md)
 - [Gunicorn](gunicorn/index.md)
