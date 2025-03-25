@@ -29,3 +29,10 @@ When you use this type, your computer will automatically figure out how big thes
 supposed to be.
 
 * uintptr
+
+## Converting to int
+
+```
+accountAge := 2.6
+accountAgeInt := int(accountAge)
+```
