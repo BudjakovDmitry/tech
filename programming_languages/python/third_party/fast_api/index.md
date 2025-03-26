@@ -2,6 +2,7 @@
 
 - [Installation](installation.md)
 - [Run server](run_server.md)
+- [Interactive API docs](api_docs.md)
 
 ---
 
@@ -9,12 +10,13 @@
 
 - ~~Requirements~~
 - ~~Installation~~
-- Example
-  - ~~Create it~~
-  - ~~Run it~~
-  - Check it
+- ~~Example~~
+- Example upgrade
 
 ## Learn
+
+- ~~Learn~~
+- Python types intro
 
 ### Virtual environments
 
