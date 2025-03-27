@@ -1,5 +1,6 @@
 # Python
 
+- [Glossary](glossary.md)
 - [Python interpreter](interpreter.md)
 - [Data types](data_types/index.md)
 - [Decorators](decorators.md)
