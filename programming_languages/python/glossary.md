@@ -24,3 +24,8 @@ There are actually three categories of file objects:
 
 Their interfaces are defined in the `io` module. The canonical way to create a file
 object is by using the `open()` function.
+
+## statement
+
+A statement is part of a suite (a “block” of code). A statement is either an expression
+or one of several constructs with a keyword, such as `if`, `while` or `for`.
