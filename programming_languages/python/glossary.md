@@ -1,5 +1,13 @@
 # Glossary
 
+## expression
+
+A piece of syntax which can be evaluated to some value. In other words, an expression is
+an accumulation of expression elements like literals, names, attribute access, operators
+or function calls which all return a value. In contrast to many other languages, not all
+language constructs are expressions. There are also statements which cannot be used as
+expressions, such as `while`. Assignments are also statements, not expressions.
+
 ## file object
 
 An object exposing a file-oriented API (with methods such as `read()` or `write()`) to
