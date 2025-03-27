@@ -30,3 +30,7 @@
 - [SOLID](solid/index.md)
 - [Design patterns](design_patterns/index.md)
 - [Парадигмы программирование](paradigms/index.md)
+
+## Common topics
+
+- [Computer model](common/computer_model.md)
