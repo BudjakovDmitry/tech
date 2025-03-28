@@ -29,3 +29,4 @@
 - [File archiving]
   - [tar](terminal/commands/tar.md)
   - [gzip/gunzip](terminal/commands/gzip.md)
+- [Init system](init_system/index.md)
