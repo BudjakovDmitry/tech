@@ -150,3 +150,29 @@ async def main():
 
 asyncio.run(main())
 ```
+
+### Futures
+
+A `Future` is a special __low-level__ awaitable object that represents an __eventual
+result__ of an asynchronous operation.
+
+When a `Future` object is awaited it means that the coroutine will wait until the
+`Future` is resolved in some other place.
+
+Future objects in asyncio are needed to allow callback-based code to be used with
+async/await.
+
+Normally __there is no need__ to create Future objects at the application level code.
+
+Future objects, sometimes exposed by libraries and some asyncio APIs, can be awaited:
+
+```python
+async def main():
+    await function_that_returns_a_future_object()
+
+    # this is also walid
+    await asyncio.gather(
+        function_that_returns_a_future_object(),
+        some_python_coroutine(),
+    )
+```
