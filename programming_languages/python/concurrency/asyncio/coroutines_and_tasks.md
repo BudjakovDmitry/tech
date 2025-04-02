@@ -26,15 +26,11 @@ Note that simply calling a coroutine will not schedule it to be executed.
 
 To run a coroutine asyncio provides a following mechanism:
 
-### asyncio.run()
-
-The `asyncio.run()` function to run the top-level entry point "main()" function
+* The `asyncio.run()` function to run the top-level entry point "main()" function
 (example above).
 
-### Awaiting on a coroutine
-
-The following snippet of code will print "hello" after waiting for 1 second, and then
-print "world" after waiting for another 2 seconds.
+* Awaiting on a coroutine. The following snippet of code will print "hello" after
+waiting for 1 second, and then print "world" after waiting for another 2 seconds.
 
 ```python
 import asyncio
@@ -55,9 +51,8 @@ async def main():
 asyncio.run(main())
 ```
 
-### asyncio.create_task()
-
-The `asyncio.create_task()` function to run coroutines concurrently as asyncio `Tasks`.
+* The `asyncio.create_task()` function to run coroutines concurrently as asyncio
+`Tasks`.
 
 Let's modify the above example and run two `say_after` coroutines _concurrently_.
 
@@ -79,11 +74,9 @@ async def main():
     print(f"finished at {time.strftime('%X')}")
 ```
 
-### asyncio.TaskGroup
+* The `asyncio.TaskGroup` class provides a more modern alternative to `create_task()`.
 
 Added in version 3.11
-
-The `asyncio.TaskGroup` class provides a more modern alternative to `create_task()`.
 
 ```python
 import asyncio
@@ -136,3 +129,24 @@ asyncio.run(main())
 > __Important__: the term "coroutine" can be used for two closely related concepts:
 > * a _coroutine function_: an `async def` function;
 > * a _coroutine object_: an object returned by calling a _coroutine function_.
+
+### Tasks
+
+Tasks are used to schedule coroutiles _concurrently_.
+
+When a coroutine is wrapped into a _Task_ with functions like `asyncio.create_task()`
+the coroutine is automatically scheduled to run soon.
+
+```python
+import asyncio
+
+async def nested():
+    return 42
+
+async def main():
+    task = asyncio.create_task(nested())
+    await task
+
+
+asyncio.run(main())
+```
