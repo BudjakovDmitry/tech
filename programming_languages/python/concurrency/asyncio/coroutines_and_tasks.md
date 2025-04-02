@@ -176,3 +176,43 @@ async def main():
         some_python_coroutine(),
     )
 ```
+
+## Creating tasks
+
+### asyncio.create_task()
+
+```python
+asyncio.create_task(coro, *, name=None, context=None)
+```
+
+Wrap the _coro_ coroutine into a `Task` and schedule its execution. Return the `Task`
+object.
+
+If _name_ is not None, it is set as the name of the task using `Task.set_name()`.
+
+An optional keyword-only _context_ argument allows specifying a custom
+`contextvars.Context` for the _coro_ to run in. The current context copy is created when
+no _context_ is provided.
+
+The task is executed in the loop returned by `get_running_loop()`, `RuntimeError` is
+raised if there is no running loop in current thread.
+
+> __Important__: Save a reference to the result of this function, to avoid a task
+> disappearing mid-execution. The event loop only keeps weak references to tasks. A task
+> that isn’t referenced elsewhere may get garbage collected at any time, even before
+> it’s done. For reliable “fire-and-forget” background tasks, gather them in a
+> collection:
+
+```python
+background_tasks = set()
+
+for i in range(10):
+    task = asyncio.create_task(some_coro(param=i))
+
+    # Add task to the set. This creates a strong reference
+    background_tasks.add(task)
+
+    # To prevent keeping references to finished tasks forever,
+    # make each task remove its own reference from the set after completion:
+    task.add_done_callback(background_tasks.discard)
+```
