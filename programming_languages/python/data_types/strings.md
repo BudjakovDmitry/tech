@@ -1,5 +1,12 @@
 # Strings
 
+A string is a _sequence_ of characters.
+
+You can specify strings using single quotes such as `'hello world'` or the double
+quotes: `"What is your name?"`. Single and double quotes work exactly the same.
+
+All white spaces i.e. spaces and tabs within the quotes are preserved as-is
+
 ```python
 "Hello world"
 ```
