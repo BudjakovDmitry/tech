@@ -216,3 +216,29 @@ for i in range(10):
     # make each task remove its own reference from the set after completion:
     task.add_done_callback(background_tasks.discard)
 ```
+
+### TaskGroups.create()
+
+Task groups combine a task creation API with a convenient and reliable way to wait for
+all tasks in the group to finish.
+
+Added in 3.11
+
+An asynchronous context manager holding a group of tasks. Tasks can be added to the
+group using `create_task()`. All tasks are awaited when the context manager exits.
+
+```python
+async def main():
+    async with asyncio.TaskGroup() as tg:
+        task1 = tg.create_task(some_coro())
+        task2 = tg.create_task(some_coro())
+
+    print(f"Both tasks have completed now: {task1.result()}, {task2.result()}")
+```
+
+`create_task(coro, *, name=None, context=None)` creating a task in this task group. The
+signature matches that of `asyncio.create_task()`. If the task group is inactive (e.g.
+not yet entered, already finished, or in the process of shutting down), we will close
+the given coro.
+
+> _Changes in version 3.13_: Close the given coroutine if the task group is not active.
