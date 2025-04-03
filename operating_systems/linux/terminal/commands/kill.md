@@ -32,6 +32,16 @@ procedure will be executed (with signal #9 not).
 
 List the available signal choices in a nice table.
 
+### -s
+
+Allows use signal name rather than its number.
+
+`-s <signal>`
+
+```shell
+kill -s SIGKILL 542342
+```
+
 ## Examples
 
 ```shell
