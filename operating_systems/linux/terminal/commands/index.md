@@ -110,4 +110,5 @@
 
 ## Working with processes
 
+- [kill](kill.md)
 - [pidof](pidof.md)
