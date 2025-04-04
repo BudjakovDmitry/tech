@@ -39,3 +39,22 @@ The textual representation of each `object` to be printed is obtained by passing
 object to the `str` built-in call. This built-in returns a “user friendly” display
 string for any object. With no arguments at all, the print function simply prints a
 newline character to the standard output stream, which usually displays a blank line.
+
+```python
+x = 'spam'
+y = 99  # there is no need to convert objects to string
+z = ['eggs']
+print(x, y, z)  # spam 99 ['eggs']
+
+print(x, y, z, sep='')  # spam99['eggs']
+
+print(x, y, z, sep=', ')  # spam, 99, ['eggs']
+
+print(x, y, z, end=''); print(x, y, z)  # spam 99 ['eggs]spam 99 ['eggs']
+
+print(x, y, z, end='...\n')  # spam 99 ['eggs']...
+
+print(x, y, z, sep='...', end='!\n')  # spam...99...['eggs']!
+
+print(x, y, z, file=open('data.txt', 'w'))
+```
