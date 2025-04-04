@@ -5,10 +5,17 @@ A string is a _sequence_ of characters.
 You can specify strings using single quotes such as `'hello world'` or the double
 quotes: `"What is your name?"`. Single and double quotes work exactly the same.
 
+The reason of supporting both is that it allows you to embed a single-quote character in
+a string enclosed in double-quote characters, and vice versa:
+
+```python
+s = 'knight"s', "knight's"
+```
+
 All white spaces i.e. spaces and tabs within the quotes are preserved as-is
 
 ```python
-"Hello world"
+hello = "Hello world"
 ```
 
 ## String concatenation
@@ -23,6 +30,20 @@ print(str_one + str_two + str_three)
 
 print(str_one + " " + str_two + str_three)
 # Hello World!
+```
+
+Python automatically concatenates strig literals, divided by space. It is almost as
+simple to add operator `+` between them.
+
+```python
+hello = "Hello" 'World'  # 'HelloWorld'
+
+foo = (
+    "Meaning"
+    "Of"
+    "Life"
+)
+print(foo)  # MeaningOfLife
 ```
 
 ## Escape Sequences
