@@ -4,6 +4,7 @@
 
 - [POSIX](operating_systems/posix.md) - Portable Operating System Interface
 - [Linux](operating_systems/linux/index.md)
+- [File systems](operating_systems/file_systems/index.md)
 - [tmux](operating_systems/tmux.md) - terminal multiplexor
 
 ## Programming languages
