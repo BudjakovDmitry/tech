@@ -62,3 +62,20 @@ desire result:
 
 The `string.capwords()` function does not have this problem, as it splits words on
 spaces only.
+
+## String formatting
+
+String formatting is available in three flavors:
+
+* string formatting expressions;
+* string formatting method calls;
+* f-strings;
+
+### String formatting expressions
+
+The original technique available since Python's inception. This form is based upon the C
+language's "printf" model. It is largely obsolete in modern Python.
+
+### String formatting methods
+
+Added in Python 3.0
