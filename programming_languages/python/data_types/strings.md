@@ -74,6 +74,26 @@ at least one character in the string.
 
 Return a copy of the string converted to lowercase.
 
+### str.split()
+
+Split a string into substrings on a delimiter.
+
+```python
+line = 'aaa,bbb,cccc,dd'
+line.split(',')
+# ['aaa', 'bbb', 'cccc', 'dd']
+```
+
+The `split` method chops up a string into a list of substrings, around a delimiter
+string. By default, delimiter is a whitespace - the string is split at groups of one or
+more spaces, tabs and newlines.
+
+```python
+line = 'aaa bbb  ccc'
+line.split()
+# ['aaa', 'bbb', 'ccc']
+```
+
 ### str.title()
 
 Return a titlecased version of the string where words start with an uppercase character
