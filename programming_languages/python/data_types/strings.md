@@ -110,4 +110,35 @@ language's "printf" model. It is largely obsolete in modern Python.
 
 ### String formatting methods
 
-Added in Python 3.0
+```python
+# By position
+template = '{0}, {1} and {2}'
+template.format('spam', 'ham', 'eggs')  # 'spam, ham and eggs'
+
+# By keyword
+template = '{motto}, {pork} and {food}'
+template.format(motto='spam', pork='ham', food='eggs')  # 'spam, ham and eggs'
+
+# By both
+template = '{motto}, {0} and {food}'
+template.format('ham', motto='spam', food='eggs')  # 'spam, ham and eggs'
+
+# By relative position
+template = '{}, {} and {}'
+template.format('spam', 'ham', 'eggs')  # 'spam, ham and eggs'
+```
+
+Arbitrary object types can be substituted at targets:
+
+```python
+'{motto}, {0} and {food}'.format(42, motto=3.14, food=[1, 2])
+# '3.14, 42 and [1, 2]'
+```
+
+As other string methods `format` method returns a new string object.
+
+```python
+x = '{motto}, {0} and {food}'.format(42, motto=3.14, food=[1, 2])
+print(x)
+# '3.14, 42 and [1, 2]'
+```
