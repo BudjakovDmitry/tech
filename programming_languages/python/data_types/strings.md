@@ -63,6 +63,16 @@ s = 'Hello\nWorld\tBar'
 
 ## Methods
 
+### str.find()
+
+Basic substring search. It returns the offset of the passed-in substring or `-1` if it
+is not present.
+
+```python
+s = 'spam'
+s.find('pa')  # 1
+```
+
 ### str.isalnum()
 
 Return `True` if the string is an alpha-numeric string, False otherwise.
