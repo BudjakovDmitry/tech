@@ -48,7 +48,18 @@ print(foo)  # MeaningOfLife
 
 ## Escape Sequences
 
+Backslashes are used to introduce special character codings known as _escape sequences_.
+
+The character `\`, and one or more characters following it in the string literal, are
+replaced with a _single_ character in the resulting string object, which has the binary
+value specified by the escape sequence.
+
 * `\n` new line;
+* `\t` tab;
+
+```python
+s = 'Hello\nWorld\tBar'
+```
 
 ## Methods
 
