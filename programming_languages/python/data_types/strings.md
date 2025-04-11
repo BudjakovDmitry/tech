@@ -84,6 +84,16 @@ at least one character in the string.
 
 Return a copy of the string converted to lowercase.
 
+### str.replace()
+
+Perform global searches and replacements.
+
+```python
+s = 'spam'
+s.replace('pa', 'XYZ')
+# 'sXYZm
+```
+
 ### str.split()
 
 Split a string into substrings on a delimiter.
