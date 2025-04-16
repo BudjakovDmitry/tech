@@ -33,6 +33,7 @@
 - [Design patterns](design_patterns/index.md)
 - [Парадигмы программирование](paradigms/index.md)
 
-## Common topics
+## Computer Science
 
 - [Computer model](common/computer_model.md)
+- [Encodings](encodings/index.md)
