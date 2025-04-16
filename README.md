@@ -35,5 +35,5 @@
 
 ## Computer Science
 
-- [Computer model](common/computer_model.md)
-- [Encodings](encodings/index.md)
+- [Computer model](computer_science/computer_model.md)
+- [Encodings](computer_science/encodings/index.md)
