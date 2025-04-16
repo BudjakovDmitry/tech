@@ -18,7 +18,7 @@ All white spaces i.e. spaces and tabs within the quotes are preserved as-is
 hello = "Hello world"
 ```
 
-## String concatenation
+## String concatenation and repetition
 
 ```python
 str_one = "Hello"
@@ -44,6 +44,12 @@ foo = (
     "Life"
 )
 print(foo)  # MeaningOfLife
+```
+
+```python
+# repetition
+s = 'spam!'
+s * 3  # 'spam!spam!spam!'
 ```
 
 ## Escape Sequences
