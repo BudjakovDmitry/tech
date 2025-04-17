@@ -18,6 +18,21 @@ All white spaces i.e. spaces and tabs within the quotes are preserved as-is
 hello = "Hello world"
 ```
 
+## Immutability
+
+Every string operation is defined to procedure a new string as its result, because
+strings are _immutable_. They can not be changed in place after they are created. You
+can never overwrite the values of immutable objects.
+
+```python
+s = 'spam'
+# immutable objects cannot be changed
+s[0] = 'z'  # TypeError: 'str' object does not support item assignment
+
+# but we can run expressions and assign a new object to the same name
+s = 'z' + s[1:]  # 'zpam'
+```
+
 ## String concatenation and repetition
 
 ```python
