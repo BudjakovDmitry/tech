@@ -101,6 +101,15 @@ Return `True` if the string is an alpha-numeric string, False otherwise.
 A string is alpha-numeric if all characters in the string are alpha-numeric and there is
 at least one character in the string.
 
+### str.join()
+
+Concatenate any number of strings. The string whose method is called is inserted in
+between each given string. The result is returned as a new string.
+
+```python
+'->'.join(['ab', 'pq', 'rs'])  # 'ab->pq->rs'
+```
+
 ### str.lower()
 
 Return a copy of the string converted to lowercase.
