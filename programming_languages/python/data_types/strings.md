@@ -12,10 +12,24 @@ a string enclosed in double-quote characters, and vice versa:
 s = 'knight"s', "knight's"
 ```
 
-All white spaces i.e. spaces and tabs within the quotes are preserved as-is
+All white spaces i.e. spaces and tabs within the quotes are preserved as-is.
 
 ```python
 hello = "Hello world"
+```
+
+Triple-quoted string literal format called as _block string_ uses for coding multiline
+text data. You can use either single or double the single or double variety.
+
+```python
+mantra = """Always look
+    on the bright
+side of life"""
+mantra  # 'Always look\n    on the bright\nside of life'
+print(mantra)
+# Always look
+#     on the bright
+# side of life
 ```
 
 ## Immutability
