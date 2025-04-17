@@ -32,6 +32,14 @@ print(mantra)
 # side of life
 ```
 
+In triple-quoted string we should use __exactly three__ quotes at the end:
+
+```python
+""""Bob" is my nick"""  # OK
+"""My nick is "Bob""""  # Error
+"""My nick is 'Bob'"""  # OK
+```
+
 ## Immutability
 
 Every string operation is defined to procedure a new string as its result, because
