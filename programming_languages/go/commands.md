@@ -8,6 +8,12 @@ Run the Go program.
 go run app.go
 ```
 
+If we have `.mod` file we can just type:
+
+```
+go run .
+```
+
 ## build
 
 Build an executable file.
