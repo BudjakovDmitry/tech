@@ -84,7 +84,8 @@ name, age, likesGo := "Jeff", 75, true
 ## Constants
 
 The `const` keyword allow us to create a data container just as with `var`, but you will
-not be able to change the value stored in that container.
+not be able to change the value stored in that container. Constant requires an initial
+value.
 
 ```
 const exponentValue float64 = 2.7
