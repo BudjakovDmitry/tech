@@ -4,4 +4,5 @@ Package fmt implements formatted I/O.
 
 ## Functions
 
-- [Print]()
+- [Print](print.md)
+- [Println](println.md)
