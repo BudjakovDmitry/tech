@@ -23,7 +23,10 @@ var amount uint32 = 10000
 var name string = "Tim"
 var pi float64 = 3.14159
 
+// multiple variables in one line
 var i, j int = 1, 2
+
+// multiple variables with different types
 var c, python, java = true, false, "no!"
 ```
 
@@ -76,4 +79,13 @@ empty := ""
 numCars := 10  // inferred to be integer
 temperature := 0.0  // inferred to be a floating point
 name, age, likesGo := "Jeff", 75, true
+```
+
+## Constants
+
+The `const` keyword allow us to create a data container just as with `var`, but you will
+not be able to change the value stored in that container.
+
+```
+const exponentValue float64 = 2.7
 ```
