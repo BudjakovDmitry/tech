@@ -27,7 +27,7 @@ s[-1]  # 'm'
 s[-2]  # 'a'
 ```
 
-### Slicing
+## Slicing
 
 ```python
 s = "Spam"

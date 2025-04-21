@@ -4,6 +4,9 @@ https://nginx.org/
 
 - [Install](install.md)
 
+Nginx is an HTTP web server, reverse proxy, content cache,  load balancer, TCP/UDP proxy
+server, and main proxy server.
+
 Nginx has one master process and several worker processes. The main purpose of the
 master process is to read and evaluate configuration, and maintain worker processes.
 Worker processes do actual processing of requests. Nginx employs event-bases model and
