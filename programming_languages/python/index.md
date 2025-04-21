@@ -2,6 +2,7 @@
 
 - [Glossary](glossary.md)
 - [Python interpreter](interpreter.md)
+- [Operators and expressions](operators_and_expressions/index.md)
 - [Data types](data_types/index.md)
 - [Decorators](decorators.md)
 - [Builtin functions](builtin_functions/index.md)
