@@ -23,3 +23,4 @@ Floating-point and complex constituents:
 - [Scan](scan.md)
 - [Sprint](sprint.md)
 - [Sprintln](sprintln.md)
+- [Splintf](splintf.md)
