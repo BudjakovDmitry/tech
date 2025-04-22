@@ -8,6 +8,7 @@
 - [Builtin functions](builtin_functions/index.md)
 - [Exceptions](exceptions/index.md)
 - [Standard Library](stl/index.md)
+- [Type hints](type_hints.md)
 - Concurrency
   - [Parallel tasks](concurrency/parallel_tasks.md)
   - [Asyncio](concurrency/asyncio/index.md)
