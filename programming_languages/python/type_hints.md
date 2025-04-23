@@ -261,6 +261,7 @@ Example using Python 3.12 syntax:
 
 ```python
 from collections.abc import Callable
+from typing import Any
 
 
 def bare_decorator[F: Callable[..., Any]](func: F) -> F:
