@@ -254,3 +254,49 @@ def get_sys_IO(mode: str = "w") -> IO[str]:
     else:
         return sys.stdout
 ```
+
+## Decorators
+
+Example using Python 3.12 syntax:
+
+```python
+from collections.abc import Callable
+
+
+def bare_decorator[F: Callable[..., Any]](func: F) -> F:
+    ...
+
+
+def decorator_args[F: Callable[..., Any]](url: str) -> Callable[[F], F]:
+    ...
+```
+
+The same example using pre-3.12 syntax:
+
+```python
+from collections.abc import Callable
+from typing import Any, TypeVar
+
+F = TypeVar("F", bound=Callable[..., Any])
+
+def bare_decorator(func: F) -> F:
+    ...
+
+def decorator_args(url: str) -> Callable[[F], F]:
+    ...
+```
+
+## Coroutines and asyncio
+
+A coroutine is typed like a normal function.
+
+```python
+import asyncio
+
+async def countdown(tag: str, count: int) -> str:
+    while count > 0:
+        print(f"T-minus {count} ({tag})")
+        await asyncio.sleep(0.1)
+        count -= 1
+    return "Blastoff!"
+```
