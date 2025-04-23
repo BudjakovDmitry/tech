@@ -6,6 +6,12 @@
 * [Floats](floats.md)
 * [Complex](complex.md)
 
+### Operations with numbers
+
+*  `+` - addition;
+* `*` - multiply;
+* `/` - division;
+
 ## Strings
 
 * [strings](strings.md)
