@@ -1,6 +1,74 @@
 # Go functions
 
+Function creates by using `func` keyword. The function body is enclosed in curly braces.
+
+```
+package main
+
+import "fmt"
+
+func sayHello() {
+    fmt.Println("Hello world")
+}
+
+func main() {
+    sayHello()
+}
+```
+
+## Arguments
+
 A function can take zero or more arguments.
+
+```
+package main
+
+import "fmt"
+
+// one argument
+func sayHello(name string) {
+    fmt.Printf("Hello %s\n", name)
+}
+
+// multiple arguments
+func sayHelloFull(firstName string, lastName string) {
+    fmt.Printf("Hello %s %s\n", firstName, lastName)
+}
+
+// zero arguments
+func main() {
+    firstName := "John"
+    lastName := "Smith"
+    sayHello(firstName)
+    sayHelloFull(firstName, lastName)
+}
+```
+
+When two or more consecutive named function parameters share a type, you can omit type
+from all but the last.
+
+In next example we shortened
+
+```
+func add(x int, y int)
+```
+
+to
+
+```
+func add(x, y int)
+```
+
+```
+func add(x, y int) int {
+    return x + y
+}
+```
+
+## Return values
+
+To return value from a function use `return` keyword. If a function return a value, you
+have to define a type of returning value.
 
 ```
 package main
@@ -16,32 +84,7 @@ func main() {
 }
 ```
 
-In this example, `add` takes two parameters of type `int`.
-
-Type comes _after_ the variable name.
-
-When two or more consecutive named function parameters share a type, you can omit type
-from all but the last.
-
-In next example we shortened
-
-```
-x int, y int
-```
-
-to
-
-```
-x, y int
-```
-
-```
-func add(x, y int) int {
-    return x + y
-}
-```
-
-A function can return any number of results:
+A function can return any number of results split by the comma:
 
 ```
 func swap(x, y string) (string, string) {
@@ -59,10 +102,6 @@ of the function.
 
 These names should be used to document the meaning of the return values.
 
-A `return` statement without arguments returns the named return values. This is known as
-a "naked" return. Naked return statements should be used only in short functions, as
-with the example shown here. They can harm readability in longer functions.
-
 ```
 package main
 
@@ -78,6 +117,10 @@ func main() {
     fmt.Println(split(17))
 }
 ```
+
+A `return` statement without arguments returns the named return values. This is known as
+a "naked" return. Naked return statements should be used only in short functions, as
+with the example shown here. They can harm readability in longer functions.
 
 ## Function main
 
