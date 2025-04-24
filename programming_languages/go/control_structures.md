@@ -31,3 +31,25 @@ if isAdmin(userId) {
 }
 // here variable `message` is not available
 ```
+
+## switch statement
+
+```
+var userChoice string
+userChoice = getUserChoice()
+
+switch userChoice {
+case "pause":
+  // do some code
+case "continue":
+  // some code
+  // more code
+  // multiple lines
+default:
+  // if no options above were selected
+}
+```
+
+In `switch` `break` keyword has a special meaning. It is no longer breaks closest
+surrounding loop. Inside `switch` construction `break` keyword breaks current switch
+branch. That is why you should be careful using `switch` inside a loop.
