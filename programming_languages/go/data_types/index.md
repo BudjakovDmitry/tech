@@ -8,9 +8,18 @@
 
 ### Operations with numbers
 
-*  `+` - addition;
-* `*` - multiply;
-* `/` - division;
+*  `+` addition;
+* `*` multiply;
+* `/` division;
+* `==` equal to;
+* `!=` not equals to;
+* `<` smaller than;
+* `>` greater than;
+* `<=` smaller or equal;
+* `>=` greater or equal;
+* `+=` (`a = a + b` is the same as `a += b`);
+* `-=` (`a = a - b` is the same as `a -= b`);
+* `++` (`i++` is the same as `i = i + 1`);
 
 ## Strings
 
