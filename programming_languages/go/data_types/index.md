@@ -43,6 +43,8 @@ Here is a list of the null values for the different types:
 
 ## Converting
 
+### to float
+
 If we want to add floating point number and integer, we need convert `int` to `float`:
 
 ```
@@ -54,4 +56,13 @@ var value = amount * (1 + rate / 100)
 
 // converting int to float64
 var value = float64(amount) * (1 + rate / 100)
+```
+
+### to string
+
+Use `string` function to convert to string.
+
+```
+data, _ := os.ReadFile("hello")  // ReadFile returns []byte
+dataText := string(data)
 ```
