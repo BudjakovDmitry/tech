@@ -14,7 +14,8 @@ and these differ from one session to the next.
 
 These key-value pairs known as the __environment variables__.
 
-Use [printenv](/linux/terminal/commands/printenv.md) to print the environment variables.
+Use [printenv](/operating_systems/linux/terminal/commands/printenv.md) to print the
+environment variables.
 
 The names of these variables are case-sensitive.
 
