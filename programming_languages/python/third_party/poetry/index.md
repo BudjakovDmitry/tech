@@ -50,3 +50,23 @@ build-backend = "poetry.core.masonry.api"
 Poetry assumes your package contains a package with the same name as `project.name`
 located in the root of your project. If this is not the case, populate
 `tool.poetry.packages` to specify your packages and their locations.
+
+## Setting a Python version
+
+Poetry will require you to explicitly specify what versions of Python you intend to
+support, and its universal locking will guarantee that your project is installable (and
+all dependencies claim support for) all supported Python versions. Again, it’s important
+to remember that – unlike other dependencies – setting a Python version is merely
+specifying which versions of Python you intend to support.
+
+In next example we are allowing any version of Python 3 that is greater or equal than
+`3.9.0`.
+
+```toml
+[project]
+requires-python = ">=3.9"
+```
+
+When you run `poetry install`, you must have access to some version of a Python
+interpreter that satisfies this constraint available on your system. Poetry will not
+install a Python interpreter for you.
