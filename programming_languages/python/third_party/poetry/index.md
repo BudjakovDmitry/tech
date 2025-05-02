@@ -108,3 +108,10 @@ $ poetry add pendulum
 
 It will automatically find a suitable version constraint and install the package and
 sub-dependencies.
+
+## Virtual environment
+
+By default, Poetry creates a virtual environment in `{cache-dir}/virtualenvs`. You can
+change the `cache-dir` value by editing the Poetry configuration. Additionally, you can
+use the `virtualenvs.in-project` configuration variable to create virtual environments
+within your project directory.
