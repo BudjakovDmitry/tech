@@ -51,6 +51,17 @@ Poetry assumes your package contains a package with the same name as `project.na
 located in the root of your project. If this is not the case, populate
 `tool.poetry.packages` to specify your packages and their locations.
 
+## Installing pre-existing project
+
+Instead of creating a new project, Poetry can be used to ‘initialise’ a pre-populated
+directory. To interactively create a `pyproject.toml` file in directory
+`pre-existing-project`:
+
+```shell
+cd pre-existing-project
+poetry init
+```
+
 ## Setting a Python version
 
 Poetry will require you to explicitly specify what versions of Python you intend to
