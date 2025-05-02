@@ -81,3 +81,30 @@ requires-python = ">=3.9"
 When you run `poetry install`, you must have access to some version of a Python
 interpreter that satisfies this constraint available on your system. Poetry will not
 install a Python interpreter for you.
+
+## Specifying dependencies
+
+If you want to add dependencies to your project, you can specify them in the project
+section.
+
+```toml
+[project]
+# ...
+dependencies = [
+    "pendulum (>=2.1,<3.0)"
+]
+```
+
+Poetry uses this information to search for the right set of files in package
+“repositories” that you register in the `tool.poetry.source` section, or on PyPI by
+default.
+
+Also, instead of modifying the `pyproject.toml` file by hand, you can use the `add`
+command.
+
+```shell
+$ poetry add pendulum
+```
+
+It will automatically find a suitable version constraint and install the package and
+sub-dependencies.
