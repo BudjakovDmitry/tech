@@ -17,6 +17,29 @@ name = "my-package"
 
 ## The `tool.poetry` section
 
+### package-mode
+
+Poetry can be operated in two different modes. The default mode is the __package mode__,
+which is the right mode if you want to package your project into an sdist or a wheel and
+perhaps publish it to a package index. In this mode, some metadata such as `name` and
+`version`, which are required for packaging, are mandatory. Further, the project itself
+will be installed in editable mode when running `poetry install`.
+
+If you want to use Poetry only for dependency management but not for packaging, you can
+use the __non-package__ mode:
+
+```toml
+[tool.poetry]
+package-mode = false
+```
+
+In this mode, metadata such as `name` and `version` are optional. Therefore, it is not
+possible to build a distribution or publish the project to a package index. Further,
+when running `poetry install`, Poetry does not try to install the project itself, but
+only its dependencies (same as `poetry install --no-root`).
+
+### packages
+
 A list of packages and modules to include in the final distribution.
 
 If your project structure differs from the standard one supported by poetry, you can
