@@ -115,3 +115,7 @@ By default, Poetry creates a virtual environment in `{cache-dir}/virtualenvs`. Y
 change the `cache-dir` value by editing the Poetry configuration. Additionally, you can
 use the `virtualenvs.in-project` configuration variable to create virtual environments
 within your project directory.
+
+Poetry will detect and respect an existing virtual environment that has been externally
+activated. Simply activate a virtual environment using your preferred method or tooling,
+before running any Poetry commands that expect to manipulate an environment.
