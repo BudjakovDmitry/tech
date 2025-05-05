@@ -223,3 +223,26 @@ pypy and stackless;
 ```shell
 pyenv install --list
 ```
+
+### local
+
+Sets a local application-specific Python version by writing the version name to a
+`.python-version` file in the current directory. This version overrides the global
+version, and can be overridden itself by setting the `PYENV_VERSION` environment
+variable or with the `pyenv shell` command.
+
+```shell
+pyenv local 3.9.2
+```
+
+When run without a version number, `pyenv local` reports the currently configured local
+version. You can also unset the local version:
+
+```shell
+pyenv local --unset
+```
+
+Previous versions of pyenv stored local version specifications in a file named
+`.pyenv-version`. For backwards compatibility, pyenv will read a local version specified
+in an `.pyenv-version` file, but a `.python-version` file in the same directory will
+take precedence.
