@@ -5,6 +5,7 @@ Poetry is a tool for dependency management and packaging in Python.
 * [Installation](installation.md)
 * [The `pyproject.toml` file](pyproject_file/index.md)
 * [Commands](commands.md)
+* [Configuration](configuration.md)
 
 ## Project setup
 
