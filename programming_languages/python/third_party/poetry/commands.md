@@ -35,6 +35,8 @@ poetry add ../my-package/dist/my-package-0.1.0.tar.gz
 poetry add ../my-package/dist/my_package-0.1.0.whl
 ```
 
+---
+
 ## init
 
 This command will help you create a `pyproject.toml` file interactively by prompting you
@@ -55,6 +57,37 @@ poetry init
 * `--dependency`: Package to require with a version constraint. Should be in format
 `foo:1.0.0`.
 * `--dev-dependency`: Development requirements, see `--dependency`.
+
+---
+
+## run
+
+Executes the given command inside the project’s virtualenv.
+
+```shell
+poetry run python -V
+```
+
+It can also execute one of the scripts defined in `pyproject.toml`.
+
+If you have a script defined like this:
+
+```toml
+[project]
+# ...
+[project.scripts]
+my-script = "my_module:main"
+```
+
+You can execute it like so:
+
+```shell
+poetry run my-script
+```
+
+Note that this command has no option.
+
+---
 
 ## show
 
@@ -79,5 +112,4 @@ dependencies
  - itsdangerous >=2.2
  - Jinja2 >=3.1.2
  - Werkzeug >=3.1
-
 ```
