@@ -1,6 +1,7 @@
 # Git
 
 - [setup](setup.md)
+- [Getting Git repository](getting_repo.md)
 
 ```shell
 # Git version
