@@ -12,6 +12,7 @@
 - [cd](cd.md)
 - [ls](ls.md)
 - [pwd](pwd.md)
+- [tree](tree.md)
 
 ## Working with text
 
