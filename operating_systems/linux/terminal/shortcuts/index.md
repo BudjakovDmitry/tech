@@ -1,5 +1,9 @@
 # Terminal shortcuts
 
+## Open terminal
+
+`Ctrl - Alt - t` to open terminal (Ubuntu).
+
 ## Clearing screen
 
 - `Ctrl - l` to clear the entire screen (same as `clear` command);
