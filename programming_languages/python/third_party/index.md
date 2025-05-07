@@ -9,6 +9,7 @@
 - [Gunicorn](gunicorn/index.md)
 - [Nuitka](nuitka/index.md)
 - [Poetry](poetry/index.md)
+- [Pydantic](pydantic/index.md)
 - [Pyenv](pyenv/index.md)
 - [Pylint](pylint/index.md)
 - [Python-dotenv](python-dotenv/index.md)
