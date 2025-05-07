@@ -53,6 +53,10 @@ Poetry assumes your package contains a package with the same name as `project.na
 located in the root of your project. If this is not the case, populate
 `tool.poetry.packages` to specify your packages and their locations.
 
+Similarly, the traditional `MANIFEST.in` file is replaced by the `project.readme`,
+`tool.poetry.include`, and `tool.poetry.exclude` sections. `tool.poetry.exclude` is
+additionally implicitly populated by your `.gitignore`.
+
 ## Installing pre-existing project
 
 Instead of creating a new project, Poetry can be used to ‘initialise’ a pre-populated
