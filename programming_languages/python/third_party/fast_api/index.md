@@ -17,4 +17,4 @@ async def root():
 - [Installation](installation.md)
 - [Run server](run_server.md)
 - [Interactive API docs](api_docs.md)
-
+- [Methods](methods.md)
