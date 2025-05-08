@@ -6,3 +6,4 @@
   - [Complex numbers](numeric/complex.md)
 - [Sequences](sequences.md)
 - [Strings](strings.md)
+- [Lists](list.md)
