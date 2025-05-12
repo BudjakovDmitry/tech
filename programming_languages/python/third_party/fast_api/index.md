@@ -18,3 +18,4 @@ async def root():
 - [Run server](run_server.md)
 - [Interactive API docs](api_docs.md)
 - [Methods](methods.md)
+- [Path parameters](path_parameters.md)
