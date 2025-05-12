@@ -72,6 +72,70 @@ class Weekday(Enum):
 Weekday.from_date(datetime.date.today())
 ```
 
+## Programmatic access to enumeration members and their attributes
+
+Sometimes it’s useful to access members in enumerations programmatically (i.e.
+situations where `Color.RED` won’t do because the exact color is not known at
+program-writing time). Enum allows such access:
+
+```python
+from enum import Enum
+
+class Color(Enum):
+    RED = 1
+    GREEN = 2
+    BLUE = 3
+
+Color(1)
+# <Color.RED: 1>
+```
+
+If you want to access enum members by name, use item access:
+
+```python
+Color["RED"]
+# <Color.RED: 1>
+```
+
+## Comparisons
+
+Enumeration members are compared by identity:
+
+```python
+Color.RED is Color.RED
+# True
+
+Color.RED is Color.BLUE
+# False
+```
+
+Ordered comparisons between enumeration values _are not supported_ (explicitly `IntEnum`
+):
+
+```python
+Color.RED < Color.BLUE
+# TypeError: '<' not supported between instances of 'Color' and 'Color'
+```
+
+Equality comparisons are defined though:
+
+```python
+Color.BLUE == Color.RED
+# False
+```
+
+Comparisons against non-enumeration values will always compare not equal (again,
+`IntEnum` was explicitly designed to behave differently):
+
+```python
+Color.BLUE == 2
+# False
+```
+
+> __Warning__: It is possible to reload modules – if a reloaded module contains enums,
+> they will be recreated, and the new members may not compare identical/equal to the
+> original members.
+
 ## StrEnum
 
 `StrEnum` is the same as `Enum`, but ist members are also strings and can be used in
