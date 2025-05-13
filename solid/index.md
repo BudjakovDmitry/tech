@@ -1,60 +1,78 @@
 # SOLID
 
-## Введение
-
-Принципы SOLID касаются проектирования ПО. Под проектом программы Роберт Мартин называет
-исходный код.
-
-Требования к программным продуктам часто меняются. А значит нужно часто менять проект
-(код). Инженерам нужно максимизировать простоту поддержки кода (чистота кода).
-
-### Запахи кода
-
-Чтобы определить чистый код или нет, нужно видеть признаки гнилого кода (запахи кода).
-Выделяют пять фундаментальных запахов кода:
-
-- Ригидность (Rigidity);
-- Хрупкость (Fragility);
-- Неподвижность (Immobility);
-- Вязкость (Viscosity);
-- Излишняя сложность (Needless Complexity);
-
-ПО является **ригидным**, если цена внесения одного изменения очень высока.
-
-Основной источник ригидности - высокая связанность между модулями.
-
-**Хрупкое** является ПО, в котором изменения в одном модуле вызывают появление ошибок в
-других модулях.
-
-Основной источник хрупкости - плохо спроектированные отношения между модулями. Чтобы
-преодолеть хрупкость, нужно изолировать зависимости друг от друга.
-
-ПО является **неподвижным**, когда его компоненты нельзя повторно использовать в других
-системах.
-
-Этот запах скорей всего вызван плотной связью между модулями. Чтобы побороть его нужно
-грамотно разделить или изолировать модули.
-
-В **вязком** ПО при добавлении одной функции приходится взаимодействовать со множеством
-аспектов, в том числе на разных уровнях.
-
-На практике этот запах можно обнаружить по трудностям при работе с системой контроля
-версий. Это происходит из-за того, что приходится вносить слишком много изменений в
-разных частях кода.
-
-ПО является **излишне сложным**, когда разработчики, пытаясь спрогнозировать будущее,
-вводят излишние точки расширения, там где они не нужны.
-
-Почти все запахи связаны с плохо организованным менеджментом зависимостей. Из этого
-можно сделать вывод, что ключом к хорошей архитектуре является грамотный менеджмент
-зависимостей.
-
-## Принципы SOLID
-
-Это пять принципов, которые можно назвать принципами менеджмента зависимостей.
-
 - Single Responsibility Principle (SRP);
 - Open Closed Principle (OCP);
 - Liskov Substitution Principle;
 - Interface Segregation Principle;
 - Dependency Inversion Principle;
+
+## Single-Responsibility Principle (SRP)
+
+> "A class should have one, and only one reason to change."
+> <footer>— Robert C Martin</footer>
+
+## Open-Closed Principle (OCP)
+
+> "Software entities should be open for extension but closed for modification"
+> <footer>Bertrand Mayer, Object-Oriented Software Conclusion</footer>
+
+## Liskov Substitution Principle (LSP)
+
+> "If S is a subtype of T, then objects of type T may be replaced by objects of type S,
+> without breaking the program"
+> <footer>Barbara Liskov</footer>
+
+```python
+class Event:
+    ...
+    def meets_condition(self, event_data: dict) -> bool:
+        return False
+
+class LoginEvent(Event):
+    def meets_condition(self, event_data: list) -> bool:
+        # LSP violation: event_data is a list rather than dict
+        return bool(event_data)
+
+class LogoutEvent(Event):
+    def meets_condition(self, event_data: dict, override: bool) -> bool:
+        # LSP violation: the function signature has changed
+        if override:
+            return True
+        ...
+```
+
+LSP violation detectable by static analysis (in most cases).
+
+## Interface Segregation Principle (ISP)
+
+> "Clients should not be forced to depend on methods they do not use."
+> <footer>Robert C Martin</footer>
+
+```python
+from abc import ABCMeta, abstractmethod
+
+class XMLEventParser(metaclass=ABCMeta):
+    @abstractmethod
+    def from_xml(xml_data: str):
+        """Parse an event from a source in XML representation."""
+
+class JSONEventParser(metaclass=ABCMeta):
+    @abstractmethod
+    def from_json(json_data: str):
+        """Parse an event from a source in JSON format."""
+
+class EventParser(XMLEventParser, JSONEventParser):
+    """An event parser that can create an event from source data"""
+    def from_xml(xml_data: str):
+        pass
+
+    def from_json(json_data: str):
+        pass
+```
+
+## Dependency Inversion Principle (DIP)
+
+> "High-level modules should not depend on low-level modules. Both should depend on
+> abstractions. Abstractions should not depend on details. Details should depend on
+> abstractions."
+> <footer>Robert C. Martin</footer>
