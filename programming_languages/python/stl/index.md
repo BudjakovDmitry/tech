@@ -6,4 +6,5 @@
 - [signal](signal.md)
 - [sys](sys.md)
 - [time](time.md)
+- [typing](typing.md)
 - [unittest](unittest.md)
