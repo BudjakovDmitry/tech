@@ -271,6 +271,15 @@ As `needy` is a required parameter, you would need to set it in the URL:
 
 > You could also use `Enums` the same way as with path parameters.
 
+You can declare that a parameter can accept `None`, but that it's still required. This
+would force clients to send a value, even if the value is `None`.
+
+```python
+@app.get("/items/")
+async def read_items(q: str | None):
+    ...
+```
+
 ## Multiple path and query parameters
 
 You can declare multiple path parameters and query parameters at the same time, FastAPI
@@ -296,3 +305,262 @@ async def read_user_item(
         )
     return item
 ```
+
+## Additional validation
+
+FastAPI allows you to declare additional information and validation for your parameters.
+Let's take this application as example:
+
+```python
+from fastapi import FastAPI
+
+app = FastAPI()
+
+
+@app.get("/items/")
+async def read_items(q: str | None = None):
+    results = {"items": [{"item_id": "Foo"}, {"item_id": "Bar"}]}
+    if q:
+        results.update({"q": q})
+    return results
+```
+
+We are going to enforce that even though `q` is optional, whenever it is provided, its
+__length doesn't exceed 50 characters__.
+
+To achieve that we need `fastapi.Query` and `typing.Annotated`.
+
+```python
+from typing import Annotated
+
+from fastapi import FastAPI, Query
+
+app = FastAPI()
+
+
+@app.get("/items/")
+async def read_items(
+        q: Annotated[str | None, Query(min_length=3, max_length=50)] = None
+):
+    results = {"items": [{"item_id": "Foo"}, {"item_id": "Bar"}]}
+    if q:
+        results.update({"q": q})
+    return results
+```
+
+FastAPI will now:
+
+* Validate the data making sure that the max length is 50 characters and min length is 3
+characters
+* Show a clear error for the client when the data is not valid
+* Document the parameter in the OpenAPI schema path operation (so it will show up in the
+automatic docs UI)
+
+> Keep in mind that when using `Query` inside of `Annotated` you cannot use the
+> `default` parameter for `Query`. Instead, use the actual default value of the function
+> parameter. Otherwise, it would be inconsistent.
+
+```python
+# this is not allowed because it's not clear
+# if the default value should be "rick" or "morty".
+q: Annotated[str, Query(default="rick")] = "morty"
+```
+
+Other validations:
+
+* `Query(pattern="^fixedquery$")` define a regular expressions pattern that the
+parameter should match;
+
+When you need to declare a value as required while using `Query`, you can simply not
+declare a default value:
+
+```python
+from fastapi import FastAPI, Query
+from typing import Annotated
+
+app = FastAPI()
+
+
+@app.get("/items/")
+async def read_items(q: Annotated[str, Query(min_length=3)]):
+    results = {"items": [{"item_id": "Foo"}, {"item_id": "Bar"}]}
+    if q:
+        results.update({"q": q})
+    return results
+```
+
+## Metadata about the parameter
+
+### Title and description
+
+```python
+from typing import Annotated
+
+from fastapi import FastAPI, Query
+
+app = FastAPI()
+
+
+@app.get("/items/")
+async def read_items(
+    q: Annotated[
+        str | None,
+        Query(
+            title="Query string",
+            description="Query string for the items to search in the database that have a good match",
+            min_length=3,
+        ),
+    ] = None,
+):
+    results = {"items": [{"item_id": "Foo"}, {"item_id": "Bar"}]}
+    if q:
+        results.update({"q": q})
+    return results
+```
+
+### alias
+
+Imagine that you want the parameter to be `item-query`. Like in:
+`http://127.0.0.1:8000/items/?item-query=foobaritems`. But `item-query` is not a valid
+Python variable name.
+
+Then you can declare an `alias`, and that alias is what will be used to find the
+parameter value:
+
+```python
+from typing import Annotated
+
+from fastapi import FastAPI, Query
+
+app = FastAPI()
+
+
+@app.get("/items/")
+async def read_items(q: Annotated[str | None, Query(alias="item-query")] = None):
+    results = {"items": [{"item_id": "Foo"}, {"item_id": "Bar"}]}
+    if q:
+        results.update({"q": q})
+    return results
+```
+
+### Deprecating parameters
+
+```python
+from typing import Annotated
+
+from fastapi import FastAPI, Query
+
+app = FastAPI()
+
+
+@app.get("/items/")
+async def read_items(
+    q: Annotated[
+        str | None,
+        Query(
+            alias="item-query",
+            title="Query string",
+            description="Query string for the items to search in the database that have a good match",
+            min_length=3,
+            max_length=50,
+            pattern="^fixedquery$",
+            deprecated=True,
+        ),
+    ] = None,
+):
+    results = {"items": [{"item_id": "Foo"}, {"item_id": "Bar"}]}
+    if q:
+        results.update({"q": q})
+    return results
+```
+
+### Exclude parameter from OpenAPI
+
+Exclude a query parameter from the generated OpenAPI schema (and thus, from the
+automatic documentation systems):
+
+```python
+from typing import Annotated
+
+from fastapi import FastAPI, Query
+
+app = FastAPI()
+
+
+@app.get("/items/")
+async def read_items(
+    hidden_query: Annotated[str | None, Query(include_in_schema=False)] = None,
+):
+    if hidden_query:
+        return {"hidden_query": hidden_query}
+    else:
+        return {"hidden_query": "Not found"}
+```
+
+## Query parameter list / multiple values
+
+When you define a query parameter explicitly with `Query` you can also declare it to
+receive a list of values, or said in another way, to receive multiple values.
+
+For example, to declare a query parameter `q` that can appear multiple times in the URL,
+you can write:
+
+```python
+from typing import Annotated
+
+from fastapi import FastAPI, Query
+
+app = FastAPI()
+
+
+@app.get("/items/")
+async def read_items(q: Annotated[list[str] | None, Query()] = None):
+    query_items = {"q": q}
+    return query_items
+```
+
+Then, with a URL like: `http://localhost:8000/items/?q=foo&q=bar` you would receive the
+multiple `q` query parameters' values (`foo` and `bar`) in a Python list inside your
+path operation function, in the function parameter `q`.
+
+> To declare a query parameter with a type of list, like in the example above, you need
+> to explicitly use `Query`, otherwise it would be interpreted as a request body.
+
+You can also define a default list of values if none are provided:
+
+```python
+from typing import Annotated
+
+from fastapi import FastAPI, Query
+
+app = FastAPI()
+
+
+@app.get("/items/")
+async def read_items(q: Annotated[list[str], Query()] = ["foo", "bar"]):
+    query_items = {"q": q}
+    return query_items
+```
+
+If you go to: `http://localhost:8000/items/` the default of `q` will be:
+`["foo", "bar"]`.
+
+You can also use `list` directly instead of `list[str]`:
+
+```python
+from typing import Annotated
+
+from fastapi import FastAPI, Query
+
+app = FastAPI()
+
+
+@app.get("/items/")
+async def read_items(q: Annotated[list, Query()]):
+    query_items = {"q": q}
+    return query_items
+```
+
+> Keep in mind that in this case, FastAPI won't check the contents of the list. For
+> example, `list[int]` would check (and document) that the contents of the list are
+> integers. But `list` alone wouldn't.
