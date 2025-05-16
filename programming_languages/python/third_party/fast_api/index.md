@@ -20,5 +20,6 @@ async def root():
 - [Methods](methods.md)
 - [Path and query parameters](parameters.md)
 - [Request body](request_body.md)
+- [Path operation configuration](path_operation_configuration.md)
 - [Metadata and Docs URLs](api_metadata.md)
 - [APIRouter](apirouter.md)
