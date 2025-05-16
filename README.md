@@ -34,7 +34,7 @@
 
 - [SOLID](design_patterns/solid/index.md)
 - [MVC](design_patterns/mvc/index.md)
-- [Dependency injection]()
+- [Dependency injection](design_patterns/dependency_injection/index.md)
 
 ---
 
