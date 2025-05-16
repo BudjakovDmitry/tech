@@ -59,3 +59,37 @@ async def read_user_me():
 async def read_user(username: str):
     return {"username": username}
 ```
+
+## Include `APIRouter`s
+
+```python
+from fastapi import FastAPI
+
+from .internal import admin
+from .routers import items, users
+# users.router contains the APIRouter;
+# items.router contains the APIRouter
+
+app = FastAPI()
+
+
+app.include_router(users.router)
+app.include_router(items.router)
+app.include_router(
+    admin.router,
+    prefix="/admin",
+    tags=["admin"],
+    responses={418: {"description": "I'm a teapot"}},
+)
+
+
+@app.get("/")
+async def root():
+    return {"message": "Hello Bigger Applications!"}
+```
+
+With `app.include_router()` we can add each `APIRouter` to the main `FastAPI`
+application. It will include all the routes from that router as part of it.
+
+You don't have to worry about performance when including routers. This will take
+microseconds and will only happen at startup. So it won't affect performance.
