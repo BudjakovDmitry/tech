@@ -28,6 +28,16 @@
 
 - [Docker](docker/index.md)
 
+---
+
+## Design patterns
+
+- [SOLID](design_patterns/solid/index.md)
+- [MVC](design_patterns/mvc/index.md)
+- [Dependency injection]()
+
+---
+
 ## Web
 
 - Web servers
@@ -37,7 +47,6 @@
 
 - [Git](git/index.md)
 - [Regular Expressions](re/index.md)
-- [SOLID](solid/index.md)
 - [Design patterns](design_patterns/index.md)
 - [Парадигмы программирование](paradigms/index.md)
 

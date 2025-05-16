@@ -13,7 +13,7 @@ these be separated into different objects.
 
 The Model handles data, the View is what users see and the Controller connects the two.
 
-![mvc](images/mvc.png)
+![mvc](../images/mvc.png)
 
 ## Model
 
