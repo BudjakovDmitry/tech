@@ -7,6 +7,7 @@ Poetry is a tool for dependency management and packaging in Python.
 * [Commands](commands/index.md)
 * [Configuration](configuration.md)
 * [Dependency specification](dependency_specification.md)
+* [Installing dependencies](installing_dependencies.md)
 
 ## Project setup
 
