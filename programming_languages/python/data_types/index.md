@@ -7,3 +7,4 @@
 - [Sequences](sequences.md)
 - [Strings](strings.md)
 - [Lists](list.md)
+- [Dictionaries](dictionaries/readme.md)
