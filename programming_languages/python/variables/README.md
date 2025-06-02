@@ -156,5 +156,29 @@ l2 = l1
 l1[0] = 101
 
 print(l1)  # [101, 3, 4]
-print(l2)  # [101, 3, 4] - l2 has chenged implicitly
+print(l2)  # [101, 3, 4] - l2 has changed implicitly
+```
+
+If you don't want such behaviour, _copy_ objects instead of referencing.
+
+```python
+# copy list using slicing
+values = ['foo', 'bar', 'eggs']
+values_copied = values[:]
+
+# using copy() method
+names = ['Sam', 'Frodo']
+copied_names = names.copy()
+
+# using constructors
+numbers = {1, 2, 3}
+numbers_copied = set(numbers)
+```
+
+```python
+# using copy module
+import copy
+
+persons = [{'name': 'John', 'age': 28}, {'name': 'Jane', 'age': 23}]
+persons_copied = copy.deepcopy(persons)
 ```
