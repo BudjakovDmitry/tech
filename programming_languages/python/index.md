@@ -4,6 +4,7 @@
 - [Python interpreter](interpreter.md)
 - [Operators and expressions](operators_and_expressions/index.md)
 - [Data types](data_types/index.md)
+- [Variables](variables/README.md)
 - [Decorators](decorators.md)
 - [Builtin functions](builtin_functions/index.md)
 - [Exceptions](exceptions/index.md)
