@@ -55,9 +55,20 @@ for which they stand.
 * _References_ are automatically followed pointers from variables to objects
 
 Each time you generate a new value in your script by running an expression, Python
-creates a new _object_ (i.e., a new chunk of memory) to represent that value. As an
-optimization, Python internally caches and reuses certain kinds of unchangeable objects,
-such as small integers and strings.
+creates a new _object_ (i.e., a new chunk of memory) to represent that value.
+
+> As an optimization, Python internally caches and reuses certain kinds of unchangeable
+> objects, such as small integers and strings.
+>
+> ```python
+> x = 99
+> x = 'Python'
+> ```
+>
+> The project 99 here is probably not literally reclaimed. Instead, it will likely
+> remain in a system table to be reused the next time you generate a `99` in your code.
+
+
 
 Objects have more structure than just enough space to represent their values. Each
 object also has two standard header fields:
@@ -181,4 +192,29 @@ import copy
 
 persons = [{'name': 'John', 'age': 28}, {'name': 'Jane', 'age': 23}]
 persons_copied = copy.deepcopy(persons)
+```
+
+Bcause of Python’s reference model, there are two different ways to check for _equality_
+in a Python program.
+
+```python
+l = [1, 2, 3]
+m = l
+l == m  # True - same values
+l is m  # True - same objects
+
+a = [4, 5, 6]
+b = [4, 5, 6]
+a == b  # True - same values
+a is b  # False - different objects
+```
+
+Technically `is` simply compares the pointers that implements references.
+
+
+```python
+x = 99
+y = 99
+x == y  # True
+x is y  # True: caching at work
 ```
