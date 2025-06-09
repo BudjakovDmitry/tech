@@ -14,7 +14,7 @@
 
 ### Python
 
-- [Python](programming_languages/python/index.md) - Python programming language
+- [Python](programming_languages/python/readme.md) - Python programming language
 - [Python STL](programming_languages/python/stl/index.md) - Python standard library
 - [Third party libs](programming_languages/python/third_party/index.md) - The Python package index
 
