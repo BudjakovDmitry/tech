@@ -1,10 +1,70 @@
 # Variables
 
-In Python, we use variables without their existence or their types.
+## Assignments
+
+In basic form, you write the _target_ of an assignment on the left of an equals sign,
+and the _object_ to be assigned on the right.
+
+__Names are created when first assigned__. Python creates a variable name the first time
+you assign it a value.
+
+__Names must be assigned before being referenced__. It’s an error to use a name to which
+you haven’t yet assigned a value.
+
+### Variable name rules
+
+* Variable names must start with an underscore or letter, which can be followed by any
+number of letters, digits, or underscores. Legal names: `_hack`, `hack`, `Hack_1`. Not
+available: `1_hack`, `hack$`, `@#!`.
+* Case matters: `HACK` is not the same as `hack` (in the names of imported module files
+too).
+* Reserved words are off-limits as a variable names.
+
+Because module names in import statements become variables in your scripts, variable
+name constraints extend to your module filenames too.
+
+### Naming conventions
+
+* Names that begin with a single underscore (`_X`) are not imported by a
+`from module import *` statement.
+* Names that have two leading and trailing underscores (`__X__`) are system-defined
+names that have special meaning to the interpreter and provide implementation details in
+the user-defined OOP classes.
+* Names that begin with two underscores and do not end with two more (`__X`) are
+localized (“mangled”) to enclosing classes.
+* The name that is just a single underscore (`_`) retains the result of the last
+expression when you are working interactively at some REPLs.
+
+### Assignment syntax
+
+Assignment syntax forms:
+
+```python
+target = 'hack'              # Basic assignment
+code, hack = 'py', 'PY'      # Tuple assignment
+[code, hack] = ['py', 'PY']  # List assignment
+a, b, c, d = 'hack'          # Sequence assignment
+a, *b = 'hack'               # Extended-unpacking assignment: a = 'h', b = ['a', 'c', 'k']
+code = hack = 'python'       # Multiple-target assignment
+code += 1                    # Augmented assignments
+      # Named assignment expression
+```
+
+The `:=` operator allows you to code assignment as an expression, which returns the
+value it assigns to a name. This expression can be nested in places where assignment
+statements don’t work syntactically, and in common roles allows you to both assign a
+name and use its value in the same place in your code.
+
+```python
+result = (pi := 3.14) + 0.1
+# (pi := 3.14) assign value 3.14 to pi and return 3.14
+# the result = 3.24
+```
 
 ## Dynamic typing model
 
-Types are determines automatically at runtime.
+In Python, we use variables without their existence or their types. Types are determines
+automatically at runtime.
 
 ## Variables, Objects, and References
 
