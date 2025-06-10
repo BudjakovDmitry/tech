@@ -301,3 +301,57 @@ async def countdown(tag: str, count: int) -> str:
         count -= 1
     return "Blastoff!"
 ```
+
+## Type aliases
+
+See PEP 695 for the `type` statement.
+
+Type aliases may be defined by using the `type` statement (Python 3.12 and higher) which
+creates an instance of `TypeAliasType`:
+
+```python
+type Url = str
+def retry(url: Url, retry_count: int) -> None: ...
+```
+
+```python
+type Vector = list[float]
+
+def scale(scalar: float, vector: Vector) -> Vector:
+    return [scalar * num for num in vector]
+
+new_vector = scale(2.0, [1.0, -4.2, 5.4])
+```
+
+Python documentation [recommends](https://typing.python.org/en/latest/spec/aliases.html#type-aliases)
+capitalizing alias names, since they represent user-defined types, which (like
+user-defined classes) are typically spelled that way.
+
+Type aliases are useful for simplifying complex type signatures. For example:
+
+```python
+from collections.abc import Sequence
+
+type ConnectionOptions = dict[str, str]
+type Address = tuple[str, int]
+type Server = tuple[Address, ConnectionOptions]
+
+def broadcast_message(message: str, servers: Sequence[Server]) -> None:
+    ...
+
+# The static type checker will treat the previous type signature as
+# being exactly equivalent to this one
+def broadcast_message(
+    message: str,
+    servers: Sequence[tuple[tuple[str, int], dict[str, str]]]
+) -> None:
+    ...
+```
+
+The `type` statement is new in Python 3.12. For backwards compatibility, type aliases
+can also be created through simple assignment:
+
+```python
+Vector = list[float]
+def scale(scalar: float, vector: Vector) -> Vector: ...
+```
