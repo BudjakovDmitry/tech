@@ -2,6 +2,7 @@
 
 - [copy](copy.md)
 - [enum](enum.md)
+- [math](math.md)
 - [os](os.md)
 - [random](random.md)
 - [signal](signal.md)
