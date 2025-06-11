@@ -1,5 +1,6 @@
 # Python standard library
 
+- [copy](copy.md)
 - [enum](enum.md)
 - [os](os.md)
 - [random](random.md)
