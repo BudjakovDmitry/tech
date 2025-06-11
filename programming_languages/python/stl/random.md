@@ -27,3 +27,15 @@ Return a random integer _N_ such that `a <= N <= b`. Alias for `randrange(a, b+1
 
 Return a random element from the non-empty sequence `seq`. If `seq` is empty, raises
 `IndexError`.
+
+## Real-valued distributions
+
+### random.random()
+
+Return the next random floating-point number in the range `0.0 <= X < 1.0`
+
+```python
+import random
+
+print(random.random())  # 0.6978432774493304
+```
