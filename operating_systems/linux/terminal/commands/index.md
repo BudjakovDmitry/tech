@@ -9,7 +9,6 @@
 
 ## Navigation
 
-- [cd](cd.md)
 - [ls](ls.md)
 - [tree](tree.md)
 
