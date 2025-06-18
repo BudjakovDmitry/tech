@@ -40,7 +40,6 @@
 
 ## Informational
 
-- [cal, ncal](cal.md)
 - [date](date.md)
 - [df](df.md)
 - [du](du.md)
