@@ -40,7 +40,6 @@
 
 ## Informational
 
-- [date](date.md)
 - [df](df.md)
 - [du](du.md)
 - [file](file.md)
