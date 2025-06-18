@@ -40,7 +40,6 @@
 
 ## Informational
 
-- [df](df.md)
 - [du](du.md)
 - [file](file.md)
 - [free](free.md)
