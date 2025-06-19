@@ -39,7 +39,6 @@
 ## Informational
 
 - [du](du.md)
-- [file](file.md)
 - [free](free.md)
 - [history](history.md)
 - [hostname](hostname.md)
