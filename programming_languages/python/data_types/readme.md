@@ -1,7 +1,6 @@
 # Python data types
 
 - Numeric
-  - [Integers](numeric/integer.md)
   - [Complex numbers](numeric/complex.md)
   - [Decimal](numeric/decimal.md)
   - [Rational](numeric/rational.md)
