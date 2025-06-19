@@ -2,7 +2,6 @@
 
 - Numeric
   - [Integers](numeric/integer.md)
-  - [Floats](numeric/float.md)
   - [Complex numbers](numeric/complex.md)
   - [Decimal](numeric/decimal.md)
   - [Rational](numeric/rational.md)
