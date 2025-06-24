@@ -59,7 +59,6 @@
 - [chmod](chmod.md)
 - [chown](chown.md)
 - [ln](ln.md)
-- [mv](mv.md)
 - [rm](rm.md)
 - [rmdir](rmdir.md)
 - [touch](touch.md)
