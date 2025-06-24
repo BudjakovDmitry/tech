@@ -60,7 +60,6 @@
 - [chown](chown.md)
 - [ln](ln.md)
 - [rm](rm.md)
-- [rmdir](rmdir.md)
 - [touch](touch.md)
 
 ## Archives
