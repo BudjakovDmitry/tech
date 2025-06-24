@@ -11,7 +11,6 @@
 - [Hard links, Symbolic links](links.md)
 - [Standard Input, Standard Output, Standard Error](streams.md)
 - [Piping](piping.md)
-- [Wildcards and character classes](wildcards.md)
 - Expansions
   - [Brace expansions](expansions/brace.md)
   - [Arithmetic expansions](expansions/arithmetic.md)
