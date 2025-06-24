@@ -58,7 +58,6 @@
 
 - [chmod](chmod.md)
 - [chown](chown.md)
-- [ln](ln.md)
 - [touch](touch.md)
 
 ## Archives
