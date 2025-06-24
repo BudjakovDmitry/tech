@@ -56,7 +56,6 @@
 
 ## Manipulating with files and file system
 
-- [cp](cp.md)
 - [chmod](chmod.md)
 - [chown](chown.md)
 - [ln](ln.md)
