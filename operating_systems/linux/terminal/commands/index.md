@@ -47,7 +47,6 @@
 - [lsb_release](lsb_release.md)
 - [ps](ps.md)
 - [top](top.md)
-- [type](type.md)
 - [uname](uname.md)
 - [whatis](whatis.md)
 - [which](which.md)
