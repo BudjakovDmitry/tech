@@ -22,7 +22,6 @@
 - [more](more.md)
 - [paste](paste.md)
 - [rev](rev.md)
-- [sort](sort.md)
 - [tac](tac.md)
 - [tail](tail.md)
 - [tr](tr.md)
