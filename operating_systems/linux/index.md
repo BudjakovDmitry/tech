@@ -9,7 +9,6 @@
   - [Root user](permissions/root.md)
 - [Package managers](package_managers.md)
 - [Standard Input, Standard Output, Standard Error](streams.md)
-- [Piping](piping.md)
 - Expansions
   - [Brace expansions](expansions/brace.md)
   - [Arithmetic expansions](expansions/arithmetic.md)
