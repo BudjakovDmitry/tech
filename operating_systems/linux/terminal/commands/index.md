@@ -21,7 +21,6 @@
 - [less](less.md)
 - [more](more.md)
 - [paste](paste.md)
-- [rev](rev.md)
 - [tac](tac.md)
 - [tail](tail.md)
 - [tr](tr.md)
