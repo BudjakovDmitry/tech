@@ -10,7 +10,6 @@
 ## Navigation
 
 - [ls](ls.md)
-- [tree](tree.md)
 
 ## Working with text
 
