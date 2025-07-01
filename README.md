@@ -52,6 +52,5 @@
 
 ## Computer Science
 
-- [Computer model](computer_science/computer_model.md)
 - [Encodings](computer_science/encodings/index.md)
 - [Number systems](computer_science/number_systems.md)
