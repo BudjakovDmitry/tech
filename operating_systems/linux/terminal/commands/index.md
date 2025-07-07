@@ -60,7 +60,6 @@
 - [clear](clear.md)
 - [source](source.md)
 - [tee](tee.md)
-- [unalias](unalias.md)
 - [xargs](xargs.md)
 
 ## Working with users
