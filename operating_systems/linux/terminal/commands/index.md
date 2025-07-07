@@ -2,7 +2,6 @@
 
 ## Getting help
 
-- [apropos](apropos.md)
 - [info](info.md)
 - [man](man.md)
 
