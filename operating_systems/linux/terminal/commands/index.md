@@ -10,7 +10,6 @@
 
 ## Working with text
 
-- [cat](cat.md)
 - [cut](cut.md)
 - [echo](echo.md)
 - [head](head.md)
