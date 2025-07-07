@@ -43,7 +43,6 @@
 - [ps](ps.md)
 - [top](top.md)
 - [uname](uname.md)
-- [whatis](whatis.md)
 - [who](who.md)
 - [whoami](whoami.md)
 
