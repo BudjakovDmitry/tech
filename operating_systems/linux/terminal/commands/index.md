@@ -2,7 +2,6 @@
 
 ## Getting help
 
-- [info](info.md)
 - [man](man.md)
 
 ## Navigation
