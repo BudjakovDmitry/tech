@@ -8,7 +8,6 @@
   - [File permissions and ownership](permissions/file_permissions.md)
   - [Root user](permissions/root.md)
 - [Package managers](package_managers.md)
-- [Standard Input, Standard Output, Standard Error](streams.md)
 - Expansions
   - [Brace expansions](expansions/brace.md)
   - [Arithmetic expansions](expansions/arithmetic.md)
