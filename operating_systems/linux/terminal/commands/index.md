@@ -19,7 +19,6 @@
 - [tac](tac.md)
 - [tail](tail.md)
 - [tr](tr.md)
-- [uniq](uniq.md)
 - [wc](wc.md)
 
 ## Finding things
