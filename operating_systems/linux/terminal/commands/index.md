@@ -56,7 +56,6 @@
 
 ## Common
 
-- [clear](clear.md)
 - [source](source.md)
 - [tee](tee.md)
 - [xargs](xargs.md)
