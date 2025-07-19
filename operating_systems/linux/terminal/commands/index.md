@@ -12,12 +12,10 @@
 
 - [cut](cut.md)
 - [echo](echo.md)
-- [head](head.md)
 - [less](less.md)
 - [more](more.md)
 - [paste](paste.md)
 - [tac](tac.md)
-- [tail](tail.md)
 - [tr](tr.md)
 
 ## Finding things
