@@ -53,7 +53,6 @@
 ## Common
 
 - [source](source.md)
-- [tee](tee.md)
 - [xargs](xargs.md)
 
 ## Working with users
