@@ -15,10 +15,6 @@ colorize the output; WHEN can be 'always' (default if omitted), 'auto', or 'neve
 
 Display help page and exit.
 
-### -i
-
-Print the index number of each file (inode).
-
 ### -m
 
 Print result as comma separated list of entities.
