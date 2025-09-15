@@ -1,18 +1,5 @@
 # Terminal shortcuts
 
-## Open terminal
-
-`Ctrl - Alt - t` to open terminal (Ubuntu).
-
-## Clearing screen
-
-- `Ctrl - l` to clear the entire screen (same as `clear` command);
-
-## Jumping through the line
-
-- `Ctrl - a` to move the cursor to the beginning of the line;
-- `Ctrl - e` to move the cursor to the end of the line;
-
 ## Jumping characters and words
 
 - `Ctrl - f` to move the cursor forward one character at a time (same as the right arrow
