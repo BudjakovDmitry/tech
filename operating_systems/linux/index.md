@@ -10,7 +10,6 @@
 - [Package managers](package_managers.md)
 - Expansions
   - [Brace expansions](expansions/brace.md)
-  - [Arithmetic expansions](expansions/arithmetic.md)
   - [Parameter expansions](expansions/parameter.md)
 - [Command substitution](command_substitution.md)
 - [Quoting](quoting.md)
