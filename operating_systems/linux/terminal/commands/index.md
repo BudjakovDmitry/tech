@@ -11,7 +11,6 @@
 ## Working with text
 
 - [cut](cut.md)
-- [echo](echo.md)
 - [less](less.md)
 - [more](more.md)
 - [paste](paste.md)
