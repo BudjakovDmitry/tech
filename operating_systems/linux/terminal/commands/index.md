@@ -69,7 +69,6 @@
 ## The environment
 
 - [export](export.md)
-- [printenv](printenv.md)
 - [set](set.md)
 
 ## Math
