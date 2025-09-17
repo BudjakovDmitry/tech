@@ -8,8 +8,6 @@
   - [File permissions and ownership](permissions/file_permissions.md)
   - [Root user](permissions/root.md)
 - [Package managers](package_managers.md)
-- Expansions
-  - [Parameter expansions](expansions/parameter.md)
 - [Command substitution](command_substitution.md)
 - [Quoting](quoting.md)
 - [Timestamps](timestamps.md)
