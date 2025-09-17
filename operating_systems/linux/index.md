@@ -9,7 +9,6 @@
   - [Root user](permissions/root.md)
 - [Package managers](package_managers.md)
 - Expansions
-  - [Brace expansions](expansions/brace.md)
   - [Parameter expansions](expansions/parameter.md)
 - [Command substitution](command_substitution.md)
 - [Quoting](quoting.md)
