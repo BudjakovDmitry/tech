@@ -28,7 +28,6 @@
 
 - [du](du.md)
 - [free](free.md)
-- [history](history.md)
 - [hostname](hostname.md)
 - [hostnamectl](hostnamectl)
 - [id](id.md)
