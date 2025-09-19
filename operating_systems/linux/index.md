@@ -8,7 +8,6 @@
   - [File permissions and ownership](permissions/file_permissions.md)
   - [Root user](permissions/root.md)
 - [Package managers](package_managers.md)
-- [Quoting](quoting.md)
 - [Timestamps](timestamps.md)
 - Terminal
   - [Terminal commands and utils](terminal/commands/index.md)
