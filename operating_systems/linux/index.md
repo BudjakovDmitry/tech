@@ -12,7 +12,6 @@
 - Terminal
   - [Terminal commands and utils](terminal/commands/index.md)
   - [Options and arguments](terminal/options_and_arguments.md)
-  - [Terminal shortcuts](terminal/shortcuts/index.md)
   - [Commands history](terminal/history.md)
 - [The environment](environment/index.md)
 - [Shell scripts](shell_scripts/index.md)
