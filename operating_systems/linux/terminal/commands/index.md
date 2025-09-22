@@ -30,7 +30,6 @@
 - [free](free.md)
 - [hostname](hostname.md)
 - [hostnamectl](hostnamectl)
-- [id](id.md)
 - [lsb_release](lsb_release.md)
 - [ps](ps.md)
 - [top](top.md)
