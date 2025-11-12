@@ -29,11 +29,3 @@ extension (`-X`).
 By default, when you type `ls -l` we see *modification time*. If you want to see
 *access time* type `ls -lu`. [More about timestamps](/linux/timestamps.md).
 
-
-### -R
-
-List subdirectories recursively.
-
-### -1
-
-
