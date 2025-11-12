@@ -8,8 +8,6 @@ operating system.
 
 ## Terminal
 
-### Tab completion
-
 ### Mice and focus
 
 You can also use a mouse with your terminal emulator. It supports a quick copy-and-paste
