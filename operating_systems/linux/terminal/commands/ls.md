@@ -11,10 +11,6 @@ By default, when you type `ls -l` we see *modification time*. If you want to see
 
 colorize the output; WHEN can be 'always' (default if omitted), 'auto', or 'never'.
 
-### --help
-
-Display help page and exit.
-
 ### -m
 
 Print result as comma separated list of entities.
