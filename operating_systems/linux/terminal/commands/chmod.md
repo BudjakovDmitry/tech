@@ -1,9 +1,5 @@
 # chmod
 
-Change or modify file or directory permissions (chmod stands for "change mode").
-
-[Managing file permissions and ownership](/linux/permissions/file_permissions.md)
-
 ## Symbolic notation
 
 Specify which permissions to change with a combination of the following characters:
