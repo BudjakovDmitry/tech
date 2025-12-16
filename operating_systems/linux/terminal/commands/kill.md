@@ -1,4 +1,0 @@
-# kill
-
-## Examples
-
