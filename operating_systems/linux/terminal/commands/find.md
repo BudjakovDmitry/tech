@@ -1,27 +1,5 @@
 # find
 
-Find files matching a pattern in the current directory tree. You can search for files
-based on different attributes, such as the file's name, type, owner, size, or timestamp.
-
-The find command conducts a search of the entire directory tree starting from the given
-directory name.
-
-Example: print out the list of every single file and directory nested in the current
-working directory including files and folders nested in subdirectories.
-
-```shell
-find
-```
-
-## Arguments
-
-Path to the directory where search.
-
-```shell
-# find all files and directories in user's home directory
-find ~
-```
-
 ## Options
 
 ### -and
