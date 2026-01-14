@@ -2,10 +2,6 @@
 
 ## Options
 
-### -and
-
-`find expr1 -and expr2` is the same as `find expr1 expr2`
-
 ### -amin n
 
 File was last accessed less than, more than or exactly *n* minutes ago.
@@ -79,25 +75,6 @@ find -ctime +2
 
 # find files that were changed less than 48 hours ago
 find -ctime -2
-```
-
-### -empty
-
-Find empty files and/or directories.
-
-```shell
-# find all empty files and directories in user's home directory
-find ~ -empty
-```
-
-```shell
-# find all empty files in user's home directory
-find ~ -empty -type f
-```
-
-```shell
-# find all empty directories in user's home directory
-find ~ -empty -type d
 ```
 
 ### -exec *command*
@@ -226,67 +203,4 @@ The shortcut for `-not` is `!`
 # these commands have the same result
 find -not -name '*.txt'
 find ! -name '*.txt'
-```
-
-### -iname
-
-The same as `-name` but case-insensitive.
-
-```shell
-find /home -iname "documents"
-```
-
-### -or
-
-```shell
-# print all html and css files
-find . -name '*.html' -or -name '*.css'
-```
-
-### -size
-
-The `-size` option is used to find files of a specific size.
-
-```shell
-# find all files larger than 1 gigabyte
-find -size +1G
-```
-
-```shell
-# find files under 50 megabytes
-find -size -50M
-```
-
-```shell
-# find files that are exactly 20 kilobytes
-find -size 20k
-```
-
-### -type
-
-We can tell `find` to only find by file type: only print files, directories, symbolic
-links, etc.
-
-```shell
-# print a list of every file inside current working directory
-find -type f
-```
-
-```shell
-# print a list of every directory inside of current working directory
-find -type d
-```
-
-```shell
-# print a list of symbolic links inside current working directory
-find -type l
-```
-
-### -user
-
-The `-user` option uses to match files and directories that belong to a particular user.
-
-```shell
-# find all fies that in /home directory that belong to harry
-find /home -user harry
 ```
