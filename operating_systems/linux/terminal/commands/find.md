@@ -2,21 +2,6 @@
 
 ## Options
 
-### -amin n
-
-File was last accessed less than, more than or exactly *n* minutes ago.
-
-```shell
-# find files that were accessed exactly ten minutes ago
-find -amin 10
-
-# find files that were accessed more than ten minutes ago
-find -amin +10
-
-# find files that were accessed less than ten minutes ago
-find -amin -10
-```
-
 ### -anewer reference
 
 Time of the last access of the current file is more recent than that of the last data
@@ -38,21 +23,6 @@ find -atime +2
 
 # find files that were last accessed less than 48 hours ago
 find -atime -2
-```
-
-### -cmin n
-
-File's status was last changed less than, more than or exactly *n* minutes ago.
-
-```shell
-# find files that were changed exactly one minute ago
-find -cmin 1
-
-# find files that were changed more than ten minutes ago
-find -cmin +10
-
-# find files that were changed less then ten five minutes ago
-find -cmin -5
 ```
 
 ### -cnewer reference
@@ -121,21 +91,6 @@ find -empty -ok rm '{}' ';'
 Suppress normal output; instead print a name of each input file from which output would
 normally have been printed. Scanning each input file stops upon first match.
 
-### -mmin n
-
-File's data was last modified less than, more than or exactly *n* minutes ago.
-
-```shell
-# find files that were modified exactly 30 minutes ago
-find -mmin 30
-
-# find files that were modified more than 30 minutes ago
-find -mmin +30
-
-# find files that were modified less than 30 minutes ago
-find -mmin -30
-```
-
 ### -mtime n
 
 File's data was last modified less than, more than or exactly *n\*24* hours ago. See the
@@ -153,28 +108,6 @@ find -mtime +2
 find -mtime -2
 ```
 
-### -name
-
-We can provide a specific pattern to `find` to use when matching filenames and
-directories with the `-name` option. We need to enclose our pattern in quotes.
-
-The `-name` option is case-sensitive.
-
-```shell
-# find all files in Documents folder that end in the '.txt'
-find ~/Documents -name "*.txt"
-```
-
-It is important ot understand if we write `find ~ -name "right"` the command is not
-going to do a search for partial match of "right". It's going to look a file or
-directory called exactly "right". If we want to find all files or directories that end
-with "right", we should use other pattern `find ~ -name "*right"`.
-
-```shell
-# find any file or directory inside home directory that contains a number
-find ~ -name "*[[:digit:]]*"
-```
-
 ### -newer reference
 
 Time of the last data modification of the current file is more recent than that of the
@@ -182,25 +115,4 @@ last data modification of the *reference* file.
 
 ```shell
 find -newer notes.txt
-```
-
-### -not
-
-Negates whatever options comes after it.
-
-```shell
-# find files that NOT ends with '.html'
-find -type -f -not -name '*.html'
-
-# find all files in user's home directory that were changed less than one minute ago and
-# don't end with '.xml'
-find ~ -mmin -1 -not -name '*.xml'
-```
-
-The shortcut for `-not` is `!`
-
-```shell
-# these commands have the same result
-find -not -name '*.txt'
-find ! -name '*.txt'
 ```
