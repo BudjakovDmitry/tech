@@ -7,24 +7,6 @@
 Time of the last access of the current file is more recent than that of the last data
 modification of the *reference* file.
 
-### -atime n
-
-File was last accessed less than, more than or exactly *n\*24* hours ago. When *find*
-figures out how many 24-hours periods ago file was last accessed, any fractional parts
-is ignored. So to match `-atime +1`, a file has to have been accessed at least **two**
-days ago.
-
-```shell
-# find files that were last accessed exactly 24 hours ago
-find -atime 1
-
-# find files that were last accessed more than 48 hours ago
-find -atime +2
-
-# find files that were last accessed less than 48 hours ago
-find -atime -2
-```
-
 ### -cnewer reference
 
 Time of the last status change of the current file is more recent than that of the last
