@@ -1,42 +1,9 @@
 # grep
 
-Grep stands for "Global Regular Expression Print". It is a powerful program used to find
-text patterns within files. It returns lines of a file matching a specified pattern,
-such as a regular expression.
-
 Common usage pattern:
 
 ```shell
 grep pattern filename
-```
-
-When `grep` encounters a "pattern" in the file, it prints out the lines containing it.
-
-In addition, the variant programs `egrep`, `fgrep` and `rgrep` are the same as
-`grep -E`, `grep -F` and `grep -r`, respectively.
-
-
-Suppose we have a list of people's names.
-
-```
-Alan Turing
-Bjarne Stroustroup
-Charles Babbage
-Dennis Ritchie
-Erwin Schrodinger
-```
-
-Find all lines that contains the consecutive characters "ch":
-
-```shell
-grep ch people.txt
-```
-
-will return
-
-```
-Dennis Ritchie
-Erwin Schrodinger
 ```
 
 ## Options
@@ -75,22 +42,6 @@ Process a binary file as if it did not contain matching data; this is equivalent
 
 Get the count of matching lines;
 
-### -i
-
-Make search case-insensitive (by default it is case-sensitive).
-
-```shell
-grep -i ch people.txt
-```
-
-will return
-
-```
-Charles Babbage
-Dennis Ritchie
-Erwin Schrodinger
-```
-
 ### -l, --files-with-matches
 
 Suppress normal output; instead print the name of each input file from which output
@@ -99,32 +50,6 @@ would normally have been printed. Scanning each input file stops upon first matc
 ### -m NUM, --max-count=NUM
 
 Stop reading a file after NUM matching lines.
-
-### -n, --line-number
-
-Also print the line numbers;
-
-### -r
-
-Use `-r` option to perform a recursive search which will include all files under a
-directory, subdirectories and their files.
-
-If we don't specify a starting directory, grep will search the current working
-directory.
-
-```shell
-# search the current working directory and any nested directories
-grep -r "chicken"
-```
-
-```shell
-# specify directory
-grep -r red ~/colors
-```
-
-### -v
-
-Print all lines which do not contain the pattern;
 
 ### -w
 
