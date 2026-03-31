@@ -1,3 +1,0 @@
-# Encodings
-
-* [ASCII](ascii.md)
