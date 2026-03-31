@@ -19,14 +19,6 @@ something else. Whatever form it takes, the Python code you write must always be
 this interpreter. And to enable that, you must install the Python interpreter on your
 computer.
 
-The version of the installed interpreter.
-
-```shell
-python3 --version
-# or
-python3 -V
-```
-
 ## Interpreter under the hood
 
 In its simplest form, a Python program is just a text file containing Python statements.
